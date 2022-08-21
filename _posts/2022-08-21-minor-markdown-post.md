@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Using Markdown.
+description: Testing out the features of Markdown.
 categories: [markdown]
 title: Samit's Goals for Computer Science
 ---
