@@ -7,7 +7,7 @@ title: An Example Markdown Post
 ---
 # Example Markdown Post
 
-## Basic setup
+## Basic setup by Samit LOL
 
 Jekyll requires blog post files to be named according to the following format:
 
