@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
+            "title": "First Jupyter Notebook",
             "content": ". First Jupyter Notebook (Python) . Printing &quot;Hello everyone! My name is Samit.&quot; using Python . print(&quot;Hello everyone! My name is Samit&quot;) . Hello everyone! My name is Samit .",
-            "url": "https://samitpoojary.github.io/FASTPAGES/2022/08/21/first-jupyter-notebook.html",
-            "relUrl": "/2022/08/21/first-jupyter-notebook.html",
+            "url": "https://samitpoojary.github.io/FASTPAGES/jupyter/2022/08/21/first-jupyter-notebook.html",
+            "relUrl": "/jupyter/2022/08/21/first-jupyter-notebook.html",
             "date": " • Aug 21, 2022"
         }
         
