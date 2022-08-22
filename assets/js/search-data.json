@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "First Jupyter Notebook",
-            "content": ". First Jupyter Notebook (Python) . Printing &quot;Hello everyone! My name is Samit.&quot; using Python . print(&quot;Hello everyone! My name is Samit&quot;) . Hello everyone! My name is Samit .",
+            "content": ". First Jupyter Notebook (Python) . Printing &quot;Hello everyone! My name is Samit.&quot; using Python . print(&quot;Hello everyone! My name is Samit, and I&#39;m ready to learn more about Python and its concepts.&quot;) . Hello everyone! My name is Samit, and I&#39;m ready to learn more about Python and its concepts. .",
             "url": "https://samitpoojary.github.io/FASTPAGES/jupyter/2022/08/21/first-jupyter-notebook.html",
             "relUrl": "/jupyter/2022/08/21/first-jupyter-notebook.html",
             "date": " • Aug 21, 2022"
