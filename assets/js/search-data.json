@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "About Me",
+            "title": "About Myself",
             "content": "A little bit about me! . Testing Markdown . Hello, I’m Samit! This is a sample markdown post. I would simply like to introduce myself. I am currently a junior, and super excited for this year of APCSP! I am particularly interested in the concepts of Python, and how I can appply it to real-world issues! .",
             "url": "https://samitpoojary.github.io/FASTPAGES/markdown/2022/08/21/minor-markdown-post.html",
             "relUrl": "/markdown/2022/08/21/minor-markdown-post.html",
@@ -61,7 +61,7 @@
 
   
       ,"page1": {
-          "title": "About Me",
+          "title": "About FastPages",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://samitpoojary.github.io/FASTPAGES/about/",
           "relUrl": "/about/",
