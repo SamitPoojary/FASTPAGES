@@ -60,7 +60,20 @@
   
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
+          "title": "Notes for AP CSP",
+          "content": "Notes . … | . Terms . … | . Ideas . … | .",
+          "url": "https://samitpoojary.github.io/FASTPAGES/_pages/02_notes.html",
+          "relUrl": "/_pages/02_notes.html",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "About FastPages",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://samitpoojary.github.io/FASTPAGES/about/",
@@ -73,13 +86,8 @@
   
 
   
-  
 
   
-
-  
-  
-
   
 
   
@@ -92,7 +100,10 @@
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://samitpoojary.github.io/FASTPAGES/robots.txt",
