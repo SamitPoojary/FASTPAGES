@@ -8,7 +8,7 @@ permalink: /notes/
 title: APCSP Notes!
 ---
 
-# How to start coding through Terminal!
+# Coding Through Terminal
 
 ```bash
 (base) samitpoojary@Samits-MacBook-Pro ~ % cd vscode
@@ -18,7 +18,7 @@ title: APCSP Notes!
 
 ## How to Create a Notebook Using Bash:
 
-1. Enter vscode with wsl.
+1. .
 
 2. Use these commands with python:
 
@@ -50,70 +50,4 @@ then
 fi
 echo "Directory $project exists." 
 ```
-*Change repo link to my own*
 
-3. You can look at files in folder with this:
-
-```bash
-# You must run cells above to define variable and project
-
-echo "Navigate to project, then navigate to area wwhere files were cloned"
-cd $project
-pwd
-
-echo ""
-echo "list top level or root of files with project pulled from github"
-ls
-
-echo ""
-echo "list again with hidden files pulled from github"
-ls -a   # hidden files flag, many shell commands have flags
-
-echo ""
-echo "list all files in long format"
-ls -al   # all files and long listing
-```
-
-```bash
-# You must run cells above to define variable and project
-
-echo "Look for posts"
-export posts=$project/_posts  # _posts inside project
-cd $posts  # this should exist per fastpages
-pwd  # present working directory
-ls -l  # list posts
-```
-
-```bash
-# You must run cells above to define variable and project
-
-echo "Look for notebooks"
-export notebooks=$project/_notebooks  # _notebooks is inside project
-cd $notebooks   # this should exist per fastpages
-pwd  # present working directory
-ls -l  # list notebooks
-```
-
-```bash
-# You must run cells above to define notebooks location
-
-echo "Look for images in notebooks, print working directory, list files"
-cd $notebooks/images  # this should exist per fastpages
-pwd
-ls -l
-```
-
-4. You can also look inside files (markdown file):
-
-```bash
-# You must run cells above to define project
-echo "Navigate to project, then navigate to area wwhere files were cloned"
-
-cd $project
-echo "show the contents of README.md"
-echo ""
-
-cat README.md  # show contents of file, in this case markdown
-echo ""
-echo "end of README.md"
-```
