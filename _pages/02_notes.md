@@ -18,7 +18,7 @@ title: APCSP Notes!
 
 ## How to Create a Notebook Using Bash:
 
-1. .
+1. First, enter vscode through terminal
 
 2. Use these commands with python:
 
