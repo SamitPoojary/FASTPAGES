@@ -1,10 +1,10 @@
 ---
 toc: true
 layout: post
-description: Notes, terms, and ideas of AP CSP
+description: Notes, terms, and ideas for APCSP
 author: Samit Poojary
 categories: [markdown, AP CSP]
-title: Notes for AP CSP
+title: APCSP Notes!
 ---
 
 # Notes
