@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      1 min read
     
 </span></p>
 
@@ -103,7 +103,7 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="how-to-start-coding-through-terminal">How to start coding through Terminal!</h1>
+    <h1 id="coding-through-terminal">Coding Through Terminal</h1>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>base<span class="o">)</span> samitpoojary@Samits-MacBook-Pro ~ % <span class="nb">cd </span>vscode
 <span class="o">(</span>base<span class="o">)</span> samitpoojary@Samits-MacBook-Pro vscode % <span class="nb">cd </span>fastpages
@@ -114,7 +114,7 @@ window.onload = wrap_img;
 
 <ol>
   <li>
-    <p>Enter vscode with wsl.</p>
+    <p>.</p>
   </li>
   <li>
     <p>Use these commands with python:</p>
@@ -148,72 +148,7 @@ window.onload = wrap_img;
 <span class="k">fi
 </span><span class="nb">echo</span> <span class="s2">"Directory </span><span class="nv">$project</span><span class="s2"> exists."</span> 
 </code></pre></div></div>
-<p><em>Change repo link to my own</em></p>
 
-<ol>
-  <li>You can look at files in folder with this:</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># You must run cells above to define variable and project</span>
-
-<span class="nb">echo</span> <span class="s2">"Navigate to project, then navigate to area wwhere files were cloned"</span>
-<span class="nb">cd</span> <span class="nv">$project</span>
-<span class="nb">pwd
-
-echo</span> <span class="s2">""</span>
-<span class="nb">echo</span> <span class="s2">"list top level or root of files with project pulled from github"</span>
-<span class="nb">ls
-
-echo</span> <span class="s2">""</span>
-<span class="nb">echo</span> <span class="s2">"list again with hidden files pulled from github"</span>
-<span class="nb">ls</span> <span class="nt">-a</span>   <span class="c"># hidden files flag, many shell commands have flags</span>
-
-<span class="nb">echo</span> <span class="s2">""</span>
-<span class="nb">echo</span> <span class="s2">"list all files in long format"</span>
-<span class="nb">ls</span> <span class="nt">-al</span>   <span class="c"># all files and long listing</span>
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># You must run cells above to define variable and project</span>
-
-<span class="nb">echo</span> <span class="s2">"Look for posts"</span>
-<span class="nb">export </span><span class="nv">posts</span><span class="o">=</span><span class="nv">$project</span>/_posts  <span class="c"># _posts inside project</span>
-<span class="nb">cd</span> <span class="nv">$posts</span>  <span class="c"># this should exist per fastpages</span>
-<span class="nb">pwd</span>  <span class="c"># present working directory</span>
-<span class="nb">ls</span> <span class="nt">-l</span>  <span class="c"># list posts</span>
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># You must run cells above to define variable and project</span>
-
-<span class="nb">echo</span> <span class="s2">"Look for notebooks"</span>
-<span class="nb">export </span><span class="nv">notebooks</span><span class="o">=</span><span class="nv">$project</span>/_notebooks  <span class="c"># _notebooks is inside project</span>
-<span class="nb">cd</span> <span class="nv">$notebooks</span>   <span class="c"># this should exist per fastpages</span>
-<span class="nb">pwd</span>  <span class="c"># present working directory</span>
-<span class="nb">ls</span> <span class="nt">-l</span>  <span class="c"># list notebooks</span>
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># You must run cells above to define notebooks location</span>
-
-<span class="nb">echo</span> <span class="s2">"Look for images in notebooks, print working directory, list files"</span>
-<span class="nb">cd</span> <span class="nv">$notebooks</span>/images  <span class="c"># this should exist per fastpages</span>
-<span class="nb">pwd
-ls</span> <span class="nt">-l</span>
-</code></pre></div></div>
-
-<ol>
-  <li>You can also look inside files (markdown file):</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># You must run cells above to define project</span>
-<span class="nb">echo</span> <span class="s2">"Navigate to project, then navigate to area wwhere files were cloned"</span>
-
-<span class="nb">cd</span> <span class="nv">$project</span>
-<span class="nb">echo</span> <span class="s2">"show the contents of README.md"</span>
-<span class="nb">echo</span> <span class="s2">""</span>
-
-<span class="nb">cat </span>README.md  <span class="c"># show contents of file, in this case markdown</span>
-<span class="nb">echo</span> <span class="s2">""</span>
-<span class="nb">echo</span> <span class="s2">"end of README.md"</span>
-</code></pre></div></div>
 
   </div><a class="u-url" href="/FASTPAGES/notes/" hidden></a>
 </article>
