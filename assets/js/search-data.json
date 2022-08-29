@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "About Myself",
-            "content": "A little bit about me! . Testing Markdown . Hello, I’m Samit! This is a sample markdown post. I would simply like to introduce myself. I am currently a junior, and super excited for this year of APCSP! I am particularly interested in the concepts of Python, and how I can appply it to real-world issues! .",
+            "content": "A little bit about me! . Testing Markdown . Hello, I’m Samit! This is a sample markdown post. I would simply like to introduce myself. I am currently a junior, and super excited for this year of APCSP! I am particularly interested in the concepts of Python, and how I can appply it to real-world issues! . .",
             "url": "https://samitpoojary.github.io/FASTPAGES/markdown/2022/08/21/minor-markdown-post.html",
             "relUrl": "/markdown/2022/08/21/minor-markdown-post.html",
             "date": " • Aug 21, 2022"
