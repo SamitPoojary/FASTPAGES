@@ -1,5 +1,5 @@
 ---
-toc: false
+toc: true
 layout: post
 description: Notes, terms, and ideas for APCSP
 author: Samit Poojary
@@ -8,7 +8,7 @@ permalink: /notes/
 title: APCSP Notes!
 ---
 
-# Coding Through Terminal
+## Coding Through Terminal
 
 ```bash
 (base) samitpoojary@Samits-MacBook-Pro ~ % cd vscode
