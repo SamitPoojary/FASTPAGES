@@ -1,11 +1,16 @@
 ---
 layout: page
-title: About FastPages
+title: About Me!
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+# My Personal Goals in this Class
 
+Hello!
 
+- I am Samit Poojary, a Junior here at Del Norte. 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+In this class, I would like to accomplish several tasks:
+- Understand how to navigate VS Code efficiently in order to become more effective and efficient
+- Understand the concepts of Python and its concepts in order to be able to apply it into real-world issues
+- Have fun while doing it!
