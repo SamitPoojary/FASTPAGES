@@ -8,6 +8,27 @@ permalink: /notes/
 title: APCSP Notes!
 ---
 
+## Week 0
+- Tool Setup
+- PowerShell
+    - cd = change directory
+    - code . = open VSCode via terminal
+    - ls = list files
+- Markdown (md)
+    - #, ##, ### = types of font (Heading, Subheading, etc.)
+    - Use hyphens to create a bullet point
+
+## Week 1
+- Intro to Python
+    - print () = displays whatever is in quotations
+    - def = defines a function which can then be used in the future
+
+
+## Week 2
+- 
+
+
+
 ## Coding Through Terminal
 
 ```bash
