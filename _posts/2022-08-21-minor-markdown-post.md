@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Testing out the features of Markdown.
-categories: [markdown]
+categories: [markdown, personal]
 title: About Myself
 ---
 # A little bit about me!

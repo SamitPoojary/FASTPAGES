@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Testing out the features of Markdown some more.
-categories: [markdown]
+categories: [markdown, personal]
 title: Personal Goals for CSP
 ---
 
