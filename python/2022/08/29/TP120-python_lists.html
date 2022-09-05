@@ -10,17 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}." />
 <meta property="og:description" content="An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}." />
-<link rel="canonical" href="https://samitpoojary.github.io/FASTPAGES/collegeboard/python_lists" />
-<meta property="og:url" content="https://samitpoojary.github.io/FASTPAGES/collegeboard/python_lists" />
+<link rel="canonical" href="https://samitpoojary.github.io/FASTPAGES/python/2022/08/29/TP120-python_lists.html" />
+<meta property="og:url" content="https://samitpoojary.github.io/FASTPAGES/python/2022/08/29/TP120-python_lists.html" />
 <meta property="og:site_name" content="Pooj’s FastPages" />
-<meta property="og:image" content="https://samitpoojary.github.io/FASTPAGES/images/python_lists.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-29T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://samitpoojary.github.io/FASTPAGES/images/python_lists.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Lists, Dictionaries, Iteration" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}.","headline":"Lists, Dictionaries, Iteration","image":"https://samitpoojary.github.io/FASTPAGES/images/python_lists.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://samitpoojary.github.io/FASTPAGES/collegeboard/python_lists"},"url":"https://samitpoojary.github.io/FASTPAGES/collegeboard/python_lists"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}.","headline":"Lists, Dictionaries, Iteration","mainEntityOfPage":{"@type":"WebPage","@id":"https://samitpoojary.github.io/FASTPAGES/python/2022/08/29/TP120-python_lists.html"},"url":"https://samitpoojary.github.io/FASTPAGES/python/2022/08/29/TP120-python_lists.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/FASTPAGES/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://samitpoojary.github.io/FASTPAGES/feed.xml" title="Pooj's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/FASTPAGES/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,14 +79,14 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/FASTPAGES/categories/#collegeboard">collegeboard</a>
+        <a class="category-tags-link" href="/FASTPAGES/categories/#python">python</a>
         
       
       </p>
@@ -258,22 +256,44 @@ person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaS
 
 <span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Samit"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Poojary"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"February 24"</span><span class="p">,</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"samitpoojary@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"1932-Scout-Scarab"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
 <span class="p">})</span>
 
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sunny"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Naidu"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 2"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Temecula"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="c1"># Append to List a 3rd Dictionary of key/values</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Samit"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Poojary"</span><span class="p">,</span>
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"February 24"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"samitpoojary@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Pagani Zonda HP Barchetta"</span><span class="p">]</span>
+
+<span class="p">})</span>
+
+<span class="c1"># Append to List a 4th Dictionary of key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Harish"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Poojary"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"December 4"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"hpoojary@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Porsche Cayenne GTS Turbo"</span><span class="p">]</span>
+
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -290,7 +310,7 @@ person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaS
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'Samit', 'LastName': 'Poojary', 'DOB': 'February 24', 'Residence': 'San Diego', 'Email': 'samitpoojary@gmail.com', 'Owns_Cars': ['1932-Scout-Scarab', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Samit', 'LastName': 'Poojary', 'DOB': 'February 24', 'Residence': 'San Diego', 'Email': 'samitpoojary@gmail.com', 'Owns_Cars': ['4Runner']}]
+<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Samit', 'LastName': 'Poojary', 'DOB': 'February 24', 'Residence': 'San Diego', 'Email': 'samitpoojary@gmail.com', 'Owns_Cars': ['Pagani Zonda HP Barchetta']}, {'FirstName': 'Harish', 'LastName': 'Poojary', 'DOB': 'December 4', 'Residence': 'San Diego', 'Email': 'hpoojary@gmail.com', 'Owns_Cars': ['Porsche Cayenne GTS Turbo']}]
 </pre>
 </div>
 </div>
@@ -357,15 +377,25 @@ person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaS
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>For loop output
 
-Samit Poojary
+John Mortensen
 	 Residence: San Diego
-	 Birth Day: February 24
-	 Cars: 1932-Scout-Scarab, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Birth Day: October 21
+	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars: 4Runner
 
 Samit Poojary
 	 Residence: San Diego
 	 Birth Day: February 24
-	 Cars: 4Runner
+	 Cars: Pagani Zonda HP Barchetta
+
+Harish Poojary
+	 Residence: San Diego
+	 Birth Day: December 4
+	 Cars: Porsche Cayenne GTS Turbo
 
 </pre>
 </div>
@@ -422,15 +452,25 @@ Samit Poojary
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>While loop output
 
-Samit Poojary
+John Mortensen
 	 Residence: San Diego
-	 Birth Day: February 24
-	 Cars: 1932-Scout-Scarab, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Birth Day: October 21
+	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars: 4Runner
 
 Samit Poojary
 	 Residence: San Diego
 	 Birth Day: February 24
-	 Cars: 4Runner
+	 Cars: Pagani Zonda HP Barchetta
+
+Harish Poojary
+	 Residence: San Diego
+	 Birth Day: December 4
+	 Cars: Porsche Cayenne GTS Turbo
 
 </pre>
 </div>
@@ -488,15 +528,25 @@ Samit Poojary
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Recursive loop output
 
-Samit Poojary
+John Mortensen
 	 Residence: San Diego
-	 Birth Day: February 24
-	 Cars: 1932-Scout-Scarab, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Birth Day: October 21
+	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars: 4Runner
 
 Samit Poojary
 	 Residence: San Diego
 	 Birth Day: February 24
-	 Cars: 4Runner
+	 Cars: Pagani Zonda HP Barchetta
+
+Harish Poojary
+	 Residence: San Diego
+	 Birth Day: December 4
+	 Cars: Porsche Cayenne GTS Turbo
 
 </pre>
 </div>
@@ -533,7 +583,7 @@ Samit Poojary
 
 
 
-  </div><a class="u-url" href="/FASTPAGES/collegeboard/python_lists" hidden></a>
+  </div><a class="u-url" href="/FASTPAGES/python/2022/08/29/TP120-python_lists.html" hidden></a>
 </article>
 
       </div>
