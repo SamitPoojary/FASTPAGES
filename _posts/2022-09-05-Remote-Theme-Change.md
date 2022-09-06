@@ -24,3 +24,9 @@ As shown above, the darkmode theme makes my blog site look really cool! The blac
 Unfortunately, the darkmode had some strange effects on my coding syntax, and even prohibited my ability to access my Tags page! I was extremely upset that this awesome theme took so much away from the backbone of my blog site, but it's all part of the process. 
 
 I was soon able to figure out that the darkmode theme which I had found online wasn't compatible with the corresponding CSS of my FastPages site, so I searched up one that WAS compatible, and now it works! However, I may continue to change the color theme of my blog site from time-to-time. 
+
+I prefer to have my Tagging and Search features to be WORKING, since it just makes finding specific notebooks/posts so much easier. 
+
+![]({{site.baseurl}}/images/tagsproof.png "https://github.com/fastai/fastpages")
+![]({{site.baseurl}}/images/searchproof.png "https://github.com/fastai/fastpages")
+
