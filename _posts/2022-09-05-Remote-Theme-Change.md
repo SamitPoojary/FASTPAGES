@@ -19,7 +19,7 @@ Once the changes had been committed, here were the results:
 ![]({{site.baseurl}}/images/themechange.png "https://github.com/fastai/fastpages")
 
 I also tried to change the jekyll style, but it didn't even allow me to commit for some reason...
-![]({{site.baseurl}}/images/jekyll.png "https://github.com/fastai/fastpages")
+![]({{site.baseurl}}/images/realjekyll.png "https://github.com/fastai/fastpages")
 
 As shown above, the darkmode theme makes my blog site look really cool! The black contrasts super well with my title image of Kobe Bryant, and I was really looking forward to keeping the theme... 
 
