@@ -1,9 +1,9 @@
 ---
-toc: true
+toc: false
 layout: post
-description: Analyzing the effects of altering the default remote theme for my FastPages site. 
-categories: [markdown,html]
-title: Changing the Default Remote Theme!
+description: Outlining my AppLab Project 
+categories: [markdown,Code.org, java, personal]
+title: Planning my AppLab Project!
 ---
 
 ## Brainstorming Quiz Ideas
