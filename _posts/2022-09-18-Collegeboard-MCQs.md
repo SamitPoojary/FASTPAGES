@@ -3,7 +3,7 @@ toc: false
 layout: post
 description: Physical Proof of Completing the Collegeboard MCQ's
 categories: [markdown, AP Exam]
-title: Completion of the Collegeboard MCQ's
+title: The Importance of Collaboration
 ---
 
 ### Pictured below is proof of my completion of the collaboration quiz, which was assigned to us through through AP Classroom on the Collegeboard site. 
