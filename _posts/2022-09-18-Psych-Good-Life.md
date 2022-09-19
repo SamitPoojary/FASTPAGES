@@ -5,6 +5,7 @@ description: Some Ideas for Coping with "Glitches" in Life
 categories: [markdown,personal]
 title: Psychology and the Good Life
 ---
+# Testing out local server.
 
 ### Main Takeaway From Video:
 - Students have constantly been dealing with stress, so much to the point where they aren't able to enjoy life as much as they should. 
