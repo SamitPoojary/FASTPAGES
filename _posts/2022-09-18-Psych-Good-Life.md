@@ -6,7 +6,7 @@ categories: [markdown,personal]
 title: Psychology and the Good Life
 ---
 
-### Main Takeaway From Video:
+### Main Takeaway From Video!:
 - Students have constantly been dealing with stress, so much to the point where they aren't able to enjoy life as much as they should. 
 
 ## Goal:
