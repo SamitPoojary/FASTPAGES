@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Music Shuffle Song Selector with JavaScript",
-            "content": "What is this program? . This will be a program that randomly selects a song from a list, and gives you a spotify link to listen to it. | . Click For Random Song Song Will Appear Here . &lt;/script&gt; . Testing Program’s Functionality . This will be a program that randomly selects a player from Real Madrid from a list, and gives you a link to view their statistical profile. | . Click For Random Real Madrid Player Player Will Appear Here . &lt;/script&gt; .",
-            "url": "https://samitpoojary.github.io/FASTPAGES/java/2022/09/25/js-algorithm.html",
-            "relUrl": "/java/2022/09/25/js-algorithm.html",
+            "title": "LaLiga Player Generator",
+            "content": "Testing Program’s Functionality . This js-encoded algorithm randomly selects a player from Real Madrid, a European soccer team, and then gives you a clickable link to view their statistical profile. | . Click For Random Real Madrid Player Player Will Appear Here . &lt;/script&gt; . The algorithm works! .",
+            "url": "https://samitpoojary.github.io/FASTPAGES/java/markdown/2022/09/25/js-algorithm.html",
+            "relUrl": "/java/markdown/2022/09/25/js-algorithm.html",
             "date": " • Sep 25, 2022"
         }
         
