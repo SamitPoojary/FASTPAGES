@@ -227,19 +227,16 @@
   
 
   
-
+      ,"page4": {
+          "title": "HTML Fragments + JS Kernel Table!",
+          "content": "",
+          "url": "https://samitpoojary.github.io/FASTPAGES/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
   
 
-  
-  
-
-  
-  
-
-  
-  
-
-  
   
 
   
@@ -248,7 +245,21 @@
   
 
   
-      ,"page12": {
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://samitpoojary.github.io/FASTPAGES/robots.txt",
