@@ -7,3 +7,4 @@ permalink: /notes/
 title: HTML Fragments + JS Kernel Table!
 ---
 
+{% include navbar.html %}
