@@ -44,7 +44,7 @@ Initially, developers list off the specifications of the program. During the pro
 
 ![]({{site.baseurl}}/images/cbproof1.png "Proof of Completing the 1.4 Assignment.")
 
-## Identifying and Correcting Errors Video 1-3 Notes:
+## 1.4 Notes - Identifying and Correcting Errors Video 1-3 Notes:
 - Programmers run into errors many times and it is a part of the programming process
 - Logic Error: when the programmer makes a mistake in the algorithm that causes an unexpected result
 - Syntax Error: a typo in the code that doesn’t let the program to run or compile
