@@ -42,7 +42,7 @@ Program Documentation:
 
 Initially, developers list off the specifications of the program. During the production, developers track their process, issues, and successes. After the production, developers explain the overall process of their code and how it affects the whole program.
 
-![]({{site.baseurl}}/images/cb1proof.png "Proof of Completing the 1.4 Assignment.")
+![]({{site.baseurl}}/images/cbproof1.png "Proof of Completing the 1.4 Assignment.")
 
 ## Identifying and Correcting Errors Video 1-3 Notes:
 - Programmers run into errors many times and it is a part of the programming process
