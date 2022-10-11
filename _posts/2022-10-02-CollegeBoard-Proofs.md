@@ -41,3 +41,19 @@ Program Documentation:
 
 
 Initially, developers list off the specifications of the program. During the production, developers track their process, issues, and successes. After the production, developers explain the overall process of their code and how it affects the whole program.
+
+![]({{site.baseurl}}/images/cb1proof.png "Proof of Completing the 1.4 Assignment.")
+
+## Identifying and Correcting Errors Video 1-3 Notes:
+- Programmers run into errors many times and it is a part of the programming process
+- Logic Error: when the programmer makes a mistake in the algorithm that causes an unexpected result
+- Syntax Error: a typo in the code that doesn’t let the program to run or compile
+- How to correct logic errors:
+    - use Test Cases and try out different inputs
+    - Hand Tracing: writing out the values of variables within the loop as it iterates to determine if the result is correct
+    - Add Extra Outputs: help to find and fix the error
+    - Some IDEs show visualizations and debuggers to help correct errors
+- The testing is used to revise, refine, and improve the program
+- Testing is used to find and fix problems in the program
+- Takeaway: Identify inputs and intended outputs by testing the program
+
