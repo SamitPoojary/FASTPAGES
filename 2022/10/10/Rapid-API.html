@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Testing out the Features of Rapid API | Pooj’s FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Testing out the Features of Rapid API" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://samitpoojary.github.io/FASTPAGES/2022/10/10/Rapid-API.html" />
+<meta property="og:url" content="https://samitpoojary.github.io/FASTPAGES/2022/10/10/Rapid-API.html" />
+<meta property="og:site_name" content="Pooj’s FastPages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-10T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Testing out the Features of Rapid API" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-10T00:00:00-05:00","datePublished":"2022-10-10T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Testing out the Features of Rapid API","mainEntityOfPage":{"@type":"WebPage","@id":"https://samitpoojary.github.io/FASTPAGES/2022/10/10/Rapid-API.html"},"url":"https://samitpoojary.github.io/FASTPAGES/2022/10/10/Rapid-API.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FASTPAGES/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://samitpoojary.github.io/FASTPAGES/feed.xml" title="Pooj's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/FASTPAGES/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FASTPAGES/">Pooj&#39;s FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FASTPAGES/search/">Search</a><a class="page-link" href="/FASTPAGES/categories/">Tags</a><a class="page-link" href="/FASTPAGES/notes/">APCSP Notes!</a><a class="page-link" href="/FASTPAGES/about/">About Me!</a><a class="page-link" href="/FASTPAGES/notes/">Submenu</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Testing out the Features of Rapid API</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-10T00:00:00-05:00" itemprop="datePublished">
+        Oct 10, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/SamitPoojary/FASTPAGES/tree/master/_notebooks/2022-10-10-Rapid-API.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/FASTPAGES/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/SamitPoojary/FASTPAGES/master?filepath=_notebooks%2F2022-10-10-Rapid-API.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FASTPAGES/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/SamitPoojary/FASTPAGES/blob/master/_notebooks/2022-10-10-Rapid-API.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FASTPAGES/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FSamitPoojary%2FFASTPAGES%2Fblob%2Fmaster%2F_notebooks%2F2022-10-10-Rapid-API.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/FASTPAGES/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-10-Rapid-API.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://gas-price.p.rapidapi.com/europeanCountries&quot;</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;093c731fb9mshd2b4db3a5a833acp172c94jsn194a4fa97d9b&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;gas-price.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#34;results&#34;:[{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,655&#34;,&#34;diesel&#34;:&#34;1,956&#34;,&#34;gasoline&#34;:&#34;1,757&#34;,&#34;country&#34;:&#34;Albania&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;1,651&#34;,&#34;gasoline&#34;:&#34;1,672&#34;,&#34;country&#34;:&#34;Andorra&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,608&#34;,&#34;diesel&#34;:&#34;1,147&#34;,&#34;gasoline&#34;:&#34;1,217&#34;,&#34;country&#34;:&#34;Armenia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;1,250&#34;,&#34;diesel&#34;:&#34;1,942&#34;,&#34;gasoline&#34;:&#34;1,743&#34;,&#34;country&#34;:&#34;Austria&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,542&#34;,&#34;diesel&#34;:&#34;0,937&#34;,&#34;gasoline&#34;:&#34;0,937&#34;,&#34;country&#34;:&#34;Belarus&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,796&#34;,&#34;diesel&#34;:&#34;2,070&#34;,&#34;gasoline&#34;:&#34;1,875&#34;,&#34;country&#34;:&#34;Belgium&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,822&#34;,&#34;diesel&#34;:&#34;1,647&#34;,&#34;gasoline&#34;:&#34;1,463&#34;,&#34;country&#34;:&#34;Bosnia and Herzegovina&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,583&#34;,&#34;diesel&#34;:&#34;1,667&#34;,&#34;gasoline&#34;:&#34;1,513&#34;,&#34;country&#34;:&#34;Bulgaria&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,951&#34;,&#34;diesel&#34;:&#34;1,766&#34;,&#34;gasoline&#34;:&#34;1,458&#34;,&#34;country&#34;:&#34;Croatia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;1,814&#34;,&#34;gasoline&#34;:&#34;1,469&#34;,&#34;country&#34;:&#34;Cyprus&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,757&#34;,&#34;diesel&#34;:&#34;1,775&#34;,&#34;gasoline&#34;:&#34;1,630&#34;,&#34;country&#34;:&#34;Czech Republic&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;2,115&#34;,&#34;gasoline&#34;:&#34;2,106&#34;,&#34;country&#34;:&#34;Denmark&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,888&#34;,&#34;diesel&#34;:&#34;1,853&#34;,&#34;gasoline&#34;:&#34;1,862&#34;,&#34;country&#34;:&#34;Estonia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;2,159&#34;,&#34;gasoline&#34;:&#34;2,096&#34;,&#34;country&#34;:&#34;Finland&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,770&#34;,&#34;diesel&#34;:&#34;1,868&#34;,&#34;gasoline&#34;:&#34;1,712&#34;,&#34;country&#34;:&#34;France&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,822&#34;,&#34;diesel&#34;:&#34;1,442&#34;,&#34;gasoline&#34;:&#34;1,281&#34;,&#34;country&#34;:&#34;Georgia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;1,104&#34;,&#34;diesel&#34;:&#34;2,098&#34;,&#34;gasoline&#34;:&#34;1,982&#34;,&#34;country&#34;:&#34;Germany&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,999&#34;,&#34;diesel&#34;:&#34;1,940&#34;,&#34;gasoline&#34;:&#34;2,063&#34;,&#34;country&#34;:&#34;Greece&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,949&#34;,&#34;diesel&#34;:&#34;1,635&#34;,&#34;gasoline&#34;:&#34;1,482&#34;,&#34;country&#34;:&#34;Hungary&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;2,257&#34;,&#34;gasoline&#34;:&#34;2,251&#34;,&#34;country&#34;:&#34;Iceland&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,890&#34;,&#34;diesel&#34;:&#34;1,882&#34;,&#34;gasoline&#34;:&#34;1,774&#34;,&#34;country&#34;:&#34;Ireland&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,798&#34;,&#34;diesel&#34;:&#34;1,804&#34;,&#34;gasoline&#34;:&#34;1,715&#34;,&#34;country&#34;:&#34;Italy&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;1,004&#34;,&#34;gasoline&#34;:&#34;1,050&#34;,&#34;country&#34;:&#34;Kosovo&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,824&#34;,&#34;diesel&#34;:&#34;1,849&#34;,&#34;gasoline&#34;:&#34;1,781&#34;,&#34;country&#34;:&#34;Latvia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,749&#34;,&#34;diesel&#34;:&#34;1,836&#34;,&#34;gasoline&#34;:&#34;1,718&#34;,&#34;country&#34;:&#34;Lithuania&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,816&#34;,&#34;diesel&#34;:&#34;1,897&#34;,&#34;gasoline&#34;:&#34;1,715&#34;,&#34;country&#34;:&#34;Luxembourg&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,787&#34;,&#34;diesel&#34;:&#34;1,474&#34;,&#34;gasoline&#34;:&#34;1,400&#34;,&#34;country&#34;:&#34;North Macedonia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;1,228&#34;,&#34;gasoline&#34;:&#34;1,360&#34;,&#34;country&#34;:&#34;Malta&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,883&#34;,&#34;diesel&#34;:&#34;1,353&#34;,&#34;gasoline&#34;:&#34;1,307&#34;,&#34;country&#34;:&#34;Moldova&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,860&#34;,&#34;diesel&#34;:&#34;1,600&#34;,&#34;gasoline&#34;:&#34;1,480&#34;,&#34;country&#34;:&#34;Montenegro&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,963&#34;,&#34;diesel&#34;:&#34;1,912&#34;,&#34;gasoline&#34;:&#34;2,017&#34;,&#34;country&#34;:&#34;Netherlands&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;1,320&#34;,&#34;diesel&#34;:&#34;2,334&#34;,&#34;gasoline&#34;:&#34;2,262&#34;,&#34;country&#34;:&#34;Norway&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,646&#34;,&#34;diesel&#34;:&#34;1,552&#34;,&#34;gasoline&#34;:&#34;1,369&#34;,&#34;country&#34;:&#34;Poland&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,938&#34;,&#34;diesel&#34;:&#34;1,872&#34;,&#34;gasoline&#34;:&#34;1,842&#34;,&#34;country&#34;:&#34;Portugal&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,815&#34;,&#34;diesel&#34;:&#34;1,734&#34;,&#34;gasoline&#34;:&#34;1,484&#34;,&#34;country&#34;:&#34;Romania&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,358&#34;,&#34;diesel&#34;:&#34;0,864&#34;,&#34;gasoline&#34;:&#34;0,832&#34;,&#34;country&#34;:&#34;Russia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,938&#34;,&#34;diesel&#34;:&#34;1,786&#34;,&#34;gasoline&#34;:&#34;1,487&#34;,&#34;country&#34;:&#34;Serbia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,866&#34;,&#34;diesel&#34;:&#34;1,779&#34;,&#34;gasoline&#34;:&#34;1,689&#34;,&#34;country&#34;:&#34;Slovakia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;1,013&#34;,&#34;diesel&#34;:&#34;1,690&#34;,&#34;gasoline&#34;:&#34;1,454&#34;,&#34;country&#34;:&#34;Slovenia&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;1,044&#34;,&#34;diesel&#34;:&#34;1,885&#34;,&#34;gasoline&#34;:&#34;1,778&#34;,&#34;country&#34;:&#34;Spain&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;1,250&#34;,&#34;diesel&#34;:&#34;2,425&#34;,&#34;gasoline&#34;:&#34;1,971&#34;,&#34;country&#34;:&#34;Sweden&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;1,069&#34;,&#34;diesel&#34;:&#34;2,232&#34;,&#34;gasoline&#34;:&#34;1,974&#34;,&#34;country&#34;:&#34;Switzerland&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,572&#34;,&#34;diesel&#34;:&#34;1,385&#34;,&#34;gasoline&#34;:&#34;1,161&#34;,&#34;country&#34;:&#34;Turkey&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;-&#34;,&#34;diesel&#34;:&#34;1,384&#34;,&#34;gasoline&#34;:&#34;1,051&#34;,&#34;country&#34;:&#34;U.S.A&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,732&#34;,&#34;diesel&#34;:&#34;1,410&#34;,&#34;gasoline&#34;:&#34;1,292&#34;,&#34;country&#34;:&#34;Ukraine&#34;},{&#34;currency&#34;:&#34;euro&#34;,&#34;lpg&#34;:&#34;0,874&#34;,&#34;diesel&#34;:&#34;2,087&#34;,&#34;gasoline&#34;:&#34;1,904&#34;,&#34;country&#34;:&#34;United Kingdom&#34;}],&#34;success&#34;:true}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/FASTPAGES/2022/10/10/Rapid-API.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FASTPAGES/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/FASTPAGES/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
