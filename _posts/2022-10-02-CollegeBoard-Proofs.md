@@ -57,3 +57,10 @@ Initially, developers list off the specifications of the program. During the pro
 - Testing is used to find and fix problems in the program
 - Takeaway: Identify inputs and intended outputs by testing the program
 
+
+![]({{site.baseurl}}/images/41cbproof.png "Proof of Completing the 4.1 Assignment.")
+
+## 4.1 Notes - The Internet Quiz:
+- Here I was able to learn a lot about the internet, and I did some troubleshooting and figure out how to fix programming errors. These quizzes were straightforward and helped me develop my critical thinking. The internest portion was a little diffucult because I did not have much first hand experience with the internet but however after critical thinking and looking over the college videos I was able to learn about the aspects of the internet.
+
+- The programming issues were also very good for my learning because it takes a lot of effort to first understand the purpose of the code and see why it is not working. To find the lines and the more specific error trains my mind to make less errors.
