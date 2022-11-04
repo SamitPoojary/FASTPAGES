@@ -25,7 +25,7 @@ Collaboration displays:
     - Problem solving
     - Creating ideas
 
-## 1.2 Notes - Program, Function, and Purpose Notes
+## 1.2 Notes - Program, Function, and Purpose 
 
 - Computer programs accept input in a variety of different forms (tacile aka touch, audio, visual, text). 
 - Programs are mostly event-driven –> events (mouse clicks, screen taps/swipes, physical button clicks, eyboard entries, audio keywords/phrases) are triggered by actions, which sends input to the program. 
