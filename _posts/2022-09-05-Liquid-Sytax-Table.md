@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: "My progress for the week!"
 categories: [markdown, personal]
-title: My Posts
+title: Organizing my Posts
 ---
 <html>
 <style>
