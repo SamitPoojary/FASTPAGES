@@ -20,3 +20,8 @@ title: Trimester 1 Final Review
 ![]({{site.baseurl}}/images/tri1mcq3.png "Question 43")
 - Choice C is correct in this case because the variables "x" and "result" are intialized to 0. Inside the loop, result is increased by "x" and "x" is increased by 1. The loop terminates when "x" exceeds 5. 
 - Therefore, "result" is assigned the sum of the integers from 0 to 5, or 15; not 14. 
+
+
+## Strengths and Weaknesses:
+- I had a difficult time coping with questions regarding binary, and often found myself using online help for those questions
+- However, I did note that I did well on questions regarding collaboration and team activity. 
