@@ -23,12 +23,6 @@ title: APCSP Notes!
     - print () = displays whatever is in quotations
     - def = defines a function which can then be used in the future
 
-
-## Week 2
-- 
-
-
-
 ## Coding Through Terminal
 
 ```bash
