@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: 
 categories: [notes, markdown, javascript, html]
-permalink: /notes/
+permalink: /submenu/
 title: Submenu
 ---
 
