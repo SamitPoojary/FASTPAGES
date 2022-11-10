@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -106,6 +106,9 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#week-0">Week 0</a></li>
 <li class="toc-entry toc-h2"><a href="#week-1">Week 1</a></li>
+<li class="toc-entry toc-h2"><a href="#week-2">Week 2</a></li>
+<li class="toc-entry toc-h2"><a href="#coding-through-terminal">Coding Through Terminal</a></li>
+<li class="toc-entry toc-h2"><a href="#how-to-create-a-notebook-using-bash">How to Create a Notebook Using Bash:</a></li>
 <li class="toc-entry toc-h2"><a href="#vscode-terminology">VSCode Terminology:</a></li>
 <li class="toc-entry toc-h2"><a href="#largest-takeaway-of-trimester-1">Largest Takeaway of Trimester 1:</a></li>
 </ul><h2 id="week-0">
@@ -138,6 +141,60 @@ window.onload = wrap_img;
   </li>
 </ul>
 
+<h2 id="week-2">
+<a class="anchor" href="#week-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 2</h2>
+<ul>
+  <li>
+</ul>
+
+<h2 id="coding-through-terminal">
+<a class="anchor" href="#coding-through-terminal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coding Through Terminal</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>base<span class="o">)</span> samitpoojary@Samits-MacBook-Pro ~ % <span class="nb">cd </span>vscode
+<span class="o">(</span>base<span class="o">)</span> samitpoojary@Samits-MacBook-Pro vscode % <span class="nb">cd </span>fastpages
+<span class="o">(</span>base<span class="o">)</span> samitpoojary@Samits-MacBook-Pro fastpages % code <span class="nb">.</span>
+</code></pre></div></div>
+
+<h2 id="how-to-create-a-notebook-using-bash">
+<a class="anchor" href="#how-to-create-a-notebook-using-bash" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Create a Notebook Using Bash:</h2>
+
+<ol>
+  <li>
+    <p>First, enter vscode through terminal</p>
+  </li>
+  <li>
+    <p>Use these commands with python:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"Using conditional statement to create a project directory and project"</span>
+
+<span class="c"># Variable section</span>
+<span class="nb">export </span><span class="nv">project_dir</span><span class="o">=</span><span class="nv">$HOME</span>/vscode  <span class="c"># change vscode to different name to test git clone</span>
+<span class="nb">export </span><span class="nv">project</span><span class="o">=</span><span class="nv">$project_dir</span>/APCSP  <span class="c"># change APCSP to name of project from git clone</span>
+<span class="nb">export </span><span class="nv">project_repo</span><span class="o">=</span><span class="s2">"https://github.com/nighthawkcoders/APCSP.git"</span>  <span class="c"># change to project of choice</span>
+
+<span class="nb">cd</span> ~    <span class="c"># start in home directory</span>
+
+<span class="c"># Conditional block to make a project directory</span>
+<span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-d</span> <span class="nv">$project_dir</span> <span class="o">]</span>
+<span class="k">then 
+    </span><span class="nb">echo</span> <span class="s2">"Directory </span><span class="nv">$project_dir</span><span class="s2"> does not exists... makinng directory </span><span class="nv">$project_dir</span><span class="s2">"</span>
+    <span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$project_dir</span>
+<span class="k">fi
+</span><span class="nb">echo</span> <span class="s2">"Directory </span><span class="nv">$project_dir</span><span class="s2"> exists."</span> 
+
+<span class="c"># Conditional block to git clone a project from project_repo</span>
+<span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-d</span> <span class="nv">$project</span> <span class="o">]</span>
+<span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"Directory </span><span class="nv">$project</span><span class="s2"> does not exists... cloning </span><span class="nv">$project_repo</span><span class="s2">"</span>
+    <span class="nb">cd</span> <span class="nv">$project_dir</span>
+    git clone <span class="nv">$project_repo</span>
+    <span class="nb">cd</span> ~
+<span class="k">fi
+</span><span class="nb">echo</span> <span class="s2">"Directory </span><span class="nv">$project</span><span class="s2"> exists."</span> 
+</code></pre></div></div>
+
 <h2 id="vscode-terminology">
 <a class="anchor" href="#vscode-terminology" aria-hidden="true"><span class="octicon octicon-link"></span></a>VSCode Terminology:</h2>
 <ul>
@@ -159,7 +216,6 @@ window.onload = wrap_img;
   <li><strong>Should work to better understand components of JSON and its various applications</strong></li>
   <li>More familiarized with Python, and HTML… should continue to see rapid improvement come Tri 2</li>
 </ul>
-
 
   </div><a class="u-url" href="/FASTPAGES/notes/" hidden></a>
 </article>
