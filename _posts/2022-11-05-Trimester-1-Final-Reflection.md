@@ -24,4 +24,4 @@ title: Trimester 1 Final Review
 
 ## Strengths and Weaknesses:
 - I had a difficult time coping with questions regarding binary, and often found myself using online help for those questions
-- However, I did note that I did well on questions regarding collaboration and team activity. 
+- However, I did note that I did well on questions regarding collaboration and team activity, and particularly on the questions asking what the line of code would do. 
