@@ -329,8 +329,19 @@
       ,"page4": {
           "title": "Submenu",
           "content": "| HTML + JavaScript Table | LaLiga Generator | API Utilization | .",
-          "url": "https://samitpoojary.github.io/FASTPAGES/notes/",
-          "relUrl": "/notes/",
+          "url": "https://samitpoojary.github.io/FASTPAGES/submenu/",
+          "relUrl": "/submenu/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
+          "title": "Weekly Log",
+          "content": "Weekly Progress .",
+          "url": "https://samitpoojary.github.io/FASTPAGES/_pages/05_Weekly_Log.html",
+          "relUrl": "/_pages/05_Weekly_Log.html",
           "date": ""
       }
       
@@ -358,7 +369,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://samitpoojary.github.io/FASTPAGES/robots.txt",
