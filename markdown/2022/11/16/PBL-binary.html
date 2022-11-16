@@ -143,6 +143,26 @@ window.onload = wrap_img;
                     <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
                 </td>
                 
+                <td><img class="img-responsive py-3" id="bulb3" src="/FASTPAGES/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb4" src="/FASTPAGES/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb5" src="/FASTPAGES/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb6" src="/FASTPAGES/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
+                </td>
+                
+                <td><img class="img-responsive py-3" id="bulb7" src="/FASTPAGES/images/bulb_off.png" alt="" width="40" height="Auto" />
+                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
+                </td>
+                
             </tr>
             <tr>
                 
@@ -153,6 +173,16 @@ window.onload = wrap_img;
                 
                 <td><input type="text" id="digit2" value="0" size="1" readonly="" /></td>
                 
+                <td><input type="text" id="digit3" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit4" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit5" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit6" value="0" size="1" readonly="" /></td>
+                
+                <td><input type="text" id="digit7" value="0" size="1" readonly="" /></td>
+                
             </tr>
             </table>
         </div>
@@ -160,7 +190,7 @@ window.onload = wrap_img;
 </div>
 
 <script>
-    const BITS = 3;
+    const BITS = 8;
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
     const IMAGE_ON = "/FASTPAGES/images/bulb_on.gif";
