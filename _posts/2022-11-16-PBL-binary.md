@@ -3,14 +3,14 @@ toc: false
 layout: post
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 categories: [markdown]
-title: Binary Math
+title: Binary Math with Lightbulbs
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
-{% assign BITS = 3 %}
+{% assign BITS = 8 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
