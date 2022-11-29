@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      5 min read
     
 </span></p>
 
@@ -107,8 +107,17 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.1-and-3.2">3.1 and 3.2<a class="anchor-link" href="#3.1-and-3.2"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Variables,-Assignments,-and-Data-Abstraction:">Variables, Assignments, and Data Abstraction:<a class="anchor-link" href="#Variables,-Assignments,-and-Data-Abstraction:"> </a></h2><ul>
-<li>Tip: using meaningful variable names helps with readability and understanding of what values are represented by the variables
+<li>Tip: using meaningful variable names helps with readability and understanding of what values are represented by the variables</li>
+<li>keep it nice and simple</li>
+<li>easier to understand what value means later on</li>
+<li>no spaces between characters
 ### Variables</li>
 <li>A list of data can also be stored in variables<ul>
 <li>printing and retrieving specific value in the list without creating a lot of variables</li>
@@ -117,8 +126,10 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li>integer: A number</li>
-<li>Text/string: A word<ul>
-<li>Boolean: Data that determines if something is true or false</li>
+<li>Text/string: A word</li>
+<li>Boolean: Data that determines if something is true or false<ul>
+<li>List of data can even be stored as a single variable</li>
+<li>makes it more organized</li>
 </ul>
 </li>
 </ul>
@@ -171,6 +182,20 @@ False &lt;class &#39;bool&#39;&gt;
 <h2 id="Assignments">Assignments<a class="anchor-link" href="#Assignments"> </a></h2><ul>
 <li>The assignment operator allows a program to change the value represented by a variable</li>
 <li>Used to assigning values to variables</li>
+<li>The "=" operator assigns equated values on either side</li>
+<li>The "+=" operator adds the right side to the left, then assigns it all to the left operand<ul>
+<li>x += y<ul>
+<li>Result: x+y</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The "-=" operator subtracts the right side from the left, and assigns it all to the left operand<ul>
+<li>x -= y</li>
+<li>x-y</li>
+</ul>
+</li>
+<li>Similarily, the */ and /= multiply and divide the right and left side, respectively</li>
 </ul>
 
 </div>
@@ -212,7 +237,7 @@ False &lt;class &#39;bool&#39;&gt;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The value stored in a variable will be the most recent value assigned</p>
+<p>Notice here how the value stored in a variable will be the most recent value assigned</p>
 
 </div>
 </div>
@@ -316,6 +341,24 @@ False &lt;class &#39;bool&#39;&gt;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Managing-Lists">Managing Lists<a class="anchor-link" href="#Managing-Lists"> </a></h3><ul>
+<li>There are 3 different types of list operations<ul>
+<li>one is to assign values to a list at certain indices</li>
+<li>another is to create an empty list an dassign it to a variable</li>
+<li>the third is assigning a copy of one list to another list
+### Managing Complexity/Readability:</li>
+</ul>
+</li>
+<li>Helps improve the fluidity and readability</li>
+<li>reduces the need for new variables since more and more data is being collected (don't overcomplicate)</li>
+<li>Update data with ease!</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -344,6 +387,96 @@ pink
 purple
 blue
 brown
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Homework!">Homework!<a class="anchor-link" href="#Homework!"> </a></h2><p>You will turn in a program that utilizes lists and variables as it's primary function, options could be a quiz, a sorter, database, or wherever your imagination brings you. You will be graded on how well you understood the concepts and if you used anything other than just the simplest parts.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For each question below, please use proper capitalization and provide non-numerical answers&quot;</span><span class="p">)</span>
+
+<span class="n">WCQuiz</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;1) Who won the 2014 FIFA World Cup?&quot;</span><span class="p">:</span> <span class="s2">&quot;Germany&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;2) What country has won the most FIFA World Cups?&quot;</span><span class="p">:</span> <span class="s2">&quot;Brazil&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;3) Who has the most WC assists of all time (last name only)?&quot;</span><span class="p">:</span> <span class="s2">&quot;Maradona&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;4) What is the name of the German striker who leads all time WC Goals?&quot;</span><span class="p">:</span> <span class="s2">&quot;Miroslav Klose&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;5) Where is the current World Cup being held? &quot;</span><span class="p">:</span> <span class="s2">&quot;Qatar&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;6) Where is the  World Cup being held in 2026? &quot;</span><span class="p">:</span> <span class="s2">&quot;USA&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;7) The FIFA World Cup occurs once every _ years? &quot;</span><span class="p">:</span> <span class="s2">&quot;Four&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;8) Where was the FIFA World Cup held in 2014? &quot;</span><span class="p">:</span> <span class="s2">&quot;Brazil&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;9) Where was the FIFA World Cup held in 2010? &quot;</span><span class="p">:</span> <span class="s2">&quot;South Africa&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;10) Who won the FIFA World Cup in 2010? &quot;</span><span class="p">:</span> <span class="s2">&quot;Spain&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># the code below aims to first project the question to the user, and then return the same exact value that was inputted in order to check correctness</span>
+<span class="k">def</span> <span class="nf">interface</span><span class="p">(</span><span class="n">question</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">user</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#this sets the user&#39;s initial score to 0, since they have not answered any questions correctly just yet</span>
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">WCQuiz</span><span class="p">:</span>
+    <span class="n">usr</span> <span class="o">=</span> <span class="n">interface</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">usr</span> <span class="o">==</span> <span class="n">WCQuiz</span><span class="p">[</span><span class="n">key</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nice job! You correctly answered </span><span class="si">{</span><span class="n">usr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># usage of an f-string provides us a way to embed an expression inside a string; the little f before the &quot;</span>
+        <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Yikes! You incorrectly answered </span><span class="si">{</span><span class="n">usr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># usage of an f-string provides us a way to embed an expression inside a string; the little f before the &quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Congratulations (Or Not)! Your score is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; out of 10&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For each question below, please use proper capitalization and provide non-numerical answers
+1) Who won the 2014 FIFA World Cup?
+Nice job! You correctly answered Germany
+2) What country has won the most FIFA World Cups?
+Nice job! You correctly answered Brazil
+3) Who has the most WC assists of all time (last name only)?
+Nice job! You correctly answered Maradona
+4) What is the name of the German striker who leads all time WC Goals?
+Nice job! You correctly answered Miroslav Klose
+5) Where is the current World Cup being held? 
+Nice job! You correctly answered Qatar
+6) Where is the  World Cup being held in 2026? 
+Nice job! You correctly answered USA
+7) The FIFA World Cup occurs once every _ years? 
+Nice job! You correctly answered Four
+8) Where was the FIFA World Cup held in 2014? 
+Yikes! You incorrectly answered South Africa
+9) Where was the FIFA World Cup held in 2010? 
+Nice job! You correctly answered South Africa
+10) Who won the FIFA World Cup in 2010? 
+Nice job! You correctly answered Spain
+Congratulations (Or Not)! Your score is 9 out of 10
 </pre>
 </div>
 </div>
