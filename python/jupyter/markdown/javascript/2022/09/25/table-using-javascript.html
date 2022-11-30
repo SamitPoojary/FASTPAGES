@@ -148,10 +148,10 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">logIt</span><span class="p">(</span><span class="nx">output</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">function</span> <span class="n">logIt</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">output</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nx">logIt</span><span class="p">(</span><span class="s2">&quot;Hello everyone!&quot;</span><span class="p">);</span>
+<span class="n">logIt</span><span class="p">(</span><span class="s2">&quot;Hello everyone!&quot;</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -182,11 +182,11 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">logt</span><span class="p">(</span><span class="nx">output</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">function</span> <span class="n">logt</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">output</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="c1">// calls to the function </span>
-<span class="nx">logt</span><span class="p">(</span><span class="s2">&quot;test test&quot;</span><span class="p">);</span>
+<span class="o">//</span> <span class="n">calls</span> <span class="n">to</span> <span class="n">the</span> <span class="n">function</span> 
+<span class="n">logt</span><span class="p">(</span><span class="s2">&quot;test test&quot;</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -217,97 +217,97 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a function to hold data for a Person</span>
-<span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">nationality</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">nationality</span> <span class="o">=</span> <span class="nx">nationality</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="n">hold</span> <span class="n">data</span> <span class="k">for</span> <span class="n">a</span> <span class="n">Person</span>
+<span class="n">function</span> <span class="n">Person</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">nationality</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">nationality</span> <span class="o">=</span> <span class="n">nationality</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// define a setter for role in Person data</span>
-<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">setRole</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">role</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="nx">role</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">setter</span> <span class="k">for</span> <span class="n">role</span> <span class="ow">in</span> <span class="n">Person</span> <span class="n">data</span>
+<span class="n">Person</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">setRole</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">role</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="n">role</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// defines the manager</span>
-<span class="kd">var</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Zidane&quot;</span><span class="p">,</span> <span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="mf">50</span><span class="p">);</span>
-<span class="nx">manager</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Manager&quot;</span><span class="p">);</span>
+<span class="o">//</span> <span class="n">defines</span> <span class="n">the</span> <span class="n">manager</span>
+<span class="n">var</span> <span class="n">manager</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Zidane&quot;</span><span class="p">,</span> <span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+<span class="n">manager</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">&quot;Manager&quot;</span><span class="p">);</span>
 
-<span class="c1">// JSON conversion from object to a string</span>
-<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">nationality</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">nationality</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">role</span><span class="p">};</span>
-    <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
-    <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">JSON</span> <span class="n">conversion</span> <span class="kn">from</span> <span class="nn">object</span> <span class="n">to</span> <span class="n">a</span> <span class="n">string</span>
+<span class="n">Person</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">toJSON</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">const</span> <span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">nationality</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">nationality</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="n">role</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">role</span><span class="p">};</span>
+    <span class="n">const</span> <span class="n">json</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">obj</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">json</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// player data</span>
-<span class="kd">var</span> <span class="nx">players</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Kevin de Bruyne&quot;</span><span class="p">,</span> <span class="s2">&quot;Belgium&quot;</span><span class="p">,</span> <span class="mf">31</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Lionel Messi&quot;</span><span class="p">,</span> <span class="s2">&quot;Argentina&quot;</span><span class="p">,</span> <span class="mf">35</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Vinicius Jr.&quot;</span><span class="p">,</span> <span class="s2">&quot;Brazil&quot;</span><span class="p">,</span> <span class="mf">22</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Neymar&quot;</span><span class="p">,</span> <span class="s2">&quot;Brazil&quot;</span><span class="p">,</span> <span class="mf">30</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Haaland&quot;</span><span class="p">,</span> <span class="s2">&quot;Norway&quot;</span><span class="p">,</span> <span class="mf">22</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Sergio Ramos&quot;</span><span class="p">,</span> <span class="s2">&quot;Spain&quot;</span><span class="p">,</span> <span class="mf">36</span><span class="p">),</span>
+<span class="o">//</span> <span class="n">player</span> <span class="n">data</span>
+<span class="n">var</span> <span class="n">players</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Kevin de Bruyne&quot;</span><span class="p">,</span> <span class="s2">&quot;Belgium&quot;</span><span class="p">,</span> <span class="mi">31</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Lionel Messi&quot;</span><span class="p">,</span> <span class="s2">&quot;Argentina&quot;</span><span class="p">,</span> <span class="mi">35</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Vinicius Jr.&quot;</span><span class="p">,</span> <span class="s2">&quot;Brazil&quot;</span><span class="p">,</span> <span class="mi">22</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Neymar&quot;</span><span class="p">,</span> <span class="s2">&quot;Brazil&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Haaland&quot;</span><span class="p">,</span> <span class="s2">&quot;Norway&quot;</span><span class="p">,</span> <span class="mi">22</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Sergio Ramos&quot;</span><span class="p">,</span> <span class="s2">&quot;Spain&quot;</span><span class="p">,</span> <span class="mi">36</span><span class="p">),</span>
 <span class="p">];</span>
 
-<span class="kd">function</span> <span class="nx">Squad</span><span class="p">(</span><span class="nx">manager</span><span class="p">,</span> <span class="nx">players</span><span class="p">){</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">manager</span> <span class="o">=</span> <span class="nx">manager</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">squad</span> <span class="o">=</span> <span class="p">[</span><span class="nx">manager</span><span class="p">];</span>
+<span class="n">function</span> <span class="n">Squad</span><span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">players</span><span class="p">){</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">manager</span> <span class="o">=</span> <span class="n">manager</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">squad</span> <span class="o">=</span> <span class="p">[</span><span class="n">manager</span><span class="p">];</span>
 
-    <span class="k">this</span><span class="p">.</span><span class="nx">players</span> <span class="o">=</span> <span class="nx">players</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">players</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">player</span> <span class="p">=&gt;</span> <span class="p">{</span><span class="nx">player</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Player&quot;</span><span class="p">);</span> <span class="k">this</span><span class="p">.</span><span class="nx">squad</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">player</span><span class="p">);</span> <span class="p">});</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">players</span> <span class="o">=</span> <span class="n">players</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">players</span><span class="o">.</span><span class="n">forEach</span><span class="p">(</span><span class="n">player</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="n">player</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">&quot;Player&quot;</span><span class="p">);</span> <span class="n">this</span><span class="o">.</span><span class="n">squad</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">player</span><span class="p">);</span> <span class="p">});</span>
 
-    <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">squad</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">player</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">json</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">squad</span><span class="o">.</span><span class="n">forEach</span><span class="p">(</span><span class="n">player</span> <span class="o">=&gt;</span> <span class="n">this</span><span class="o">.</span><span class="n">json</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">player</span><span class="o">.</span><span class="n">toJSON</span><span class="p">()));</span>
 <span class="p">}</span>
 
-<span class="kd">var</span> <span class="nx">FUT</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Squad</span><span class="p">(</span><span class="nx">manager</span><span class="p">,</span> <span class="nx">players</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">FUT</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Squad</span><span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">players</span><span class="p">);</span>
 
-<span class="nx">Squad</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="n">Squad</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">_toHtml</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
 
-    <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">var</span> <span class="n">style</span> <span class="o">=</span> <span class="p">(</span>
         <span class="s2">&quot;display:inline-block;&quot;</span> <span class="o">+</span>
       <span class="s2">&quot;background:black;&quot;</span> <span class="o">+</span>
       <span class="s2">&quot;border: 2px solid grey;&quot;</span> <span class="o">+</span>
       <span class="s2">&quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot;</span>
     <span class="p">);</span>
 
-<span class="c1">// HTML Body of Table is build as a series of concatenations (+=)</span>
-<span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="c1">// Heading for Array Columns</span>
-<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Name&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Nationality&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Age&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Role&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
-<span class="c1">// Data of Array, iterate through each row of lakers team</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">FUT</span><span class="p">.</span><span class="nx">squad</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// tr for each row, a new line</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-  <span class="c1">// td for each column of data</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">nationality</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">age</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">role</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-  <span class="c1">// tr to end line</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">HTML</span> <span class="n">Body</span> <span class="n">of</span> <span class="n">Table</span> <span class="ow">is</span> <span class="n">build</span> <span class="k">as</span> <span class="n">a</span> <span class="n">series</span> <span class="n">of</span> <span class="n">concatenations</span> <span class="p">(</span><span class="o">+=</span><span class="p">)</span>
+<span class="n">var</span> <span class="n">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">Heading</span> <span class="k">for</span> <span class="n">Array</span> <span class="n">Columns</span>
+<span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+<span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Name&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+<span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Nationality&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+<span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Age&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+<span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Role&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+<span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">Data</span> <span class="n">of</span> <span class="n">Array</span><span class="p">,</span> <span class="n">iterate</span> <span class="n">through</span> <span class="n">each</span> <span class="n">row</span> <span class="n">of</span> <span class="n">lakers</span> <span class="n">team</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">row</span> <span class="n">of</span> <span class="n">FUT</span><span class="o">.</span><span class="n">squad</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="n">tr</span> <span class="k">for</span> <span class="n">each</span> <span class="n">row</span><span class="p">,</span> <span class="n">a</span> <span class="n">new</span> <span class="n">line</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+  <span class="o">//</span> <span class="n">td</span> <span class="k">for</span> <span class="n">each</span> <span class="n">column</span> <span class="n">of</span> <span class="n">data</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">nationality</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">age</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">role</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+  <span class="o">//</span> <span class="n">tr</span> <span class="n">to</span> <span class="n">end</span> <span class="n">line</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
- <span class="c1">// Build and HTML fragment of div, table, table body</span>
+ <span class="o">//</span> <span class="n">Build</span> <span class="ow">and</span> <span class="n">HTML</span> <span class="n">fragment</span> <span class="n">of</span> <span class="n">div</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">table</span> <span class="n">body</span>
 <span class="k">return</span> <span class="p">(</span>
-  <span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
+  <span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="n">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
     <span class="s2">&quot;&lt;table&gt;&quot;</span> <span class="o">+</span>
-      <span class="nx">body</span> <span class="o">+</span>
+      <span class="n">body</span> <span class="o">+</span>
     <span class="s2">&quot;&lt;/table&gt;&quot;</span> <span class="o">+</span>
   <span class="s2">&quot;&lt;/div&gt;&quot;</span>
   <span class="p">);</span>
 
 <span class="p">};</span>
 
-<span class="c1">// IJavaScript HTML processor receive parameter of defined HTML fragment</span>
-<span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">FUT</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
+<span class="o">//</span> <span class="n">IJavaScript</span> <span class="n">HTML</span> <span class="n">processor</span> <span class="n">receive</span> <span class="n">parameter</span> <span class="n">of</span> <span class="n">defined</span> <span class="n">HTML</span> <span class="n">fragment</span>
+<span class="err">$$</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="n">FUT</span><span class="o">.</span><span class="n">_toHtml</span><span class="p">());</span>
 </pre></div>
 
     </div>
