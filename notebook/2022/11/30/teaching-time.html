@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -138,6 +138,47 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Relational-Operators-in-action">Relational Operators in action<a class="anchor-link" href="#Relational-Operators-in-action"> </a></h2><ul>
+<li>How could you use operators to determine if the average of 5 grades is greater than 80?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>With the grades below, use a boolean expression to determine if the average grade is above an 80 and print the result (True or False)</li>
+<li>Try it in as few steps as possible!</li>
+<li>Be creative! There are obviously TONS of different practical solutions</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grade1</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">grade2</span> <span class="o">=</span> <span class="mi">65</span>
+<span class="n">grade3</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">grade4</span> <span class="o">=</span> <span class="mi">75</span>
+<span class="n">grade5</span> <span class="o">=</span> <span class="mi">95</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="The-versatility-of-relational-operators:">The versatility of relational operators:<a class="anchor-link" href="#The-versatility-of-relational-operators:"> </a></h2>
@@ -199,47 +240,6 @@ Hello == Hola: True
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Relational-Operators-in-action">Relational Operators in action<a class="anchor-link" href="#Relational-Operators-in-action"> </a></h2><ul>
-<li>How could you use operators to determine if the average of 5 grades is greater than 80?</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>With the grades below, use a boolean expression to determine if the average grade is above an 80 and print the result (True or False)</li>
-<li>Try it in as few steps as possible!</li>
-<li>Be creative! There are obviously TONS of different practical solutions</li>
-</ul>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grade1</span> <span class="o">=</span> <span class="mi">90</span>
-<span class="n">grade2</span> <span class="o">=</span> <span class="mi">65</span>
-<span class="n">grade3</span> <span class="o">=</span> <span class="mi">60</span>
-<span class="n">grade4</span> <span class="o">=</span> <span class="mi">75</span>
-<span class="n">grade5</span> <span class="o">=</span> <span class="mi">95</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Logical-Operators!">Logical Operators!<a class="anchor-link" href="#Logical-Operators!"> </a></h2><p>These types of operators don't necessarily deal with equivalent/non-equivalent values, but they rather work on operands to produce a singular boolean result</p>
 <ul>
 <li>AND : returns TRUE if the operands around it are TRUE</li>
@@ -289,6 +289,129 @@ Hello == Hola: True
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lesson-Overview:-3.6---Conditionals">Lesson Overview: 3.6 - Conditionals<a class="anchor-link" href="#Lesson-Overview:-3.6---Conditionals"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Focusing-on-Selection">Focusing on Selection<a class="anchor-link" href="#Focusing-on-Selection"> </a></h2><p><strong>Selection</strong>: uses a condition that evaluates to <i>true</i> or <i>false</i></p>
+<p>Selection determines which part of an algorithm are executed based on a condition being true or false</p>
+<p><strong>Algorithm</strong> is a finite set of instructions that accomplish a specific task
+<img src="/FASTPAGES/images/copied_from_nb/ghtop_images/conditionals.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conditional-Statements">Conditional Statements<a class="anchor-link" href="#Conditional-Statements"> </a></h2><p>Also known as "if statements"</p>
+<p>Can be seen as if statements or if blocks</p>
+<p><img src="/FASTPAGES/images/copied_from_nb/ghtop_images/conditionals2.png" alt="" /></p>
+<p>Can also be seen as if else statements or if else-blocks
+<img src="/FASTPAGES/images/copied_from_nb/ghtop_images/conditionals3.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is greater than y&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x is greater than y
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is greater than y&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is not greater than y&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x is greater than y
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Participation">Participation<a class="anchor-link" href="#Participation"> </a></h2><p>-Calculate the total sum of two numbers, if it is equal to 200, print 200, if otherwise, print the sum.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span>
+<span class="n">num2</span> <span class="o">=</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
