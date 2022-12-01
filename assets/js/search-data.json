@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Teaching Plan - Booleans and Conditionals",
-            "content": "testing functionality of notebook . debugged . .",
+            "content": "Lesson Overview: 3.5 - Boolean Expressions . Here we will focus on: relational operators and variable/expression/number relationships | logical operators | applications of True/False expressions | . | . Must Knows . A Boolean value is either TRUE or FALSE | The AP Exam will provide you with a reference sheet with the operators below. | . . A few ways these operators could be used... | . . Determing if a number is Even or Odd: . The MOD operator can determine whether or not a number is even, because it checks what the remainder would be if said number is divided by 2 | . . Here, the operator checks what the remainder would be if &quot;num&quot; is divided by 2, and since it is 0, &quot;num&quot; must be an even number | . Operators in action . How could you use operators to determine if the average of grade1, grade2, and grade3 is at least a 70? | . .",
             "url": "https://samitpoojary.github.io/FASTPAGES/notebook/2022/11/30/teaching-time.html",
             "relUrl": "/notebook/2022/11/30/teaching-time.html",
             "date": " • Nov 30, 2022"
