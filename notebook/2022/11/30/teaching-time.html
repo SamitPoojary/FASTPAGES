@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Teaching Plan - Booleans and Conditionals | Pooj’s FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Teaching Plan - Booleans and Conditionals" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Welcome to the World of Booleans and Conditionals!" />
+<meta property="og:description" content="Welcome to the World of Booleans and Conditionals!" />
+<link rel="canonical" href="https://samitpoojary.github.io/FASTPAGES/notebook/2022/11/30/teaching-time.html" />
+<meta property="og:url" content="https://samitpoojary.github.io/FASTPAGES/notebook/2022/11/30/teaching-time.html" />
+<meta property="og:site_name" content="Pooj’s FastPages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-30T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Teaching Plan - Booleans and Conditionals" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-30T00:00:00-06:00","datePublished":"2022-11-30T00:00:00-06:00","description":"Welcome to the World of Booleans and Conditionals!","headline":"Teaching Plan - Booleans and Conditionals","mainEntityOfPage":{"@type":"WebPage","@id":"https://samitpoojary.github.io/FASTPAGES/notebook/2022/11/30/teaching-time.html"},"url":"https://samitpoojary.github.io/FASTPAGES/notebook/2022/11/30/teaching-time.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FASTPAGES/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://samitpoojary.github.io/FASTPAGES/feed.xml" title="Pooj's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/FASTPAGES/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FASTPAGES/">Pooj&#39;s FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FASTPAGES/search/">Search</a><a class="page-link" href="/FASTPAGES/categories/">Tags</a><a class="page-link" href="/FASTPAGES/notes/">APCSP Notes!</a><a class="page-link" href="/FASTPAGES/about/">About Me!</a><a class="page-link" href="/FASTPAGES/submenu/">Submenu</a><a class="page-link" href="/FASTPAGES/_pages/05_Weekly_Log.html">Weekly Log</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Teaching Plan - Booleans and Conditionals</h1><p class="page-description">Welcome to the World of Booleans and Conditionals!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-30T00:00:00-06:00" itemprop="datePublished">
+        Nov 30, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/FASTPAGES/categories/#notebook">notebook</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-11-30-teaching-time.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lesson-Overview:-3.5---Boolean-Expressions">Lesson Overview: 3.5 - Boolean Expressions<a class="anchor-link" href="#Lesson-Overview:-3.5---Boolean-Expressions"> </a></h1><ul>
+<li>Here we will focus on:<ul>
+<li>basics of Booleans</li>
+<li>its relationship with binary</li>
+<li>relational operators</li>
+<li>Logical Operators</li>
+</ul>
+</li>
+</ul>
+<h2 id="What-is-a-boolean?">What is a boolean?<a class="anchor-link" href="#What-is-a-boolean?"> </a></h2><ul>
+<li>A data type with two possible values: true or false</li>
+</ul>
+<h2 id="Boolean-and-Binary">Boolean and Binary<a class="anchor-link" href="#Boolean-and-Binary"> </a></h2><p>So similar yet so different.</p>
+<ul>
+<li>Boolean math and binary notation both use the same two ciphers: 1 and 0.</li>
+<li>However, please note that Boolean quantities are restricted to a singlular bit (can only be either 1, or 0)</li>
+<li>On the otherhand, binary numbers may be composed of many bits adding up in place-weighted form to any finite value, or size</li>
+</ul>
+<h2 id="Must-Knows">Must Knows<a class="anchor-link" href="#Must-Knows"> </a></h2><ul>
+<li>A Boolean value is either TRUE or FALSE</li>
+<li>The AP Exam will provide you with a reference sheet with the operators below.</li>
+</ul>
+<p><img src="/FASTPAGES/images/copied_from_nb/ghtop_images/operators.png" alt="" /></p>
+<ul>
+<li>A few ways these operators could be used...</li>
+</ul>
+<p><img src="/FASTPAGES/images/copied_from_nb/ghtop_images/operators2.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Relational-Operators-in-action">Relational Operators in action<a class="anchor-link" href="#Relational-Operators-in-action"> </a></h2><ul>
+<li>How could you use operators to determine if the average of 5 grades is greater than 80?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>With the grades below, use a boolean expression to determine if the average grade is above an 80 and print the result (True or False)</li>
+<li>Try it in as few steps as possible!</li>
+<li>Be creative! There are obviously TONS of different practical solutions</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grade1</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">grade2</span> <span class="o">=</span> <span class="mi">65</span>
+<span class="n">grade3</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">grade4</span> <span class="o">=</span> <span class="mi">75</span>
+<span class="n">grade5</span> <span class="o">=</span> <span class="mi">95</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-versatility-of-relational-operators:">The versatility of relational operators:<a class="anchor-link" href="#The-versatility-of-relational-operators:"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;100 == 100:&quot;</span><span class="p">,</span><span class="mi">100</span><span class="o">==</span><span class="mi">100</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello == Adios:&quot;</span><span class="p">,</span><span class="s2">&quot;greeting&quot;</span><span class="o">==</span><span class="s2">&quot;farewell&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello != Adios:&quot;</span><span class="p">,</span><span class="s2">&quot;greeting&quot;</span><span class="o">!=</span><span class="s2">&quot;farewell&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello == Hola:&quot;</span><span class="p">,</span><span class="s2">&quot;greeting&quot;</span><span class="o">==</span><span class="s2">&quot;greeting&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5&gt;=4:&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="o">&gt;=</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Notice that relational operators can even work on lists!</span>
+<span class="c1"># For lists, the relational operator compares each respective component until an answer is derived</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;] &gt; [&#39;x&#39;,&#39;y&#39;,&#39;z&#39;]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1,2,3,5] &gt; [1,2,3,4]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1,2,3,5] &lt; [1,2,3,4]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[1,2,3,5] == [1,2,3,4]:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>100 == 100: True
+Hello == Adios: False
+Hello != Adios: True
+Hello == Hola: True
+5&gt;=4: True
+
+[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;] &gt; [&#39;x&#39;,&#39;y&#39;,&#39;z&#39;]: False
+[1,2,3,5] &gt; [1,2,3,4]: True
+[1,2,3,5] &lt; [1,2,3,4]: False
+[1,2,3,5] == [1,2,3,4]: False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Logical-Operators!">Logical Operators!<a class="anchor-link" href="#Logical-Operators!"> </a></h2><p>These types of operators don't necessarily deal with equivalent/non-equivalent values, but they rather work on operands to produce a singular boolean result</p>
+<ul>
+<li>AND : returns TRUE if the operands around it are TRUE</li>
+<li>OR : returns TRUE if at least one operand is TRUE</li>
+<li>NOT : returns TRUE if the following boolean is FALSE</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Turn-the-following-arithmetic-phrases-into-either-True-or-False-statements-as-indicated-USING-LOGICAL-OPERATORS">Turn the following arithmetic phrases into either True or False statements as indicated USING LOGICAL OPERATORS<a class="anchor-link" href="#Turn-the-following-arithmetic-phrases-into-either-True-or-False-statements-as-indicated-USING-LOGICAL-OPERATORS"> </a></h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 &gt; 2 or 5 &lt; 12:&quot;</span><span class="p">,)</span>
+
+<span class="c1"># Output FALSE using NOT</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;24 &gt; 8:&quot;</span><span class="p">,)</span>
+
+<span class="c1"># Output FALSE using AND</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;10 &gt; 20:&quot;</span><span class="p">,)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 &gt; 2 or 5 &lt; 12:
+24 &gt; 8:
+10 &gt; 20:
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lesson-Overview:-3.6---Conditionals">Lesson Overview: 3.6 - Conditionals<a class="anchor-link" href="#Lesson-Overview:-3.6---Conditionals"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Focusing-on-Selection">Focusing on Selection<a class="anchor-link" href="#Focusing-on-Selection"> </a></h2><p><strong>Selection</strong>: uses a condition that evaluates to <i>true</i> or <i>false</i></p>
+<p>Selection determines which part of an algorithm are executed based on a condition being true or false</p>
+<p><strong>Algorithm</strong> is a finite set of instructions that accomplish a specific task
+<img src="/FASTPAGES/images/copied_from_nb/ghtop_images/conditionals.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conditional-Statements">Conditional Statements<a class="anchor-link" href="#Conditional-Statements"> </a></h2><p>Also known as "if statements"</p>
+<p>Can be seen as if statements or if blocks</p>
+<p><img src="/FASTPAGES/images/copied_from_nb/ghtop_images/conditionals2.png" alt="" /></p>
+<p>Can also be seen as if else statements or if else-blocks
+<img src="/FASTPAGES/images/copied_from_nb/ghtop_images/conditionals3.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is greater than y&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x is greater than y
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is greater than y&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is not greater than y&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x is greater than y
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Participation">Participation<a class="anchor-link" href="#Participation"> </a></h2><p>-Calculate the total sum of two numbers, if it is equal to 200, print 200, if otherwise, print the sum.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span>
+<span class="n">num2</span> <span class="o">=</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/FASTPAGES/notebook/2022/11/30/teaching-time.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FASTPAGES/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/FASTPAGES/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/NighthawkCoding “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
