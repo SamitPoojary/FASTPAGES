@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -1151,6 +1151,14 @@ Congratulations (Or Not)! Your score is 9 out of 10
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Problem 1 CollegeBoard Code</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1160,10 +1168,41 @@ Congratulations (Or Not)! Your score is 9 out of 10
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Noun</span> <span class="o">=</span> <span class="s2">"Mr.Mortenson"</span> 
 <span class="n">Adjective</span> <span class="o">=</span> <span class="s2">"handsome"</span> 
-<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">"very"</span> 
+<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">"Very"</span> 
 <span class="n">Verb</span> <span class="o">=</span> <span class="s2">"is"</span> 
-<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
-<span class="n">yoda</span> <span class="o">=</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">"."</span> <span class="c1"># takes into account only the first seven characters of "Mr. Mortenson"</span>
+<span class="n">abrev</span> <span class="o">=</span> <span class="n">subtring</span><span class="p">(</span><span class="n">Noun</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="c1"># Abbreviate "Mr.Mortensen" to "Mr.Mort"</span>
+<span class="n">yoda</span> <span class="o">=</span> <span class="n">concat</span><span class="p">(</span><span class="n">Adjective2</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">Adjective</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">abrev</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span><span class="n">Verb</span><span class="p">,</span> <span class="s2">"."</span><span class="p">)</span> <span class="c1"># yoda = VeryhandsomeMr.Mortis</span>
+<span class="n">display</span><span class="p">[</span><span class="n">yoda</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Problem 1 Correct Code</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Noun</span> <span class="o">=</span> <span class="s2">"Mr.Mortenson"</span> 
+<span class="n">Adjective</span> <span class="o">=</span> <span class="s2">"handsome"</span> 
+<span class="n">Adjective2</span> <span class="o">=</span> <span class="s2">"Very"</span> 
+<span class="n">Verb</span> <span class="o">=</span> <span class="s2">"is"</span> 
+<span class="n">abrev</span> <span class="o">=</span> <span class="n">Noun</span><span class="p">[:</span><span class="mi">7</span><span class="p">]</span>
+<span class="n">yoda</span> <span class="o">=</span> <span class="n">Adjective2</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Adjective</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">abrev</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">Verb</span> <span class="o">+</span> <span class="s2">"."</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">yoda</span><span class="p">)</span>
 </pre></div>
 
@@ -1177,11 +1216,43 @@ Congratulations (Or Not)! Your score is 9 out of 10
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Mr.Mort is very handsome.
+<pre>Very handsome Mr.Mort is.
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Problem 2 Collegeboard Code</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">"choclate"</span> 
+<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">"rasin"</span> 
+<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># len1 = 4</span>
+<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> <span class="c1"># len2 = 225</span>
+<span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie</span><span class="p">,</span> <span class="s2">"vote"</span><span class="p">,</span> <span class="n">len2</span><span class="p">)</span> <span class="c1"># vote1 = choclatevote225</span>
+<span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie2</span><span class="p">,</span> <span class="s2">"vote"</span><span class="p">,</span> <span class="n">len1</span><span class="p">)</span> <span class="c1"># vote2 = rasinvote4</span>
+<span class="n">votes</span> <span class="o">=</span> <span class="n">concat</span><span class="p">(</span><span class="n">vote1</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="n">vote2</span><span class="p">)</span> <span class="c1"># votes = choclatevote225 rasinvote4</span>
+<span class="n">display</span><span class="p">[</span><span class="n">votes</span><span class="p">]</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -1209,7 +1280,7 @@ Congratulations (Or Not)! Your score is 9 out of 10
 <span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> 
 <span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie</span><span class="p">,</span> <span class="s2">"vote"</span><span class="p">,</span> <span class="n">len2</span><span class="p">)</span> 
 <span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie2</span><span class="p">,</span> <span class="s2">"vote"</span><span class="p">,</span> <span class="n">len1</span><span class="p">)</span> 
-<span class="n">votes</span> <span class="o">=</span> <span class="s2">"The first cookie has "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" and the second cookie has "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"."</span>
+<span class="n">votes</span> <span class="o">=</span> <span class="s2">"cookie has "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" votes and the second cookie has "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" votes."</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
 </pre></div>
 
@@ -1223,7 +1294,7 @@ Congratulations (Or Not)! Your score is 9 out of 10
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The first cookie has 4.0 and the second cookie has 225.
+<pre>cookie has 4.0 votes and the second cookie has 225 votes.
 </pre>
 </div>
 </div>
