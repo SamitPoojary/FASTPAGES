@@ -1,7 +1,7 @@
 ---
 toc: false
 layout: post
-description: 
+description: Student Lesson Grades (Week-by-Week)
 categories: [CollegeBoard]
 title: Tri 2 Student-Based Live Reviews
 ---
