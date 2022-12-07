@@ -15,4 +15,4 @@ title: Tri 2 Student-Based Live Reviews
 
 | Unit 3 Sections 5-7 | Unit 3 Sections 8 and 10 | Live Review Grade | 
 |:--------------------:|:--------------------:|:--------------------:|
-| N/A (Our Lesson)     |                      |      
+| N/A (Our Lesson)     | 0.9/1                     |      
