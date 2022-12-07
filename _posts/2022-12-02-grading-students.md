@@ -28,7 +28,7 @@ title: Grading Student Homeworks
 |Aniket| 0.45| 0.5| Meets expectations but doesn’t add anything else. Utilizes the format for nested conditionals and works in all expected situations.| 0.95/1|
 |Yuri| 0.45|0.5|Meets the expectations but doesn’t add anything else to make it stand out. Also, the loop doesn’t have an equal to operator along with the comparison ones so 25 and 50 aren’t accounted for. Although, it does use the format and show understanding of the concept.| 0.95/1|
 |Tanay| 0.4|0.45| This is late so there is an automatic doc of 0.1. Meets expectations but doesn’t add anything else. Utilizes the format for nested conditionals and works in all expected situations.| 0.85/1|
-|Akshat|0|0|No submission?|N/A|
+|Akshat|0.45|0.45|Meets all expectations for Conditionals hacks and provides a solid quiz that demonstrates expected understanding of Boolean expressions|0.9/1|
 |Azeem| 0.5| 0.5| This exceeds all the expectations and utilizes the if else conditionals to mastery. This also stands out, there is code that takes the input of the user which can be processed through the loop and outputs correctly based on the conditions.| 1/1|
 |Ahad| 0.45|0.45| This meets all the expectations and utilizes the formatting and material taught about nested conditionals. However, there is nothing extra to raise his grade for this section.| 0.9/1| 
 |Josh| 0.4|0.5| The loop result shows its working and the loop utilizes the correct format. However, the expired variable is supposed to be a boolean thus making the loop invalid in other scenarios.| 0.9/1|
@@ -37,7 +37,7 @@ title: Grading Student Homeworks
 |Dash| 0.45|0.5|This meets all the expectations and utilizes the material taught in class. However, there isn’t any extra code or anything that makes it special compared to the provided format| 0.95/1|
 |Toby|0.5|0.5|Meets all the expectations and implements a choice to input to run the nested conditional that takes the input to initialize the variable. Goes above and beyond.| 1/1|
 |Gene|0.5|0.5|Meets all the expectations and implements a choice to input to run the nested conditional that takes the input to initialize the variable. Goes above and beyond.|1/1|
-|Shreya|0|0|No submission?|N/A|
+|Shreya|0.45|0.5|Meets all expectations for Conditional Hacks and provided a great quiz that demonstrates fantastic understanding of boolean expressions and conditional statements|0.95/1|
 |Giannina|0|0|No submission?|N/A|
 |Sarah|0.45|0.45|Meets the expectations but doesn’t go above them. Also, this ticket shows images since the user is unable to commit. Since there's nothing extra .45 is appropriate.| 0.9/1|
 |Vivian|0.5|0.5|Meets all the expectations and code is done in a complex manner that is very unique which shows above and beyond performance. Defines and creates functions with if else loops which is ahead of what we taught.| 1/1|
