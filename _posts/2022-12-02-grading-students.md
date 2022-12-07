@@ -28,7 +28,7 @@ title: Grading Student Homeworks
 |Aniket| 0.45| 0.5| Meets expectations but doesn’t add anything else. Utilizes the format for nested conditionals and works in all expected situations.| 0.95/1|
 |Yuri| 0.45|0.5|Meets the expectations but doesn’t add anything else to make it stand out. Also, the loop doesn’t have an equal to operator along with the comparison ones so 25 and 50 aren’t accounted for. Although, it does use the format and show understanding of the concept.| 0.95/1|
 |Tanay| 0.4|0.45| This is late so there is an automatic doc of 0.1. Meets expectations but doesn’t add anything else. Utilizes the format for nested conditionals and works in all expected situations.| 0.85/1|
-|Akshat||||N/A|
+|Akshat|0|0|No submission?|N/A|
 |Azeem| 0.5| 0.5| This exceeds all the expectations and utilizes the if else conditionals to mastery. This also stands out, there is code that takes the input of the user which can be processed through the loop and outputs correctly based on the conditions.| 1/1|
 |Ahad| 0.45|0.45| This meets all the expectations and utilizes the formatting and material taught about nested conditionals. However, there is nothing extra to raise his grade for this section.| 0.9/1| 
 |Josh| 0.4|0.5| The loop result shows its working and the loop utilizes the correct format. However, the expired variable is supposed to be a boolean thus making the loop invalid in other scenarios.| 0.9/1|
