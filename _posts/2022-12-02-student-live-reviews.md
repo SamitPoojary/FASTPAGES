@@ -9,7 +9,7 @@ title: Tri 2 Student-Based Live Reviews
 
 | Unit 3 Sections 1-2 | Unit 3 Sections 3-4 | Live Review Grade|
 |:--------------------:|:--------------------:|:--------------------:|
-|         1/1         |  0.9/1 | 1/1 (recieved bonus for Fibonacci Algo)|
+|         1/1         |  0.9/1 | 2/2 (recieved bonus for Fibonacci Algo)|
 
 ## Student Teaching Week 2
 
