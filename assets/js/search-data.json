@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Grading Student Homeworks",
-            "content": "Name | Conditional Completion | Boolean Completion | Notes | Final Score | .",
+            "content": "Name Conditional Completion Boolean Completion Notes Final Score . Dhruva | 0.45 | 0.45 | This person shows an understanding of the loops but doesn’t correctly utilize booleans for the expired aspect. This means the conditional is invalid and doesn’t work at all conditions. Boolean hacks are completed per request and meet all standards | 0.9/1 | .",
             "url": "https://samitpoojary.github.io/FASTPAGES/collegeboard/project/2022/12/02/grading-students.html",
             "relUrl": "/collegeboard/project/2022/12/02/grading-students.html",
             "date": " • Dec 2, 2022"
