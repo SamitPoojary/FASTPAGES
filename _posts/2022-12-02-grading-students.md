@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Student Grades
-categories: [CollegeBoard, project]
+categories: [CollegeBoard, project, grades]
 title: Grading Student Homeworks
 ---
 | Name | Conditional Completion | Boolean Completion | Notes | Final Score |

@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Basic Overview of the Scrum Process
-categories: [personal, scrum team, markdown]
+categories: [personal, scrum team]
 title: Scrum Process
 ---
 

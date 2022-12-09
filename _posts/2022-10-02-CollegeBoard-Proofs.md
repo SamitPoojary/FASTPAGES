@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Proof of Quiz Completions
-categories: [CollegeBoard]
+categories: [CollegeBoard, notes]
 title: Collegeboard Proofs and Practices
 ---
 ![]({{site.baseurl}}/images/cbproof.png "Proof of Completing 1.1 - 1.3 Assignments.")

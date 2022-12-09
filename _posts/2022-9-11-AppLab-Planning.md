@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Outlining my AppLab Project 
-categories: [markdown,Code.org, java, personal]
+categories: [java, personal]
 title: Planning + Reviewing my AppLab Project!
 ---
 # Planning it Out!

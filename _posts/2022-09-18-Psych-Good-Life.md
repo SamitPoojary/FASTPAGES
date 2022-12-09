@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Some Ideas for Coping with "Glitches" in Life
-categories: [markdown,personal]
+categories: [markdown]
 title: Psychology and the Good Life
 ---
 

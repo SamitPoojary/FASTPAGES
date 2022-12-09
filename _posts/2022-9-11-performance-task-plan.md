@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Planning out the Performance Task
-categories: [markdown,personal, AP Exam]
+categories: [markdown, CollegeBoard]
 title: Performance Task Planning
 ---
 ## Possible Ideas for Performance Task

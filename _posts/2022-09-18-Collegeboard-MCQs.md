@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Physical Proof of Completing the Collegeboard MCQ's
-categories: [markdown, AP Exam]
+categories: [markdown, CollegeBoard]
 title: The Importance of Collaboration
 ---
 # test for local server

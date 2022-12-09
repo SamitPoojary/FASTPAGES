@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: Student Lesson Grades (Week-by-Week)
-categories: [CollegeBoard]
+categories: [grades]
 title: Tri 2 Student-Based Live Reviews
 ---
 ## Student Teaching Week 1
