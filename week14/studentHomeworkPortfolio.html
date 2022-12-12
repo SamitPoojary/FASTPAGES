@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      25 min read
+      26 min read
     
 </span></p>
 
@@ -2327,6 +2327,88 @@ An algorithm for iterating to find a value inside a data set</li>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convertFahrenheit</span><span class="p">(</span><span class="n">temperature</span><span class="p">):</span>
+    <span class="n">celsius</span> <span class="o">=</span> <span class="n">temperature</span> <span class="o">-</span> <span class="mi">32</span>
+    <span class="n">celsius</span> <span class="o">=</span> <span class="n">celsius</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">/</span> <span class="mi">9</span>
+    <span class="k">return</span> <span class="n">celsius</span>
+
+
+<span class="n">outsideTemp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is the temperature Outside?"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">convertFahrenheit</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">outsideTemp</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-6.666666666666667
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quizGrade</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="k">def</span> <span class="nf">currentGrade</span><span class="p">(</span><span class="n">currentPoints</span><span class="p">):</span>    
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">44</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="k">return</span> <span class="n">currentGrade</span>
+
+<span class="n">newPoints</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"how many points do you currently have?"</span><span class="p">))</span>
+<span class="n">newPercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">currentGrade</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">newPoints</span><span class="p">)))</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">newPoints</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">):</span>
+    <span class="n">newquizGrade</span> <span class="o">=</span> <span class="n">newPercent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your new grade is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">newquizGrade</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"your score is still "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quizGrade</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>your new grade is: 95.45454545454545
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
