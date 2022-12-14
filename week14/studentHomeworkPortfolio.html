@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      30 min read
+      31 min read
     
 </span></p>
 
@@ -114,7 +114,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#Unit-3-Sections-14-and-15">Unit 3 Sections 14 and 15 </a></li>
+<li class="toc-entry toc-h1"><a href="#Unit-3-Sections-14-and-15">Unit 3 Sections 14 and 15 </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Unit-3-Section-16">Unit 3 Section 16 </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Homework">Homework </a></li>
@@ -2677,6 +2681,167 @@ When x=5  f(x)'= 20
 <pre>24</pre>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How many numbers would you like to generate?"</span><span class="p">))</span>
+<span class="nb">min</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is the smallest number you would like to generate?"</span><span class="p">))</span>
+<span class="nb">max</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is the biggest number you would like to generate?"</span><span class="p">))</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="c1">#generating 100 random numbers in the range of 0-200 (in this case my n random numbers is 100. Im setting a range to prevent ridiculous numbers)</span>
+<span class="nb">list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">splitevenodd</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span> 
+   <span class="n">evenlist</span> <span class="o">=</span> <span class="p">[]</span> 
+   <span class="n">oddlist</span> <span class="o">=</span> <span class="p">[]</span> 
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span> 
+            <span class="n">evenlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">oddlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"Even list:"</span><span class="p">,</span> <span class="n">evenlist</span><span class="p">)</span> 
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"Odd list:"</span><span class="p">,</span> <span class="n">oddlist</span><span class="p">)</span> 
+
+<span class="n">splitevenodd</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Even list: [18, 16, 16, 20, 2, 14]
+Odd list: [7, 19]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="c1"># defining polynomial function</span>
+<span class="n">eq1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"f(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">eq1</span><span class="p">)</span>
+
+<span class="c1"># calculating the derivative</span>
+<span class="n">derivative</span> <span class="o">=</span> <span class="n">eq1</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of f(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">derivative</span><span class="p">)</span>
+
+<span class="c1">#-----------------------------------</span>
+
+<span class="n">eq2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mf">6.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="c1">#i simplified your derivative which shud be fine right?</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"g(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">eq2</span><span class="p">)</span>
+
+<span class="n">derivative2</span> <span class="o">=</span> <span class="n">eq2</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of 13x^4 + 4x^2 / 2 (g(x)) when x = 9 is:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">derivative2</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>f(x)=
+    5     2
+2 x + 6 x + 24 x
+The derivative of f(x)=
+     4
+10 x + 12 x + 24
+g(x)=
+      4     2
+6.5 x + 2 x
+The derivative of 13x^4 + 4x^2 / 2 (g(x)) when x = 9 is:
+ 18990.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">dogs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"bob"</span><span class="p">,</span> <span class="s2">"mark"</span><span class="p">,</span> <span class="s2">"lucy"</span><span class="p">,</span> <span class="s2">"tod"</span><span class="p">,</span> <span class="s2">"frank"</span><span class="p">,</span> <span class="s2">"lily"</span><span class="p">,</span> <span class="s2">"cookie"</span><span class="p">,</span> <span class="s2">"oreo"</span><span class="p">,</span> <span class="s2">"ollie"</span><span class="p">,</span> <span class="s2">"charlie"</span><span class="p">]</span> 
+<span class="n">cats</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"luna"</span><span class="p">,</span> <span class="s2">"ginger"</span><span class="p">,</span> <span class="s2">"mochi"</span><span class="p">,</span> <span class="s2">"pluto"</span><span class="p">,</span> <span class="s2">"jeff"</span><span class="p">,</span> <span class="s2">"skippy"</span><span class="p">,</span> <span class="s2">"lemon"</span><span class="p">,</span> <span class="s2">"boba"</span><span class="p">,</span> <span class="s2">"chase"</span><span class="p">,</span> <span class="s2">"louis"</span><span class="p">]</span> <span class="c1">#list of 10 dog and cat names</span>
+
+<span class="k">def</span> <span class="nf">randomOrder</span><span class="p">(</span><span class="n">animals</span><span class="p">):</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">animals</span><span class="si">}</span><span class="s1">'</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"New Random Order: "</span> <span class="o">+</span> <span class="n">result</span><span class="p">)</span>
+
+<span class="n">randomOrder</span><span class="p">(</span><span class="n">dogs</span><span class="p">)</span>
+<span class="n">randomOrder</span><span class="p">(</span><span class="n">cats</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>New Random Order: ['lily', 'bob', 'ollie', 'tod', 'oreo', 'cookie', 'frank', 'charlie', 'mark', 'lucy']
+New Random Order: ['boba', 'ginger', 'luna', 'jeff', 'mochi', 'lemon', 'louis', 'pluto', 'skippy', 'chase']
+</pre>
+</div>
 </div>
 
 </div>
