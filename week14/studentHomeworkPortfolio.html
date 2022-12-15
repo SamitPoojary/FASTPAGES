@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      32 min read
+      35 min read
     
 </span></p>
 
@@ -3310,6 +3310,143 @@ New Random Order: ['boba', 'ginger', 'luna', 'jeff', 'mochi', 'lemon', 'louis', 
 <p>Create a simulation. Literally anything.
 Find an example of a simulation in a software/game you use, and explain how it's a simulation</p>
 </blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This first simulation takes the user's age and converts it into dog years</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your name? "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is your age? "</span><span class="p">))</span>
+
+<span class="c1"># Calculate the user's age in dog years</span>
+<span class="n">dog_years</span> <span class="o">=</span> <span class="n">age</span> <span class="o">*</span> <span class="mi">7</span>
+
+<span class="c1"># Output the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hi, "</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="s2">"! You are "</span><span class="p">,</span> <span class="n">dog_years</span><span class="p">,</span> <span class="s2">" years old in dog years."</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hi,  Samit ! You are  112  years old in dog years.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This second simulation take's the user's decision of rock, paper, scissors and determines if they beat the computer.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># Prompt the user for their move</span>
+<span class="n">move</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your move (rock, paper, or scissors)? "</span><span class="p">)</span>
+
+<span class="c1"># Randomly choose the computer's move</span>
+<span class="n">computer_move</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="s2">"rock"</span><span class="p">,</span> <span class="s2">"paper"</span><span class="p">,</span> <span class="s2">"scissors"</span><span class="p">])</span>
+
+<span class="c1"># Determine the winner of the game</span>
+<span class="k">if</span> <span class="n">move</span> <span class="o">==</span> <span class="n">computer_move</span><span class="p">:</span>
+    <span class="c1"># It's a tie</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"It's a tie!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s2">"rock"</span> <span class="ow">and</span> <span class="n">computer_move</span> <span class="o">==</span> <span class="s2">"paper"</span><span class="p">:</span>
+    <span class="c1"># The computer wins</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"The computer wins!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s2">"rock"</span> <span class="ow">and</span> <span class="n">computer_move</span> <span class="o">==</span> <span class="s2">"scissors"</span><span class="p">:</span>
+    <span class="c1"># The user wins</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You win!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s2">"paper"</span> <span class="ow">and</span> <span class="n">computer_move</span> <span class="o">==</span> <span class="s2">"rock"</span><span class="p">:</span>
+    <span class="c1"># The user wins</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You win!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s2">"paper"</span> <span class="ow">and</span> <span class="n">computer_move</span> <span class="o">==</span> <span class="s2">"scissors"</span><span class="p">:</span>
+    <span class="c1"># The computer wins</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"The computer wins!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s2">"scissors"</span> <span class="ow">and</span> <span class="n">computer_move</span> <span class="o">==</span> <span class="s2">"rock"</span><span class="p">:</span>
+    <span class="c1"># The computer wins</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"The computer wins!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">move</span> <span class="o">==</span> <span class="s2">"scissors"</span> <span class="ow">and</span> <span class="n">computer_move</span> <span class="o">==</span> <span class="s2">"paper"</span><span class="p">:</span>
+    <span class="c1"># The user wins</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You win!"</span><span class="p">)</span>
+
+<span class="c1"># Output the computer's move</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The computer chose "</span><span class="p">,</span> <span class="n">computer_move</span><span class="p">,</span> <span class="s2">"."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"LOL"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It's a tie!
+The computer chose  paper .
+LOL
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Example of a simulation:</p>
+<p><img src="/FASTPAGES/images/copied_from_nb/ghtop_images/myleague.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This NBA 2k simulation runs through the yearly process of your team throughout the duration of an NBA season, playoffs, and then offseason. All the user needs to do is select a date to which they would like to automate their team to, and the simulation process runs through games, practices, and even automates trades and free agent signings. As you can see, with each day that passes, the system even automates the social media tweets and alerts so that the GM (the user) can see how each of their players are performing while simulating. This is a time-saving process, and instead of playing an 82-game season, the user can simply automate the process!</p>
 
 </div>
 </div>
