@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      11 min read
     
 </span></p>
 
@@ -122,6 +122,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Class-and-Object-Terms">Class and Object Terms </a></li>
 <li class="toc-entry toc-h2"><a href="#Class-and-Object-Code">Class and Object Code </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#Start-Code-for-Hacks">Start Code for Hacks </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks-Completion">Hacks Completion </a></li>
 </ul><!--
 #################################################
@@ -374,6 +375,54 @@ Test 4, make a dictionary
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Start-Code-for-Hacks">
+<a class="anchor" href="#Start-Code-for-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start Code for Hacks<a class="anchor-link" href="#Start-Code-for-Hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="k">def</span> <span class="nf">calculate_age</span><span class="p">(</span><span class="n">born</span><span class="p">):</span>
+    <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">born</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="p">((</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">born</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">born</span><span class="o">.</span><span class="n">day</span><span class="p">))</span>
+
+<span class="n">dob</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="n">calculate_age</span><span class="p">(</span><span class="n">dob</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>16
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -635,6 +684,110 @@ New Samit is Name: Samit, Age: 141, DOB: 1881-02-24, Class Of: 2030
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Movie</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">director</span><span class="p">,</span> <span class="n">release_date</span><span class="p">,</span> <span class="n">rating</span><span class="p">,</span> <span class="n">actors</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_director</span> <span class="o">=</span> <span class="n">director</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_release_date</span> <span class="o">=</span> <span class="n">release_date</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rating</span> <span class="o">=</span> <span class="n">rating</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_actors</span> <span class="o">=</span> <span class="n">actors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">title</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_title</span>
+
+    <span class="nd">@title</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_title</span> <span class="o">=</span> <span class="n">title</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">director</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_director</span>
+
+    <span class="nd">@director</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">director</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">director</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_director</span> <span class="o">=</span> <span class="n">director</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">release_date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_release_date</span>
+
+    <span class="nd">@release_date</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">release_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">release_date</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_release_date</span> <span class="o">=</span> <span class="n">release_date</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rating</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rating</span>
+
+    <span class="nd">@rating</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rating</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rating</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rating</span> <span class="o">=</span> <span class="n">rating</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">actors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_actors</span>
+
+    <span class="nd">@actors</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">actors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">actors</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_actors</span> <span class="o">=</span> <span class="n">actors</span>
+
+
+<span class="n">movie1</span> <span class="o">=</span> <span class="n">Movie</span><span class="p">(</span><span class="s2">"The Shawshank Redemption"</span><span class="p">,</span> <span class="s2">"Frank Darabont"</span><span class="p">,</span> <span class="s2">"1994-10-14"</span><span class="p">,</span> <span class="mf">9.2</span><span class="p">,</span> <span class="p">[</span><span class="s2">"Tim Robbins"</span><span class="p">,</span> <span class="s2">"Morgan Freeman"</span><span class="p">,</span> <span class="s2">"Bob Gunton"</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">movie1</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">movie1</span><span class="o">.</span><span class="n">director</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">movie1</span><span class="o">.</span><span class="n">release_date</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">movie1</span><span class="o">.</span><span class="n">rating</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">movie1</span><span class="o">.</span><span class="n">actors</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The Shawshank Redemption
+Frank Darabont
+1994-10-14
+9.2
+['Tim Robbins', 'Morgan Freeman', 'Bob Gunton']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This code defines a Python class called "Movie" that has a constructor and several setters and getters for the class properties.</p>
+<p>The constructor is the <strong>init</strong> method, which sets the initial values for the properties of the class: title, director, release_date, rating, and actors.</p>
+<p>The setters and getters are methods that are used to set and get the values of the properties of the class, respectively. They are defined using the @property decorator for the getter and the @property_name.setter decorator for the setter. This way we can easily manipulate the values of the class properties.</p>
+<p>With this code, we can create an instance of a movie and set/get the values of its properties like title, director, release date, rating, actors and so on.</p>
+<p>For example, we can use the code to create a movie object with the given values and then access the values using the getters. We can also update the values using the setters.</p>
+<p>We can also use JSON library to convert this class object into json for sending the data to the backend or storing it locally.</p>
+<p>In our project, we can use this class to create Movie object and store the returned data from the TMDb API, and then use the getters to retrieve the data from these objects and display it on the frontend.</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
