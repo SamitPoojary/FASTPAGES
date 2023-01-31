@@ -9,6 +9,7 @@ title: Week 20 MCQ
 # Score
 
 ![]({{site.baseurl}}/images/tri2_midterm_1.png)
+As you can see, I earned a 47/50 on the MCQ.
 
 # Corrections and Reflection
 
