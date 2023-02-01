@@ -7,6 +7,7 @@ title: Project Blog
 ---
 
 # Analyzing the Requirements
+
 | Category | Expectation | Explanation/Response|
 | :------: | ----------- | ----------- |
 | Program Purpose and Function | Describes the purpose of the program, describes the program's functionality, and can take an input and return an output. | The purpose of this program is to provide the user and specifically small businesses to manage their inventory and stock through a streamlined method of inventory organization |
