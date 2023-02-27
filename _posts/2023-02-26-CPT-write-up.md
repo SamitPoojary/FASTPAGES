@@ -8,7 +8,7 @@ title: Tri 2 CPT Write-Up
 
 # Video
 
-My video demonstration of my feature can be found here. 
+My video demonstration of my feature can be found [here](https://www.loom.com/share/cb190d6af69549c3ac35da28ea8179b6). 
 
 # Write-Up (Inventory Management System)
 
