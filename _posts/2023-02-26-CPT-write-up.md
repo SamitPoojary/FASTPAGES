@@ -32,3 +32,21 @@ The inputs of the program are the user's typed entries into the form for which e
 ### 3.b.i.
 
 ![]({{site.baseurl}}/images/cpt1.png)
+
+### 3.b.ii.
+
+![]({{site.baseurl}}/images/cpt2.png)
+
+### 3.b.iii.
+
+The name of the variable representing the collection type is "data", and "teams" is what populates the collection type through an SQLite Database. 
+
+### 3.b.iv.
+
+The data that my list contains is extremely vital to my program since it contains every single unique attribute about the product for the inventory entry. This is absolutely vital to the program as it is able to fetch and store the recieved data in order to populate the tables for when the user searches up the logged inventories of a specific company. 
+
+### 3.b.v.
+
+Without the variable "data", everything will become inefficient as the program would then require some sort of individual variable for each and every unique attribute. This would unneedingly lengthen my code and make it much too bulky and complex. 
+
+
