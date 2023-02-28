@@ -102,3 +102,13 @@ If the username is indeed empty, then an alert is displayed with the message "In
 
 #### Results of Call Two
 If such an error occurs, then the catch block logs the error to the console using console.error(error).
+
+
+
+# Grade from Azeem Khan
+
+![]({{site.baseurl}}/images/agrade.png)
+
+# Grade from Vivian Ni
+
+![]({{site.baseurl}}/images/vgrade.png)
