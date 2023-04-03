@@ -153,6 +153,129 @@ window.onload = wrap_img;
 </body>
 </html>
 
+<p>&lt;!DOCTYPE html&gt;</p>
+<html>
+<head>
+	<title>Messaging System</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			margin: 20px auto;
+			max-width: 800px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+
+		h1 {
+			font-size: 32px;
+			margin-top: 0;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-top: 20px;
+		}
+
+		label {
+			font-size: 16px;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		input[type=text], textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			font-size: 16px;
+			resize: none;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+		}
+
+		input[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+
+		.messages {
+			margin-top: 20px;
+		}
+
+		.message {
+			background-color: #f2f2f2;
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 3px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+		}
+
+		.message p {
+			margin: 0;
+			font-size: 16px;
+			word-wrap: break-word;
+		}
+
+		.message .author {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.message .date {
+			font-size: 14px;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Messaging System</h1>
+		<form>
+			<label for="author">Your Name:</label>
+			<input type="text" id="author" name="author" placeholder="Enter your name" required="" />
+
+			<label for="message">Your Message:</label>
+			<textarea id="message" name="message" rows="5" placeholder="Enter your message" required=""></textarea>
+
+			<input type="submit" value="Send Message" />
+		</form>
+
+		<div class="messages">
+			<!-- Messages will be inserted here -->
+		</div>
+	</div>
+
+	<script>
+		// Fetch messages from backend and display them
+		function fetchMessages() {
+			fetch('/messages')
+				.then(response => response.json())
+				.then(messages => {
+					const messagesDiv = document.querySelector('.messages');
+					messagesDiv.innerHTML = '';
+
+				
+</script></body></html>
 
   </div><a class="u-url" href="/FASTPAGES/tri%203%20project/2023/04/02/mcq4-copy.html" hidden></a>
 </article>
