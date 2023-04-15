@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -233,8 +233,12 @@ window.onload = wrap_img;
 <h4 id="call-one">
 <a class="anchor" href="#call-one" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call One</h4>
 
+<p>The first call is in the function to find and return the PM2.5 concentration for the city. If the function is successful, it should print a message indicating the PM2.5 concentration forthe city and whether it is a safe or unsafe level of air quality. If the function is not successful in finding data for the city, it should print a message indicating that there is no PM2.5 data available for the city.</p>
+
 <h4 id="call-two">
 <a class="anchor" href="#call-two" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call Two</h4>
+
+<p>The second call is in the function to find and return the PM10 concentration for the city. If the function is successful, it should print a message indicating the PM10 concentration for the city and whether it is a safe or unsafe level of air quality. If the function is not successful in finding data for the city, it should print a message indicating that there is no PM10 data available for the city.</p>
 
 <h3 id="3dii">
 <a class="anchor" href="#3dii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.ii.</h3>
@@ -242,8 +246,12 @@ window.onload = wrap_img;
 <h4 id="conditions-tested-by-call-one">
 <a class="anchor" href="#conditions-tested-by-call-one" aria-hidden="true"><span class="octicon octicon-link"></span></a>Condition(s) tested by Call One</h4>
 
+<p>Here, the condition being tested is whether there is any data available for the PM2.5 concentration in the given city. If the data is available, the code segment that prints the PM2.5 concentration for the city is executed, followed by a nested selection statement that checks whether the PM2.5 concentration is less than 25. If the concentration is less than 25, the message “This is a safe level of air quality. Enjoy!” is printed. Otherwise, the message “This is unsafe air quality. Be cautious!” is printed. The PM2.5 concentration value is then stored in the data dictionary. If the data is not available for the given city, the message “Sorry, there is no PM2.5 data available for {city}.” is printed.</p>
+
 <h4 id="conditions-tested-by-call-two">
 <a class="anchor" href="#conditions-tested-by-call-two" aria-hidden="true"><span class="octicon octicon-link"></span></a>Condition(s) tested by Call Two</h4>
+
+<p>Call two is testing the condition pm10_concentration[“concentration”] &lt; 25 in the find_pm10 function. If the condition is true, the program will execute the code block that prints “This is a safe level of air quality. Enjoy!” and stores the PM10 concentration value in the data dictionary under the key pm10. If the condition is false, the program will execute the code block that prints “This is unsafe air quality. Be cautious!” and stores the PM10 concentration value in the data dictionary under the key pm10.</p>
 
 <h3 id="3diii">
 <a class="anchor" href="#3diii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.iii.</h3>
@@ -251,8 +259,12 @@ window.onload = wrap_img;
 <h4 id="results-of-call-one">
 <a class="anchor" href="#results-of-call-one" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results of Call One</h4>
 
+<p>The result of call one depends on the input argument city. If the API response for PM2.5 data contains a valid concentration value for the specified city, then the function will print the PM2.5 concentration value and a message indicating whether the air quality is safe or not, based on the concentration level. The PM2.5 concentration value will also be stored in the data dictionary. If the API response does not contain any PM2.5 data for the specified city, the function will print a message saying so. If an error occurs while processing the request, the function will print an error message.</p>
+
 <h4 id="results-of-call-two">
 <a class="anchor" href="#results-of-call-two" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results of Call Two</h4>
+
+<p>Here, the condition being tested is the presence of PM10 concentration data for the city passed as an argument. If the data is present, the PM10 concentration value is retrieved and compared to the safe level threshold of 25. If the concentration is below 25, a message indicating safe air quality is printed, and the value is stored in the data dictionary. Otherwise, a message indicating unsafe air quality is printed. If the concentration is below 25, the value would be stored in the data dictionary under the pm10 key for the specified city. If PM10 concentration data is not present, the function would print a message indicating the absence of data for the specified city.</p>
 
 
   </div><a class="u-url" href="/FASTPAGES/trimester%203/2023/04/14/new-cpt.html" hidden></a>
