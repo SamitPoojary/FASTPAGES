@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -199,20 +199,30 @@ window.onload = wrap_img;
 <h3 id="3bv">
 <a class="anchor" href="#3bv" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.v.</h3>
 
+<p>The data dictionary is used to store the collected PM2.5 concentration data with the key pm25 pointing to a sub-dictionary that stores data for different cities. Storing the PM2.5 concentration data in a collection type allows the program to easily access and manipulate the data. By using a dictionary to store the data, the program can quickly look up PM2.5 concentration data for a specific city by accessing the corresponding key in the data dictionary. The importance of pm25 as a collection type is that it allows the program to store and retrieve PM2.5 concentration data for various cities over multiple runs of the program. By storing the data in a collection type, the program can access the previously collected data when the user requests PM2.5 concentration data for a city that has already been searched. This avoids making unnecessary API requests and saves time and resources.</p>
+
 <h2 id="3c">
 <a class="anchor" href="#3c" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.</h2>
 
 <h3 id="3ci">
 <a class="anchor" href="#3ci" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.i.</h3>
 
+<p><img src="/FASTPAGES/images/newcpt3.png" alt=""></p>
+
 <h3 id="3cii">
 <a class="anchor" href="#3cii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.ii.</h3>
+
+<p><img src="/FASTPAGES/images/newcpt4.png" alt=""></p>
 
 <h3 id="3ciii">
 <a class="anchor" href="#3ciii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.iii.</h3>
 
+<p>The procedures here are “find_pm25” and “find_pm10”. As the names imply, these functions are able to return a numerical integer that represents the pm25 or pm10 concentration, respectively, of any given city in the United States. It is called in the while loop, as it is required for achieving the objective of the menu of options. If either choice is selected, the terminal will prompt the user to enter a city name, and will then return the respective concentrations.</p>
+
 <h3 id="3civ">
 <a class="anchor" href="#3civ" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.iv.</h3>
+
+<p>Here, sequencing, selection, and iteration are used to provide a user-friendly interface for finding air quality information for different cities. The code uses sequencing to display a menu of options for the user to choose from. The menu includes the following options: finding the PM2.5 concentration for a city, finding the PM10 concentration for a city, viewing the stored values for PM2.5 and PM10 concentrations for cities, and exiting the program. Selection is used to determine which action the user wants to perform based on the choice they make. If the user chooses option 1, they will be prompted to enter a city, and the function find_pm25 will be called to retrieve and display the PM2.5 concentration for that city. If the user chooses option 2, they will be prompted to enter a city, and the function find_pm10 will be called to retrieve and display the PM10 concentration for that city. If the user chooses option 3, the stored PM2.5 and PM10 values for each city will be displayed using iteration. Finally, if the user chooses option 4, the program will exit.</p>
 
 <h2 id="3d">
 <a class="anchor" href="#3d" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d</h2>
