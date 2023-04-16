@@ -56,8 +56,8 @@ while True:
     print("Here are your options:")
     print("1. Find PM2.5 concentration for a city")
     print("2. Find PM10 concentration for a city")
-    print("3. See all your results!")
-    print("4. See your city list so far.")
+    print("3. See all your results so far")
+    print("4. See just your city list so far")
     print("5. Exit")
     choice = input("Enter choice (1-5): ")
 
