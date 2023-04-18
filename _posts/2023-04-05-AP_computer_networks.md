@@ -70,12 +70,6 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The scalability of a system is the capacity for the system to change in size and scale to meet new demands.
     - The internet was designed to be scalable
     - Information is passed through the internet as a data stream. Data streams contain chunks of data, which are encapsulated in packets. 
-    - Packets contain a chunk of data and metadata used for routing the packet between the origin and the destination on the internet, as well as for data reassembly.
-    - Packets may arrive at the destination in order, out of order, or not at all
-    - IP, TCP and UDP are common protocols used on the internet.
-    - The world wide web is a system of linked pages, programs, and files.
-    - HTTP is a protocol used by the world wide web
-    - The world wide web uses the internet
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
