@@ -201,9 +201,11 @@ window.onload = wrap_img;
 <p>Here's a step-by-step breakdown of how the code relates to backend functionality:</p>
 <p>new_user = User("john_doe", "john@example.com"): This line creates a new User object, initializing it with the username "john_doe" and the email "john@example.com". This could represent a user who has just signed up for an account, and the input values would typically come from user input, such as a registration form.</p>
 <p>new_user.display_info(): This line calls the display_info method on the new_user object, which prints the user's information (username and email) to the console. In a real-world backend application, you might use this method or a similar one to display user information in logs, send a welcome email, or create an API response with the user's data.</p>
-<h2 id="Lecture-Topics:">Lecture Topics:<a class="anchor-link" href="#Lecture-Topics:"> </a></h2><p>Establishing Class/User Data and making a new user</p>
+<p>Lecture Topics:</p>
+<p>Establishing Class/User Data and making a new user</p>
 <p>In Python, classes are templates used to create objects, which are instances of those classes. Classes define the data elements (attributes) and methods that describe the behavior of the objects. Let's explore how to define a class and create objects in Python.</p>
 <p>Example: Defining a User class</p>
+<p>python</p>
 <p>class User:
     def <strong>init</strong>(self, username, email):
         self.username = username
@@ -478,7 +480,7 @@ Flask provides several extensions and tools for working with SQLite databases, i
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This block of code is a menu function that helps with Create, Read, Update, and Delete (CRUD) tasks and displays the schema. The menu function acts as a control point that directs the program to call different functions based on what the user wants to do. When users enter their preferred action, the input is checked to see which function to use. The menu function is created with no arguments and is called repeatedly, displaying the menu options until the user decides to leave.</p>
 <p>This menu function is especially helpful for easily and efficiently managing CRUD tasks. To run the script, the menu function is called within a try block, and if there is an error, the except block catches it and shows a message guiding the user to perform a "Run All" operation before starting the menu. This ensures that all necessary code cells have been executed in the Jupyter Notebook environment. This menu function is flexible and can be adjusted for different applications and projects where CRUD operations are necessary, providing a user-friendly interface and efficient error handling.</p>
-<h3 id="Creating-a-Database">Creating a Database<a class="anchor-link" href="#Creating-a-Database"> </a></h3>
+<h3 id="Creating-the-Professors-DB">Creating the Professors DB<a class="anchor-link" href="#Creating-the-Professors-DB"> </a></h3>
 </div>
 </div>
 </div>
@@ -761,13 +763,6 @@ Flask provides several extensions and tools for working with SQLite databases, i
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This code is a Python function for deleting a record from a SQLite database. The function prompts the user to input the name of the professor they want to delete. It then uses a SQL query to search for the professor in the database. If the professor is found, the user is prompted to confirm the deletion. If the user confirms, the function executes a SQL command to delete the record from the database. The function also prints a message confirming that the professor has been deleted from the list of coding professors. If the professor is not found in the database, the function prints a message indicating that the professor is not in the list.</p>
 <p>To accomplish these tasks, the function first establishes a connection to the SQLite database using the sqlite3.connect() method. It then creates a cursor object that is used to execute SQL commands. The function prompts the user to enter the name of the professor they want to delete and then uses a SQL query to search the database for the professor with that name. The cursor object's execute() method is called with the SQL query and a tuple containing the name of the professor as its argument. The fetchone() method is then called on the cursor object to retrieve the record that matches the query. If the professor is found, the function prompts the user to confirm the deletion. If the user confirms, the cursor object's execute() method is called with another SQL query to delete the record from the database. The commit() method is called on the connection object to save the changes to the database. Finally, the function closes the cursor and connection to the database using the close() method on each object.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Our-Project-...-in-the-works">Our Project ... in the works<a class="anchor-link" href="#Our-Project-...-in-the-works"> </a></h2><p><a href="https://akshat122805.github.io/fastpages/2023/04/19/chatSAM.html">SAM Messaging System</a></p>
 
 </div>
 </div>
