@@ -1514,12 +1514,6 @@ total_rooms
 <li>Create a smaller dataframe and merge it with your data file</li>
 </ul>
 </li>
-<li>Numpy:<ul>
-<li>Random number generation</li>
-<li>create a multi-dimensional array (multiple elements)</li>
-<li>create an array with linearly spaced intervals between values</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -1527,6 +1521,249 @@ total_rooms
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># read JSON file</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/grade.json'</span><span class="p">)</span>
+
+<span class="c1"># find min and max values</span>
+<span class="n">min_gpa</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'GPA'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">max_gpa</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">'GPA'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Min GPA:"</span><span class="p">,</span> <span class="n">min_gpa</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Max GPA:"</span><span class="p">,</span> <span class="n">max_gpa</span><span class="p">)</span>
+
+<span class="c1"># sort by GPA from least to greatest</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'GPA'</span><span class="p">)</span>
+
+<span class="c1"># create a smaller dataframe with only 'Student ID' and 'GPA' columns</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">'Student ID'</span><span class="p">,</span> <span class="s1">'GPA'</span><span class="p">]]</span>
+
+<span class="c1"># merge with original dataframe on 'Student ID'</span>
+<span class="n">merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'Student ID'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">merged</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Min GPA: 2.75
+Max GPA: 4.75
+   Student ID  GPA_x Year in School  GPA_y
+0         456   2.75             10   2.75
+1         578   2.78             12   2.78
+2         nil   2.80              9   2.80
+3         145   2.95             12   2.95
+4         235   3.15      9th Grade   3.15
+5         313   3.33             20   3.33
+6         469   3.45             11   3.45
+7         469   3.45             11   3.45
+8         469   3.45             11   3.45
+9         469   3.45             11   3.45
+10        123   3.57             12   3.57
+11        167   3.90             10   3.90
+12        246   4.00             10   4.00
+13        324   4.75         Junior   4.75
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Numpy:<ul>
+<li>Random number generation</li>
+<li>create a multi-dimensional array (multiple elements)</li>
+<li>create an array with linearly spaced intervals between values</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Random number generation</span>
+<span class="n">random_numbers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># generate an array of 5 random numbers between 0 and 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random_numbers</span><span class="p">)</span>
+
+<span class="c1"># create a multi-dimensional array</span>
+<span class="n">multi_dim_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">multi_dim_array</span><span class="p">)</span>
+
+<span class="c1"># create an array with linearly spaced intervals between values</span>
+<span class="n">linear_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># generate an array with 5 values equally spaced between 0 and 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">linear_array</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0.45941533 0.45837166 0.59542915 0.61141982 0.78919827]
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+[ 0.   2.5  5.   7.5 10. ]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># generate a 3x3 array of random integers between 0 and 10</span>
+<span class="n">rand_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rand_array</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[5 1 0]
+ [8 2 4]
+ [7 5 3]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># create a 2x2x2 array with elements ranging from 1 to 8</span>
+<span class="n">multi_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]],</span> <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">multi_array</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[[1 2]
+  [3 4]]
+
+ [[5 6]
+  [7 8]]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># create an array with 10 evenly spaced values between 1 and 5</span>
+<span class="n">lin_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lin_array</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.         1.44444444 1.88888889 2.33333333 2.77777778 3.22222222
+ 3.66666667 4.11111111 4.55555556 5.        ]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1543,121 +1780,6 @@ total_rooms
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Create data file with random integers</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'B'</span><span class="p">,</span> <span class="s1">'C'</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Data file:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-
-<span class="c1"># Pandas commands</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Min values:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Max values:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Sorted in descending order by column B:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'B'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
-
-<span class="c1"># Create smaller dataframe and merge it with original dataframe</span>
-<span class="n">small_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'D'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]})</span>
-<span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">small_df</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Merged dataframes:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">merged_df</span><span class="p">)</span>
-
-<span class="c1"># Numpy commands</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Random array with shape (2, 3, 4):'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Array with linearly spaced intervals between 0 and 10:'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Data file:
-    A   B   C
-0  29  43  90
-1  10  99  76
-2   6  45  26
-3  10  62  80
-4  66  84  89
-5  80  32  26
-6  48  31  96
-7  80  75  18
-8  81  77   9
-9   1  30  20
-Min values:
-A     1
-B    30
-C     9
-dtype: int64
-Max values:
-A    81
-B    99
-C    96
-dtype: int64
-Sorted in descending order by column B:
-    A   B   C
-1  10  99  76
-4  66  84  89
-8  81  77   9
-7  80  75  18
-3  10  62  80
-2   6  45  26
-0  29  43  90
-5  80  32  26
-6  48  31  96
-9   1  30  20
-Merged dataframes:
-    A   B   C   D
-0  29  43  90   1
-1  10  99  76   2
-2   6  45  26   3
-3  10  62  80   4
-4  66  84  89   5
-5  80  32  26   6
-6  48  31  96   7
-7  80  75  18   8
-8  81  77   9   9
-9   1  30  20  10
-Random array with shape (2, 3, 4):
-[[[0.98187973 0.37118984 0.19388344 0.08295071]
-  [0.21219836 0.00766414 0.65312082 0.66527902]
-  [0.83363036 0.64471333 0.37966291 0.91153884]]
-
- [[0.81732291 0.70014435 0.01205942 0.84009464]
-  [0.95040314 0.21515865 0.1449216  0.03069485]
-  [0.8108356  0.11885597 0.42099182 0.87881929]]]
-Array with linearly spaced intervals between 0 and 10:
-[ 0.   2.5  5.   7.5 10. ]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 </div>
 
 
