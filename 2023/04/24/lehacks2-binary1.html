@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      7 min read
     
 </span></p>
 
@@ -272,6 +272,199 @@ NOT result: decimal = -25 , binary = b11001
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Bitwise operations are used in a variety of applications, particularly in low-level programming and computer science. Some common used of bitwise operations include:&gt; Flag Management: Flags are used to keep track of the state of a system or a program. Bitwise operations can be used to set, clear, and toggle flags.&gt; Bit Manipulation:Bitwise operations can be used to manipulate individual bits in a binary number. This is often used to extract specific bits from a number, set specific bits to a particular value, or flip the value of specific bits.&gt; Masking:Masking is used to extract a specific subset of bits from a binary number. Bitwise operations are commonly used for masking, particularly in low-level programming.&gt; Encryption:Bitwise operations can be used in cryptographic applications to scramble and unscramble data. One common application of bitwise operations in encryption is the XOR operation.&gt; Graphics:Bitwise operations can be used in computer graphics to manipulate individual pixels on a screen. This can be used to draw shapes, change colors, and create special effects.&gt; Networking:Bitwise operations are used extensively in networking applications, particularly in the handling of IP addresses and port numbers.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Function to convert a string to binary</span>
+<span class="k">def</span> <span class="nf">string_to_binary</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="n">binary</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+        <span class="n">binary</span> <span class="o">+=</span> <span class="nb">format</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">),</span> <span class="s1">&#39;08b&#39;</span><span class="p">)</span>  <span class="c1"># Convert the character to binary and append to the binary string</span>
+    <span class="k">return</span> <span class="n">binary</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a word to convert to binary: &quot;</span><span class="p">)</span>
+<span class="n">binary_word</span> <span class="o">=</span> <span class="n">string_to_binary</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The binary representation of &#39;</span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">&#39; is </span><span class="si">{</span><span class="n">binary_word</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The binary representation of &#39;hi&#39; is 0110100001101001
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Many programs use binary conversion, particularly those related to computer science, electrical engineering, and mathematics. Programs that rely on binary conversion include:&gt; Networking: Programs that deal with network addresses, such as IP addresses and subnet masks, use binary conversion to represent and manipulate the addresses.&gt; Cryptography:Programs that deal with encryption and decryption use binary conversion to encode and decode data.&gt; Computer Hardware:Programs that interface with computer hardware, such as drivers and firmware, often use binary conversion to communicate with the hardware at the binary level.&gt; Mathematical Applications:Programs that deal with complex calculations and mathematical analysis, such as statistical analysis or machine learning algorithms, may use binary conversion to represent large numbers or complex data sets.&gt; Finance:Programs that deal with financial calculations and accounting may use binary conversion to represent fractional amounts or complex financial data.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Binary-Search">Binary Search<a class="anchor-link" href="#Binary-Search"> </a></h2><ul>
+<li>An algorithm made to find an item from a list of items</li>
+<li>Works by dividing the list repeatedly to narrow down which half (the low or high half) that contains the item</li>
+<li>Lists of integers are often used with binary search</li>
+<li>Binary search makes searching more efficient, as it ensures the program won't have to search through an entire list of items one by one</li>
+<li>List must be sorted</li>
+</ul>
+<p><strong>What are some situations in which binary search could be used?</strong></p>
+<ul>
+<li>searching for a specific value in a sorted array</li>
+<li>finding a max or min value in a function</li>
+<li>implementing a guessing game such as high/low</li>
+</ul>
+<h3 id="Real-Example-of-Binary-Search">Real Example of Binary Search<a class="anchor-link" href="#Real-Example-of-Binary-Search"> </a></h3><p>Binary search operates a lot like a "guess the number" game. Try the game and explain how the two are similar.</p>
+<ul>
+<li>high low games are similar to binary search in that they both involve dividing a range of values in half and using feedback to iteratively refine the search space</li>
+<li>In the high/low game, a player is trying to guess a number within a given range, and is given feedback (higher or lower) after each guess to narrow down the possible values</li>
+<li>binary search starts with a sorted array and repeatedly divides the search space in half until the target in the array is found or determined that it is not present</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+
+<span class="n">hid</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">game</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">guess</span>
+    <span class="n">guess</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Pick a number&#39;</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="n">hid</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;higher&#39;</span><span class="p">)</span>
+        <span class="n">game</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="n">hid</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lower&#39;</span><span class="p">)</span>
+        <span class="n">game</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="n">hid</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">hid</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You Win !!!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;guesses: &#39;</span><span class="p">,</span> <span class="n">guess</span><span class="p">)</span>
+<span class="n">game</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>higher
+higher
+higher
+higher
+lower
+lower
+lower
+lower
+81
+You Win !!!
+guesses:  9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Logic-Gates">Logic Gates<a class="anchor-link" href="#Logic-Gates"> </a></h2><p>Accepts inputs and then outputs a result based on what the inputs were</p>
+<ol>
+<li>NOT Gate (aka inverter)</li>
+</ol>
+<ul>
+<li>Accepts a single input and outputs the opposite value.</li>
+<li>Ex: If the input is 0, the output is 1</li>
+</ul>
+<ol>
+<li>AND Gates</li>
+</ol>
+<ul>
+<li>Multiple inputs</li>
+<li>Accepts two inputs. </li>
+<li>If both inputs "true," it returns "true." </li>
+<li>If both inputs are "false," it returns "false."</li>
+<li>What would it return if one input was "true" and the other was "false"? Discuss and record below.<ul>
+<li>false because in order for an and gate to return true, both values have to be true.</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>OR Gates</li>
+</ol>
+<ul>
+<li>Accepts two inputs.</li>
+<li>As long as one of the two inputs is "true," it returns "true."</li>
+<li>If both inputs are "false," what would the OR gate return? Discuss and record below.<ul>
+<li>false</li>
+</ul>
+</li>
+</ul>
+<h3 id="Universal-Logic-Gates">Universal Logic Gates<a class="anchor-link" href="#Universal-Logic-Gates"> </a></h3><ol>
+<li>NAND Gate</li>
+</ol>
+<ul>
+<li>Accepts two inputs.</li>
+<li>Outputs "false" ONLY when <strong>both</strong> of its inputs are "true." At all other times, the gate produces an output of "true."</li>
+</ul>
+<ol>
+<li>NOR Gate</li>
+</ol>
+<ul>
+<li>Accepts two inputs.</li>
+<li>Outputs "true" only when <strong>both</strong> of its inputs are "false." At all other times, the gate produces an output of "false."</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
 
 
