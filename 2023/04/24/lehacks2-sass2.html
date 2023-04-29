@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
@@ -969,70 +969,12 @@ false
 <li>Complete the code portions, questions, and prompts throughout the notebook
 <strong>COMPLETED</strong></li>
 <li>Extra Credit: code a small JavaScript game 
-<strong>BELOW</strong></li>
+<strong>N/A</strong></li>
 </ol>
 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">const</span> <span class="nx">readline</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;readline&#39;</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">secretNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mf">10</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1</span><span class="p">;</span>
-<span class="kr">const</span> <span class="nx">rl</span> <span class="o">=</span> <span class="nx">readline</span><span class="p">.</span><span class="nx">createInterface</span><span class="p">({</span>
-  <span class="nx">input</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">stdin</span><span class="p">,</span>
-  <span class="nx">output</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span>
-<span class="p">});</span>
-
-<span class="nx">rl</span><span class="p">.</span><span class="nx">question</span><span class="p">(</span><span class="s1">&#39;Guess the secret number between 1 and 10: &#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">answer</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">answer</span> <span class="o">==</span> <span class="nx">secretNumber</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Congratulations! You guessed the secret number!&#39;</span><span class="p">);</span>
-  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Sorry, the secret number was </span><span class="si">${</span><span class="nx">secretNumber</span><span class="si">}</span><span class="sb">.`</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="nx">rl</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
-<span class="p">});</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-evalmachine.&lt;anonymous&gt;:1
-const readline = require(&#39;readline&#39;);
-^
-
-SyntaxError: Identifier &#39;secretNumber&#39; has already been declared
-    at evalmachine.&lt;anonymous&gt;:1:1
-    at Script.runInThisContext (vm.js:96:20)
-    at Object.runInThisContext (vm.js:303:38)
-    at run ([eval]:1020:15)
-    at onRunRequest ([eval]:864:18)
-    at onMessage ([eval]:828:13)
-    at process.emit (events.js:182:13)
-    at emit (internal/child_process.js:812:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 </div>
 
 
