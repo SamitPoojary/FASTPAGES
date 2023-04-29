@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      3 min read
     
 </span></p>
 
@@ -127,215 +127,155 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Why-SASS?">Why SASS?<a class="anchor-link" href="#Why-SASS?"> </a></h1><p>SASS is an improvement on CSS in that there are methods of abstraction. It is a <strong>preprocessor</strong> language that is <strong>compiled</strong> into CSS, which means that <strong>the SASS code is translated into CSS</strong>, which is what your web browser can read.</p>
-<h1 id="SASS-vs-SCSS">SASS vs SCSS<a class="anchor-link" href="#SASS-vs-SCSS"> </a></h1><p>As you learn about Sass, you might notice something called Scss. They are basically the same thing except that Scss uses curly braces and semicolons to distinguish between lines. Sass uses indentation and newlines instead.</p>
-<p>We will be teaching the Scss syntax because it is more commonly used.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Getting-started">Getting started<a class="anchor-link" href="#Getting-started"> </a></h1><p>A easy way to write SASS and have it preprocessed into CSS is by using a Jekyll powered website, such as GitHub pages or Fastpages.</p>
-<p>The first step is to clone a GitHub pages repo, such as this <a href="https://github.com/lwu1822/sassy_squad">one</a>.</p>
-<p>Within the repository, head over to <code>assets/css/</code>, and open <code>style.scss</code>.</p>
-<p>This is where you can create your SASS code.</p>
-<p>To see your CSS-translated SASS code, head over to <code>_site/assets/css/style.css</code></p>
-<p>Note: You will need to run bundle exec jekyll serve before the _site directory appears.</p>
-<p>The first few hundred lines are used to style Github's theme. Make sure to scroll to the very bottom to see the SASS code that you wrote, which is in the form of CSS.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Nesting">Nesting<a class="anchor-link" href="#Nesting"> </a></h1><ul>
-<li>Nesting is a useful feature in SASS that allows you to nest styles within other styles, making it easier to write and organize your code.</li>
-<li>In SASS, you can nest selectors inside other selectors to create a hierarchy of styles.</li>
-<li>To nest a selector inside another selector, simply write the child selector inside the parent selector.</li>
-<li>When you nest a selector, the child selector inherits the properties of the parent selector.</li>
-<li>You can also nest properties within a selector to group related properties together.</li>
-<li>When you nest properties, the resulting CSS will be grouped together in a logical and organized way.</li>
-<li>One thing to keep in mind when using nesting is to avoid nesting too deeply, as this can make your code difficult to read and maintain.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mini-hack">Mini-hack<a class="anchor-link" href="#Mini-hack"> </a></h1><p>Write out the SASS equivalent for the following CSS code:</p>
-
-<pre><code>.a .b {
-    color: green;
-}
-
-.a .c {
-    color: blue;
-}</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong></p>
-
-<pre><code>.a {
-  .b {
-    color: green;
-  }
-  .c {
-    color: blue;
-  }
-}</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Extend/Inheritance">Extend/Inheritance<a class="anchor-link" href="#Extend/Inheritance"> </a></h1><p>What are some similarities that the buttons share? What are the differences?</p>
+<h2 id="Binary-Recap-and-Notes">Binary Recap and Notes<a class="anchor-link" href="#Binary-Recap-and-Notes"> </a></h2><blockquote><p>In the bullet points below, record 5 things that you already knew about binary before this lecture</p>
 <ul>
-<li><p>The colors, the width, the height, and the pop up feature</p>
-</li>
-<li><p>In Sass, extend is a way to share a set of CSS properties from one selector to another.</p>
-</li>
-<li>The @extend directive is used to extend one selector to inherit the styles of another selector.</li>
-<li>To use @extend, first define a base selector with the properties you want to share, then use @extend to inherit those properties to another selector.</li>
-<li>The syntax for @extend is @extend selector;, where selector is the name of the selector you want to extend.</li>
-<li>When a selector is extended, it inherits all of the properties of the selector it's extending, and the CSS output will contain only one instance of those properties.</li>
-<li>This can help keep your CSS lean and reduce duplication of styles.</li>
-<li>It's important to note that @extend is not the same as nesting. Nesting is used to scope CSS rules to a specific context, while @extend is used to inherit properties from one selector to another.</li>
-<li>Be cautious when using @extend as it can lead to unexpected styling if not used properly. It's generally recommended to use it sparingly and only in situations where it makes sense.</li>
+<li>binary is ones and zeros</li>
+<li>computers use binary to convert data, messages, etc</li>
+<li>binary search is a faster way to search for items in a list. follows a log(n) pattern</li>
+<li>I can convert decimal to binary and vice versa</li>
+<li>binary is used in networking and sub-netting</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mixin">Mixin<a class="anchor-link" href="#Mixin"> </a></h1><ul>
-<li>Mixins allow you to define a set of CSS rules that can be reused throughout your stylesheet, similar to a function in programming.</li>
-<li>Mixins can include properties, values, and even other mixins.</li>
-<li>Mixins are defined using the @mixin directive, followed by a name and a block of CSS rules.</li>
-<li>Mixins can take arguments, which allow you to customize the values of the properties in the mixin.</li>
-<li>Mixins are included in your CSS rules using the @include directive, followed by the name of the mixin.</li>
-<li>Mixins can be used to make your stylesheets more modular, reusable, and maintainable, by reducing duplication and promoting consistency.</li>
-<li>Mixins can also help you to write more concise and readable CSS code, by abstracting away complex or repetitive styles into simple, named constructs.</li>
-<li>Mixins are a powerful feature of Sass, and can help you to create efficient and flexible stylesheets that can be easily customized and adapted as your design evolves.</li>
+<p>Binary is can be applied in many ways to store, access, and manipulate information. Think of three applications that rely on binary.</p>
+<ul>
+<li>networking and sub-netting</li>
+<li>encryption</li>
+<li>computers could use it to store and convert data securely and efficiently</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mini-hack">Mini-hack<a class="anchor-link" href="#Mini-hack"> </a></h1><p>Write out a mixin in SASS that takes in a color and a font size as the parameter. Within the mixin, set the background color and font color to the color parameter, and set the font size to the font size parameter. Then create a selector that calls the mixin, and pass in a color and font size of your choice as the arguments.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
-<pre><code>@mixin my-mixin($color, $font-size) {
-  background-color: $color;
-  color: $color;
-  font-size: $font-size;
-}
-
-// Calling the mixin with a color of red and font size of 20px
-.my-selector {
-  @include my-mixin(red, 20px);
-}</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Function">Function<a class="anchor-link" href="#Function"> </a></h1><ul>
-<li>Functions in SASS have a specific syntax: they begin with the keyword "@function", followed by the function name and any parameters in parenthesis.</li>
-<li>The function body is defined inside curly braces, where the code is executed and a value is returned using the "@return" keyword.</li>
-<li>The function in this example takes in three arguments, corresponding to the RGB color values of a given color, and subtracts each value from 255 to get the inverted color.</li>
-<li>The resulting color is stored in a variable, which is then returned using the "@return" keyword.</li>
-<li>To use the function, it must be called by name and any required arguments are passed inside parentheses.</li>
-<li>In this example, the ".invert" class is defined with a background color and text color that are both inverted versions of black and a light gray color, respectively.
--The resulting effect is that the background and text colors toggle between light and dark modes when the "Click me" button is pressed.</li>
+<p>Why is binary such an effective system for storing information? Why don't computers use the decimal system instead?</p>
+<ul>
+<li>Binary is an effective system for storing information in computers because it is a two-digit system that can represent all numbers and characters using only two digits:0 and 1. - This simplicity of the binary system makes it easy for computers to use and process information quickly and accurately.</li>
 </ul>
+</blockquote>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Import">Import<a class="anchor-link" href="#Import"> </a></h1><ul>
-<li>You can use import in Sass to split your code into multiple files.</li>
-<li>First, create a directory called _sass.</li>
-<li>Within that directory, create another Sass file where you can write your code.</li>
-<li>Once you're finished with the code, switch back to the main file and import the file with @import "file-name".</li>
-<li>The import statement should not include the file extension.</li>
-<li>Import statements are usually placed at the beginning of the main file.</li>
-<li>Importing is useful for organizing code and keeping things maintainable.</li>
-</ul>
+<h2 id="Bitwise-Operations">Bitwise Operations<a class="anchor-link" href="#Bitwise-Operations"> </a></h2><p>Fill in the blank spots below during the lecture</p>
+<table>
+<thead><tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>AND</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>OR</td>
+<td></td>
+</tr>
+<tr>
+<td>^</td>
+<td>XOR</td>
+<td></td>
+</tr>
+<tr>
+<td>~</td>
+<td>NOT</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>Left Shift</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>Right Shift</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;</td>
+<td>Zero-fill Right Shift</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SASS-Hacks">SASS Hacks<a class="anchor-link" href="#SASS-Hacks"> </a></h1><ol>
-<li><p>Take notes and complete the mini-hacks. (0.9) <strong>COMPLETED</strong></p>
-</li>
-<li><p>Complete the <a href="https://lwu1822.github.io/sassy_squad/quizQuestions">quiz questions</a> and provide your answers in this notebook. (0.9) <strong>COMPLETED</strong></p>
-</li>
-</ol>
-<p>b. A scripting language that has many styling operations</p>
-<p>a. They are very similar in their function, but their syntax is slightly different</p>
-<p>c. CSS takes up more bytes</p>
-<p>b. Syntactically Awesome Style Sheets</p>
-<p>d. compute</p>
-<p>b. extend</p>
-<p>b. Directive</p>
-<ol>
-<li><p>Use SASS to create something that uses either extend or mixin. (0.9) <strong>See below</strong></p>
-</li>
-<li><p>Extra credit: Research other SASS features and blog about what you learned or add to your SASS project with any extra features not covered in this lesson. More points will be given if both are done.</p>
-</li>
-</ol>
+<blockquote><p>In this program, the binary operators &amp; (AND), | (OR), ^ (XOR), and ~ (NOT) are used to perform the binary operations on the input numbers. The results are stored in separate variables as decimal numbers. Then, the bin() function is used to convert each decimal result to binary, and the binary strings are stored in separate variables. Finally, the program returns a tuple of tuples, with each inner tuple containing both the decimal and binary result for each operation. The outer tuple is unpacked into separate variables for printing, and the results are displayed as both decimal and binary.</p>
+</blockquote>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">binary_operations</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="c1"># Perform the binary operations</span>
+    <span class="n">and_result_decimal</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">&amp;</span> <span class="n">num2</span>
+    <span class="n">or_result_decimal</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">|</span> <span class="n">num2</span>
+    <span class="n">xor_result_decimal</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">^</span> <span class="n">num2</span>
+    <span class="n">not_result_decimal</span> <span class="o">=</span> <span class="o">~</span><span class="n">num1</span>
+
+    <span class="c1"># Convert results to binary</span>
+    <span class="n">and_result_binary</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">and_result_decimal</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="n">or_result_binary</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">or_result_decimal</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="n">xor_result_binary</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">xor_result_decimal</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="n">not_result_binary</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">not_result_decimal</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+
+    <span class="c1"># Return the results as a tuple of tuples</span>
+    <span class="k">return</span> <span class="p">((</span><span class="n">and_result_decimal</span><span class="p">,</span> <span class="n">and_result_binary</span><span class="p">),</span>
+            <span class="p">(</span><span class="n">or_result_decimal</span><span class="p">,</span> <span class="n">or_result_binary</span><span class="p">),</span>
+            <span class="p">(</span><span class="n">xor_result_decimal</span><span class="p">,</span> <span class="n">xor_result_binary</span><span class="p">),</span>
+            <span class="p">(</span><span class="n">not_result_decimal</span><span class="p">,</span> <span class="n">not_result_binary</span><span class="p">))</span>
+
+<span class="c1"># Ask the user for input</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the first number: &quot;</span><span class="p">))</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the second number: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Call the binary_operations function and print the results</span>
+<span class="n">and_result</span><span class="p">,</span> <span class="n">or_result</span><span class="p">,</span> <span class="n">xor_result</span><span class="p">,</span> <span class="n">not_result</span> <span class="o">=</span> <span class="n">binary_operations</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AND result: decimal =&quot;</span><span class="p">,</span> <span class="n">and_result</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, binary =&quot;</span><span class="p">,</span> <span class="n">and_result</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OR result: decimal =&quot;</span><span class="p">,</span> <span class="n">or_result</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, binary =&quot;</span><span class="p">,</span> <span class="n">or_result</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;XOR result: decimal =&quot;</span><span class="p">,</span> <span class="n">xor_result</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, binary =&quot;</span><span class="p">,</span> <span class="n">xor_result</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NOT result: decimal =&quot;</span><span class="p">,</span> <span class="n">not_result</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, binary =&quot;</span><span class="p">,</span> <span class="n">not_result</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>AND result: decimal = 8 , binary = 1000
+OR result: decimal = 24 , binary = 11000
+XOR result: decimal = 16 , binary = 10000
+NOT result: decimal = -25 , binary = b11001
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Using SASS to create something that uses mixin</p>
-
-<pre><code>@mixin button-style($background-color, $text-color, $font-size) {
-  background-color: $background-color;
-  color: $text-color;
-  font-size: $font-size;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &amp;:hover {
-    background-color: darken($background-color, 10%);
-  }
-}
-
-.button {
-  @include button-style(#0077FF, #FFFFFF, 16px);
-}
-
-.secondary-button {
-  @include button-style(#F44336, #FFFFFF, 14px);
-}</code></pre>
-<p>This code defines a reusable style for buttons using a SASS mixin. The @mixin block defines the style properties for buttons and allows for the use of variables. The button-style mixin takes three arguments - background color, text color, and font size - which are used to dynamically set those properties.</p>
-<p>The .button and .secondary-button classes are then defined and assigned the button-style mixin using @include. This allows for the styles defined in the mixin to be applied to those classes.</p>
-<p>In simpler terms, the code allows for the creation of nice-looking buttons with custom colors and font sizes by using the button-style mixin. This makes it easy to apply consistent button styles throughout a project.</p>
+<blockquote><p>Bitwise operations are used in a variety of applications, particularly in low-level programming and computer science. Some common used of bitwise operations include:&gt; - Flag Management: Flags are used to keep track of the state of a system or a program. Bitwise operations can be used to set, clear, and toggle flags.&gt; - Bit Manipulation:Bitwise operations can be used to manipulate individual bits in a binary number. This is often used to extract specific bits from a number, set specific bits to a particular value, or flip the value of specific bits.&gt; - Masking:Masking is used to extract a specific subset of bits from a binary number. Bitwise operations are commonly used for masking, particularly in low-level programming.&gt; - Encryption:Bitwise operations can be used in cryptographic applications to scramble and unscramble data. One common application of bitwise operations in encryption is the XOR operation.&gt; - Graphics:Bitwise operations can be used in computer graphics to manipulate individual pixels on a screen. This can be used to draw shapes, change colors, and create special effects.&gt; - Networking:Bitwise operations are used extensively in networking applications, particularly in the handling of IP addresses and port numbers.</p>
+</blockquote>
 
 </div>
 </div>
