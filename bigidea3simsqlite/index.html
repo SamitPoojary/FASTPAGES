@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      29 min read
+      31 min read
     
 </span></p>
 
@@ -252,6 +252,7 @@ window.onload = wrap_img;
 <ul>
 <li>Why do you think lists are helpful? What word does College Board like to use to describe the function of lists?</li>
 </ul>
+<p>Lists facilitate operations like addition or removal of elements, accessing specific elements by index, and iterating over all elements. The College Board uses the term "abstraction" to refer to the role of lists in programming. Lists obscure the intricacies of how individual elements are stored in memory, enabling programmers to work with groups of elements as a single entity. This simplifies the process of writing and comprehending code that deals with multiple values simultaneously, without having to be concerned about the underlying technicalities of how they are represented in the computer's memory.</p>
 
 </div>
 </div>
@@ -976,7 +977,7 @@ Better luck next time!
 <li>O(N*N)</li>
 </ul>
 <p><strong>Response</strong></p>
-<p>Below is O(N^2)</p>
+<p>Below is O(N^2) ; O(NN) because it is iterating N times for N possibilites, which gives it a time complexity equivalent to NN</p>
 
 </div>
 </div>
@@ -1008,9 +1009,10 @@ Better luck next time!
 <ul>
 <li>n</li>
 <li>(n+1)</li>
-<li>n(n-1)</li>
-<li><strong>n(n+1)</strong></li>
+<li><strong>n(n-1)</strong></li>
+<li>n(n+1)</li>
 </ul>
+<p>n(n-1) because it is iterating n times for n-1 possibilities, which gives it a time complexity of n(n-1)</p>
 
 </div>
 </div>
@@ -1402,7 +1404,7 @@ The difference between the value and the index is 200.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>It took 31 random generations to get 10.
+<pre>It took 1 random generations to get 10.
 </pre>
 </div>
 </div>
@@ -1547,52 +1549,38 @@ The difference between the value and the index is 200.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># (Concert attendance? Wind speeds? Interactions between subjects in large environments?)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="c1"># Think about the sort of things that could be saved in lists, dictionaries, etc.</span>
-<span class="c1"># (Even better if you can take advantage of the specific features of multiple types of data sets!)</span>
+<span class="c1"># Define menu items and their prices</span>
+<span class="n">menu</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">"Burger"</span><span class="p">:</span> <span class="mf">5.99</span><span class="p">,</span>
+  <span class="s2">"Pizza"</span><span class="p">:</span> <span class="mf">7.99</span><span class="p">,</span>
+  <span class="s2">"Fries"</span><span class="p">:</span> <span class="mf">2.99</span><span class="p">,</span>
+  <span class="s2">"Soda"</span><span class="p">:</span> <span class="mf">1.99</span>
+<span class="p">}</span>
 
-<span class="c1"># What kind of iteration happens in the real world?</span>
-<span class="c1"># What occurs repeatedly, even over a long period of time?</span>
-<span class="c1"># You could model the results of a disease spreading through a population without it taking IRL years.</span>
+<span class="c1"># Generate a random order for the customer</span>
+<span class="n">order</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+  <span class="n">item</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">menu</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+  <span class="n">order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 
-<span class="kn">import</span> <span class="nn">random</span>
+<span class="c1"># Display the customer's order</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your order is:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"- "</span> <span class="o">+</span> <span class="n">item</span><span class="p">)</span>
 
-<span class="c1"># Set up the population</span>
-<span class="n">population_size</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="n">population</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="n">population_size</span>
-<span class="n">infected_count</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">infected_indices</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">population_size</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
-<span class="n">population</span><span class="p">[</span><span class="n">infected_indices</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Calculate the total cost of the meal</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
+  <span class="n">total</span> <span class="o">+=</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
 
-<span class="c1"># Set up the simulation parameters</span>
-<span class="n">infection_rate</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="n">recovery_rate</span> <span class="o">=</span> <span class="mf">0.01</span>
-<span class="n">time_steps</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="c1"># Display the total cost of the meal</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Your total is: $"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">total</span><span class="p">))</span>
 
-<span class="c1"># Run the simulation</span>
-<span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">time_steps</span><span class="p">):</span>
-    <span class="c1"># Spread the virus</span>
-    <span class="n">new_infected_indices</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">infected_indices</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">neighbor_index</span> <span class="ow">in</span> <span class="p">[</span><span class="n">index</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
-            <span class="k">if</span> <span class="n">neighbor_index</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">neighbor_index</span> <span class="o">&lt;</span> <span class="n">population_size</span><span class="p">:</span>
-                <span class="k">if</span> <span class="ow">not</span> <span class="n">population</span><span class="p">[</span><span class="n">neighbor_index</span><span class="p">]:</span>
-                    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">infection_rate</span><span class="p">:</span>
-                        <span class="n">new_infected_indices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">neighbor_index</span><span class="p">)</span>
-                        <span class="n">population</span><span class="p">[</span><span class="n">neighbor_index</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="n">infected_indices</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">new_infected_indices</span><span class="p">)</span>
-    <span class="n">infected_count</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_infected_indices</span><span class="p">)</span>
-    
-    <span class="c1"># Recover from the virus</span>
-    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">infected_indices</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">recovery_rate</span><span class="p">:</span>
-            <span class="n">population</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">infected_indices</span> <span class="o">=</span> <span class="p">[</span><span class="n">index</span> <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">infected_indices</span> <span class="k">if</span> <span class="n">population</span><span class="p">[</span><span class="n">index</span><span class="p">]]</span>
-    <span class="n">infected_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">infected_indices</span><span class="p">)</span>
-    
-    <span class="c1"># Print out the current state of the simulation</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Step </span><span class="si">{</span><span class="n">step</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">infected_count</span><span class="si">}</span><span class="s2"> infected"</span><span class="p">)</span>
+<span class="c1"># Add a special deal if they ordered pizza and fries</span>
+<span class="k">if</span> <span class="s2">"Pizza"</span> <span class="ow">in</span> <span class="n">order</span> <span class="ow">and</span> <span class="s2">"Fries"</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"You get a free soda with your meal!"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1605,106 +1593,12 @@ The difference between the value and the index is 200.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Step 0: 1 infected
-Step 1: 1 infected
-Step 2: 1 infected
-Step 3: 1 infected
-Step 4: 1 infected
-Step 5: 1 infected
-Step 6: 1 infected
-Step 7: 1 infected
-Step 8: 1 infected
-Step 9: 1 infected
-Step 10: 1 infected
-Step 11: 1 infected
-Step 12: 1 infected
-Step 13: 1 infected
-Step 14: 1 infected
-Step 15: 1 infected
-Step 16: 1 infected
-Step 17: 1 infected
-Step 18: 1 infected
-Step 19: 1 infected
-Step 20: 1 infected
-Step 21: 1 infected
-Step 22: 1 infected
-Step 23: 1 infected
-Step 24: 1 infected
-Step 25: 1 infected
-Step 26: 1 infected
-Step 27: 2 infected
-Step 28: 2 infected
-Step 29: 2 infected
-Step 30: 2 infected
-Step 31: 2 infected
-Step 32: 2 infected
-Step 33: 2 infected
-Step 34: 2 infected
-Step 35: 2 infected
-Step 36: 2 infected
-Step 37: 2 infected
-Step 38: 3 infected
-Step 39: 3 infected
-Step 40: 4 infected
-Step 41: 4 infected
-Step 42: 4 infected
-Step 43: 4 infected
-Step 44: 4 infected
-Step 45: 5 infected
-Step 46: 5 infected
-Step 47: 5 infected
-Step 48: 5 infected
-Step 49: 5 infected
-Step 50: 5 infected
-Step 51: 5 infected
-Step 52: 6 infected
-Step 53: 6 infected
-Step 54: 6 infected
-Step 55: 6 infected
-Step 56: 7 infected
-Step 57: 7 infected
-Step 58: 7 infected
-Step 59: 7 infected
-Step 60: 8 infected
-Step 61: 8 infected
-Step 62: 8 infected
-Step 63: 8 infected
-Step 64: 8 infected
-Step 65: 8 infected
-Step 66: 9 infected
-Step 67: 9 infected
-Step 68: 9 infected
-Step 69: 9 infected
-Step 70: 9 infected
-Step 71: 9 infected
-Step 72: 10 infected
-Step 73: 10 infected
-Step 74: 10 infected
-Step 75: 10 infected
-Step 76: 10 infected
-Step 77: 10 infected
-Step 78: 10 infected
-Step 79: 10 infected
-Step 80: 12 infected
-Step 81: 12 infected
-Step 82: 12 infected
-Step 83: 13 infected
-Step 84: 13 infected
-Step 85: 13 infected
-Step 86: 13 infected
-Step 87: 13 infected
-Step 88: 13 infected
-Step 89: 13 infected
-Step 90: 13 infected
-Step 91: 13 infected
-Step 92: 13 infected
-Step 93: 13 infected
-Step 94: 13 infected
-Step 95: 12 infected
-Step 96: 12 infected
-Step 97: 13 infected
-Step 98: 14 infected
-Step 99: 14 infected
+<pre>Your order is:
+- Pizza
+- Fries
+- Burger
+Your total is: $16.97
+You get a free soda with your meal!
 </pre>
 </div>
 </div>
@@ -1990,7 +1884,7 @@ Step 99: 14 infected
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@property</span>
 <span class="k">def</span> <span class="nf">streak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_streak</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_streak</span>
 </pre></div>
 
     </div>
@@ -2177,6 +2071,357 @@ Created user with username "Un Bea Table".
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">create_database</span><span class="p">():</span>
+    <span class="c1"># Connect to the database (will create it if it doesn't exist)</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/EmployeeDB.db'</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="c1"># Create the employees table if it doesn't already exist</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'''CREATE TABLE IF NOT EXISTS Employees (</span>
+<span class="s1">                    id INTEGER PRIMARY KEY,</span>
+<span class="s1">                    name TEXT,</span>
+<span class="s1">                    age INTEGER,</span>
+<span class="s1">                    department TEXT,</span>
+<span class="s1">                    salary INTEGER</span>
+<span class="s1">                )'''</span><span class="p">)</span>
+
+    <span class="c1"># Add some sample data to the table</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO Employees (name, age, department, salary) VALUES ('John Smith', 35, 'Sales', 60000)"</span><span class="p">)</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO Employees (name, age, department, salary) VALUES ('Jane Doe', 28, 'Marketing', 55000)"</span><span class="p">)</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO Employees (name, age, department, salary) VALUES ('Bob Johnson', 42, 'Engineering', 80000)"</span><span class="p">)</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO Employees (name, age, department, salary) VALUES ('Sarah Lee', 30, 'Finance', 65000)"</span><span class="p">)</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO Employees (name, age, department, salary) VALUES ('Tom Davis', 48, 'Operations', 90000)"</span><span class="p">)</span>
+
+    <span class="c1"># Commit changes and close the connection</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># Call the function to create the database</span>
+<span class="n">create_database</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/employees'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">get_employees</span><span class="p">():</span>
+    <span class="c1"># Connect to the database</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/EmployeeDB.db'</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="c1"># Execute an SQL query to select all employees</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT * FROM Employees"</span><span class="p">)</span>
+
+    <span class="c1"># Fetch all results and store them in a list of dictionaries</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+    <span class="n">employees</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+        <span class="n">employee</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'id'</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">'name'</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">'age'</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">'department'</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s1">'salary'</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">4</span><span class="p">]}</span>
+        <span class="n">employees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">employee</span><span class="p">)</span>
+
+    <span class="c1"># Close the connection</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="c1"># Return the list of employees as a JSON object</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s1">'employees'</span><span class="p">:</span> <span class="n">employees</span><span class="p">})</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> * Serving Flask app '__main__'
+ * Debug mode: off
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
+   <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/EmployeeDB.db'</span>
+   <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the employee's name: "</span><span class="p">)</span>
+   <span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the employee's age: "</span><span class="p">)</span>
+   <span class="n">department</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the employee's department: "</span><span class="p">)</span>
+   <span class="n">salary</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the employee's salary: "</span><span class="p">)</span>
+
+   <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+   <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+   <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+   <span class="k">try</span><span class="p">:</span>
+       <span class="c1"># Execute SQL to insert record into db</span>
+       <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO Employees (name, age, department, salary) VALUES (?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">salary</span><span class="p">))</span>
+       <span class="c1"># Commit the changes</span>
+       <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> has been added to the list of employees."</span><span class="p">)</span>
+              
+   <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while inserting record"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+   <span class="c1"># Close cursor and connection</span>
+   <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+   <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">create</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Samit has been added to the list of employees.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/EmployeeDB.db'</span>
+
+    <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="c1"># Execute SQL to select all rows from the employees table</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT * FROM Employees"</span><span class="p">)</span>
+
+    <span class="c1"># Fetch all the rows</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="c1"># Print out the rows</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+
+    <span class="c1"># Close cursor and connection</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">read</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'John Smith', 35, 'Sales', 60000)
+(2, 'Jane Doe', 28, 'Marketing', 55000)
+(3, 'Bob Johnson', 42, 'Engineering', 80000)
+(4, 'Sarah Lee', 30, 'Finance', 65000)
+(5, 'Tom Davis', 48, 'Operations', 90000)
+(6, 'Samit', 17, 'Calculus', 100000)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">update</span><span class="p">():</span>
+    <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/EmployeeDB.db'</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="c1"># Get the employee ID and new salary from the user</span>
+    <span class="n">employee_id</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the ID of the employee you want to update: "</span><span class="p">)</span>
+    <span class="n">new_salary</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the new salary for the employee: "</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute SQL to update the salary for the employee with the given ID</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE Employees SET salary = ? WHERE id = ?"</span><span class="p">,</span> <span class="p">(</span><span class="n">new_salary</span><span class="p">,</span> <span class="n">employee_id</span><span class="p">))</span>
+        <span class="c1"># Get the number of rows affected by the update</span>
+        <span class="n">rows_updated</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span>
+        <span class="c1"># Commit the changes</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="n">rows_updated</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No employee found with ID </span><span class="si">{</span><span class="n">employee_id</span><span class="si">}</span><span class="s2">. No changes were made."</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">rows_updated</span><span class="si">}</span><span class="s2"> employee(s) updated successfully."</span><span class="p">)</span>
+              
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while updating record"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+    <span class="c1"># Close cursor and connection</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># Call the function to update an employee's salary</span>
+<span class="n">update</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 employee(s) updated successfully.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">delete</span><span class="p">():</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/EmployeeDB.db'</span>
+    <span class="c1"># Get the employee ID to delete</span>
+    <span class="n">employee_id</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the ID of the employee you want to delete: "</span><span class="p">)</span>
+
+    <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute SQL to delete the employee with the given ID</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM Employees WHERE id=?"</span><span class="p">,</span> <span class="p">(</span><span class="n">employee_id</span><span class="p">,))</span>
+        <span class="c1"># Commit the changes</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Employee with ID </span><span class="si">{</span><span class="n">employee_id</span><span class="si">}</span><span class="s2"> has been deleted."</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while deleting record"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+    <span class="c1"># Close cursor and connection</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">delete</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Employee with ID 1 has been deleted.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
