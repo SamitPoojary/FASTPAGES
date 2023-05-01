@@ -3,8 +3,6 @@ toc: true
 layout: post
 description: Collegeboard Corrections 2020
 title: College Board MCQ corrections
-categories: [markdown, csp]
-permalink: /csp/MCQcorrectionspracexam/
 ---
 
 ![image](https://user-images.githubusercontent.com/110933283/235427138-893f3410-86ea-46d3-bfb6-87a1537d8a64.png)
