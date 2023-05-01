@@ -1,4 +1,4 @@
-# Importing API from RapidAPI
+# Importing API from RapidAPI, so credit to them for the URL and providing the data for this algorithm
 # Note that me and Alex Kumar collaborated on this code,  but made our own modifications to it. We planned the idea out together. 
 
 import requests
@@ -91,14 +91,9 @@ while True:
         for item in city_list:
             city_name = item.split(":")[0]
             print(city_name)
-    # Here for choice 5, I give full credit to Alex Kumar for writing the code. 
     elif choice == "5":
         break
     else:
         print("Sorry, but this isn't a valid choice. Please try again!")
-
-
-
-
 
 
