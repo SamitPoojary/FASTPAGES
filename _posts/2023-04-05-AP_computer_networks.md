@@ -30,7 +30,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Running Code: the inspect element on browser, shows what is happening behind what we see normally, cherry tomatoes when we debug in VS code
 - Inspect Variables: see the values on the variables to debug and see what is happening
 
-![]({{site.baseurl}}/images/vardaan.png)
+![]({{site.baseurl}}/images/vardizzle.png)
 
 
 ### The Internet
