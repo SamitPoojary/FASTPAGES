@@ -5,7 +5,7 @@
 import requests
 
 stored_data = {'pm2.5': {}, 'pm10': {}}
-
+# this code below makes a call to an API, and adds the pm25/pm10 concentration to the list
 def find_pm(type, city):
     if type == "pm25":
         url = "https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality"
@@ -31,7 +31,9 @@ def find_pm(type, city):
             stored_data['pm2.5'][city] = pm25_concentration
             print(f"{city} added to the PM2.5 dictionary")
 
+# this code below checks to see what type of data
     elif type == "pm10":
+        # again, I give credit to Rapid API for providing this data
         url = "https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality"
         querystring = {"city": city}
         headers = {
@@ -54,6 +56,8 @@ def find_pm(type, city):
         else:
             stored_data['pm10'][city] = pm10_concentration
             print(f"{city} added to the PM10 dictionary")
+
+# Below is a menu, which provides the user with multiple choices to select. The function will continue to loop over the choices as well.
 
 while True:
     print("Here are your options:")
