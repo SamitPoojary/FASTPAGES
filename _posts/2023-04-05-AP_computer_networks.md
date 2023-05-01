@@ -20,19 +20,18 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - OS: **Macintosh**
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
-
-right here
+- Input devices: lets a user interact with the computer- mouse, microphone, keyboard
+- Output devices: computer communicate with the user- speaker, headphones, monitor
+- Program File: file that the computer can execute to run a program- games, media player, website
+- Program Code: instructions for the computer when a program file is run- stuff behind the game, website, and stuff
+- Processes: program is executed in multiple threads- searching, debugging, sorting, etc
+- Ports: endpoint that lets a server handle requests from devices over the internet
+- Data File: has information in the file, or data in a specific format, can be CRUDed, and tells program what to do
+- Inspect Running Code: the inspect element on browser, shows what is happening behind what we see normally, cherry tomatoes when we debug in VS code
+- Inspect Variables: see the values on the variables to debug and see what is happening
 
 
+![]({{site.baseurl}}/images/kaiden1.png)
 
 ### The Internet
 > Watch/review College Board Daily Video for 4.1.1
@@ -73,8 +72,8 @@ right here
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-right here
-
+![]({{site.baseurl}}/images/kaiden.png)
+![]({{site.baseurl}}/images/kaiden2.png)
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
