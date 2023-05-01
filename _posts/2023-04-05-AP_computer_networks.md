@@ -31,8 +31,6 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Variables: see the values on the variables to debug and see what is happening
 
 
-![]({{site.baseurl}}/images/kaiden1.png)
-
 ### The Internet
 > Watch/review College Board Daily Video for 4.1.1
 
@@ -72,8 +70,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
-![]({{site.baseurl}}/images/kaiden.png)
-![]({{site.baseurl}}/images/kaiden2.png)
+![]({{site.baseurl}}/images/realkaiden.png)
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
