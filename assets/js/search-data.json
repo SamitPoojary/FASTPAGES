@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "College Board MCQ corrections",
             "content": ". . I got this wrong because I did not account for the indexing This would be the result if the loop header was changed to REPEAT 3 TIMES. | . . Fractions are sometimes approximated by decimals, which can lead to rounding errors. Integers, on the other hand, do not have this problem. | . . Both codes would move the robot to the correct square | . . I got this wrong because The two programs initialize i to different values, but they print the same values inside the loop because Program A prints i and then increments it, while Program B increments i and then prints it. | . . The rate of growth was constant however during the later years it was no longer constant | . . I made a problem with reading the graph incorrectly this was an arithmetic error | . . This code segment subtracts the lowest score from the sum of all the scores. It then incorrectly divides the result by the number of scores, instead of dividing it by one less than the number of scores. | . . It can be done by only removing two connections | . . This code segment stores the substring “jack” in the variable animal. It then concatenates “jack” with “a”, storing the result “jacka” in animal. Finally, it concatenates the substring “lope” with “jacka”, storing the result “lopejacka” in animal. | .",
-            "url": "https://samitpoojary.github.io/FASTPAGES/csp/MCQcorrectionspracexam/",
-            "relUrl": "/csp/MCQcorrectionspracexam/",
+            "url": "https://samitpoojary.github.io/FASTPAGES/2023/05/01/CollegeBoardPracexam.html",
+            "relUrl": "/2023/05/01/CollegeBoardPracexam.html",
             "date": " • May 1, 2023"
         }
         
