@@ -1,64 +1,60 @@
-# Credit to Rapid API for the the headers and code to retrieve data from the API
-# Note: collaboration with Samit Poojary on the idea and some coding is shared.
+# Credit to Rapid API for the headers, as well as providing data from the API to be used in this code
+
+# Note: I collaborated on this project with Alex Kumar and the code is shared, although we have made some slight adjustments for ourselves. 
+
 import requests
-storeddata = [{'pm2.5': {}}, {'pm10': {}}]
-# API call that adds the pm25 to the list
-def findpm(type, city):
-    if (type == "pm25"):
+
+stored_data = {'pm2.5': {}, 'pm10': {}}
+
+def find_pm(type, city):
+    if type == "pm25":
         url = "https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality"
-
         querystring = {"city": city}
-
         headers = {
             "X-RapidAPI-Key": "f8c1edc71amsh2ceb94e75170cf3p1172ddjsn28d9990da6a6",
             "X-RapidAPI-Host": "air-quality-by-api-ninjas.p.rapidapi.com"
         }
 
-        response = requests.request("GET", url, headers=headers, params=querystring)
+        response = requests.get(url, headers=headers, params=querystring)
         data = response.json()
-        pm25_concentration = data["PM2.5"]
-        print("pm25_concentration for " + str(city) + " is " +  str(pm25_concentration["concentration"]))
+        pm25_concentration = data["PM2.5"]["concentration"]
 
-        if pm25_concentration["concentration"] < 25:
+        print(f"PM2.5 concentration for {city} is {pm25_concentration}")
+        if pm25_concentration < 25:
             print("This is a safe level of pollution")
-        else: 
-            print("This is unsafe")
-        if city in storeddata[0]['pm2.5']:
-            print(f"{city} already exists in pm2.5 dictionary")
         else:
-            storeddata[0]['pm2.5'][city] = pm25_concentration["concentration"]
-            print(f"{city} added to pm2.5 dictionary")
-            
-    # checks to see what type
-    elif (type == "pm10"): 
-        # Credit to Rapid API for the the headers and code to retrieve data from the API
+            print("This is unsafe")
+
+        if city in stored_data['pm2.5']:
+            print(f"{city} already exists in the PM2.5 dictionary")
+        else:
+            stored_data['pm2.5'][city] = pm25_concentration
+            print(f"{city} added to the PM2.5 dictionary")
+
+    elif type == "pm10":
         url = "https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality"
-
         querystring = {"city": city}
-
         headers = {
             "X-RapidAPI-Key": "f8c1edc71amsh2ceb94e75170cf3p1172ddjsn28d9990da6a6",
             "X-RapidAPI-Host": "air-quality-by-api-ninjas.p.rapidapi.com"
         }
 
-        response = requests.request("GET", url, headers=headers, params=querystring)
+        response = requests.get(url, headers=headers, params=querystring)
         data = response.json()
-        pm10_concentration = data["PM2.5"]
-        print("pm10_concentration for " + str(city) + " is " +  str(pm10_concentration["concentration"]))
+        pm10_concentration = data["PM10"]["concentration"]
 
-        if pm10_concentration["concentration"] < 25:
+        print(f"PM10 concentration for {city} is {pm10_concentration}")
+        if pm10_concentration < 25:
             print("This is a safe level of pollution")
-        else: 
+        else:
             print("This is unsafe")
 
-        # This adds the data to the list of stored values
-        if city in storeddata[1]['pm10']:
-            print(f"{city} already exists in pm2.5 dictionary")
+        if city in stored_data['pm10']:
+            print(f"{city} already exists in the PM10 dictionary")
         else:
-            storeddata[1]['pm10'][city] = pm10_concentration["concentration"]
-            print(f"{city} added to pm10 dictionary")
+            stored_data['pm10'][city] = pm10_concentration
+            print(f"{city} added to the PM10 dictionary")
 
-# Menu function that will continue to loop over the choices allowing user to do menu multiple times
 while True:
     print("Here are your options:")
     print("1. Find the PM2.5 concentration for a city")
@@ -72,23 +68,19 @@ while True:
 
     if choice == "1":
         city = input("Enter city name: ")
-        findpm("pm25", city)
+        find_pm("pm25", city)
     elif choice == "2":
         city = input("Enter city name: ")
-
-        findpm("pm10", city)
-        
+        find_pm("pm10", city)
     elif choice == "3":
-        pm25data = storeddata[0]['pm2.5']
-        for city, pm in pm25data.items():
+        pm25_data = stored_data['pm2.5']
+        for city, pm in pm25_data.items():
             print(city, pm)
-        
-    
     elif choice == "4":
-        pm10data = storeddata[1]['pm10']
-        for city, pm in pm10data.items():
-            print(city, pm)
+        pm10_data = stored_data['pm10']
+        for city, pm in pm10_data.items():
+            print (city,pm)
     elif choice == "5":
         break
     else:
-        print("Invalid choice. Please try again.")
+        ("This was not a valid choice. Please try again.")
