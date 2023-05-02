@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Frontend and Backend Development Lesson Notes | Pooj’s FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Frontend and Backend Development Lesson Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://samitpoojary.github.io/FASTPAGES/frontbacknotespage2/" />
+<meta property="og:url" content="https://samitpoojary.github.io/FASTPAGES/frontbacknotespage2/" />
+<meta property="og:site_name" content="Pooj’s FastPages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-28T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Frontend and Backend Development Lesson Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-28T00:00:00-05:00","datePublished":"2023-04-28T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Frontend and Backend Development Lesson Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://samitpoojary.github.io/FASTPAGES/frontbacknotespage2/"},"url":"https://samitpoojary.github.io/FASTPAGES/frontbacknotespage2/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FASTPAGES/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://samitpoojary.github.io/FASTPAGES/feed.xml" title="Pooj's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/FASTPAGES/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FASTPAGES/">Pooj&#39;s FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FASTPAGES/search/">Search</a><a class="page-link" href="/FASTPAGES/categories/">Tags</a><a class="page-link" href="/FASTPAGES/notes/">APCSP Notes!</a><a class="page-link" href="/FASTPAGES/about/">About Me!</a><a class="page-link" href="/FASTPAGES/submenu/">Submenu</a><a class="page-link" href="/FASTPAGES/_pages/05_Weekly_Log.html">Weekly Log</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Frontend and Backend Development Lesson Notes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-28T00:00:00-05:00" itemprop="datePublished">
+        Apr 28, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      21 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/SamitPoojary/FASTPAGES/tree/master/_notebooks/2023-04-28-frontendBackend.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/FASTPAGES/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/SamitPoojary/FASTPAGES/master?filepath=_notebooks%2F2023-04-28-frontendBackend.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FASTPAGES/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/SamitPoojary/FASTPAGES/blob/master/_notebooks/2023-04-28-frontendBackend.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/FASTPAGES/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FSamitPoojary%2FFASTPAGES%2Fblob%2Fmaster%2F_notebooks%2F2023-04-28-frontendBackend.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/FASTPAGES/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Introduction">Introduction </a></li>
+<li class="toc-entry toc-h1"><a href="#Backend">Backend </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#What-is-CRUD">What is CRUD </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Films-API">Films API </a></li>
+<li class="toc-entry toc-h1"><a href="#Fetching">Fetching </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Overview">Overview </a></li>
+<li class="toc-entry toc-h2"><a href="#Python-Fetch-Using-Request">Python Fetch Using Request </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Backend-and-Frontend-Example">Backend and Frontend Example </a></li>
+<li class="toc-entry toc-h1"><a href="#NOTES-AND-TAKEAWAYS:">NOTES AND TAKEAWAYS: </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#1.-Unique-API-with-CRUD-Features">1. Unique API with CRUD Features </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Model-File">Model File </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Explanations">Explanations </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#API-File">API File </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Fetch-API-Request">Fetch API Request </a></li>
+<li class="toc-entry toc-h2"><a href="#Video-of-Complete-GitHub-Pages-Website">Video of Complete GitHub Pages Website </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-04-28-frontendBackend.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Introduction">
+<a class="anchor" href="#Introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction<a class="anchor-link" href="#Introduction"> </a>
+</h1>
+<p>Frontend and backend are two essential components of a web application. The frontend is the part of the application that interacts with the user, whereas the backend is the part that handles the logic and data processing behind the scenes.</p>
+<p>The frontend, also known as the client-side, typically consists of HTML, CSS, and JavaScript code that runs in the user's web browser. The frontend handles the user interface, page layout, and overall look of the application. It also handles user interactions, such as submitting forms, clicking buttons, and navigating between pages.</p>
+<p>On the other hand, the backend, also known as the server-side, typically consists of a server, a database, and, in our case, APIs. The backend handles the processing and storage of data, manages user authentication and authorization, and handles business logic and rules. The backend also communicates with the frontend, providing the necessary data to render the user interface and processing user inputs.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Backend">
+<a class="anchor" href="#Backend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Backend<a class="anchor-link" href="#Backend"> </a>
+</h1>
+<p>In our class we mainly use Python and SQL/JSON to create APIs and databases. Here is a simple example of creating a SQL database and using CRUD as well.</p>
+<h2 id="What-is-CRUD">
+<a class="anchor" href="#What-is-CRUD" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is CRUD<a class="anchor-link" href="#What-is-CRUD"> </a>
+</h2>
+<ul>
+<li>
+<p>C: The 'C' stands for create, meaning to create a new entry in a database. In this case, creating a new entry about a certain movie or TV show.</p>
+</li>
+<li>
+<p>R: Read, or to retrieve data from the database. In this case it is selecting the movie/TV shwo that you choose to display.</p>
+</li>
+<li>
+<p>U: Update, or changing an existing entry in the database. In this case it is selecting the preexisting movie/TV show and changing the values to match what you want.</p>
+</li>
+<li>
+<p>D: Delete, or removing data from the database. In this case it is selecting the preexisting movie/TV show and removing the entry from the database.</p>
+</li>
+</ul>
+<h1 id="Films-API">
+<a class="anchor" href="#Films-API" aria-hidden="true"><span class="octicon octicon-link"></span></a>Films API<a class="anchor-link" href="#Films-API"> </a>
+</h1>
+<p>This API is intended to be used as a list of movies and TV shows that a person has watched. It includes attributes for the Film name(key), the year released, the language, the number of episodes, A list of the number of episodes(using pickletype), and a youtube url for the trailer. The CRUD works as follows:
+Create: Enter the above mentioned attributes
+Read: Returns all of the films and their attributes
+Update: Takes in new episodes watched, and a list of their names, and adds them to their respective attibutes
+Delete: Option for deleting every film, also takes in a name to delete that film if it exists</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="c1"># Connect to the SQLite database using SQLite3</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/films.db'</span><span class="p">)</span>
+
+<span class="c1"># Create a cursor object to execute SQL commands</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Create a table in the database</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'''CREATE TABLE movies</span>
+<span class="s1">                 (id INTEGER PRIMARY KEY, title TEXT, year INTEGER, epcount INTEGER, language TEXT, trailer TEXT, eplist TEXT)'''</span><span class="p">)</span>
+
+<span class="c1"># Commit the changes to the database and close the connection</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="k">def</span> <span class="nf">create</span><span class="p">():</span>
+    <span class="c1"># Ask the user for movie details</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the movie/tv show title: "</span><span class="p">)</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the movie/tv show release year: "</span><span class="p">)</span>
+    <span class="n">epcount</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the movie/tv show epcount: "</span><span class="p">)</span>
+    <span class="n">language</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the movie/tv show language: "</span><span class="p">)</span>
+    <span class="n">eplist</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the movie/tv show episode names: "</span><span class="p">)</span>
+    <span class="n">trailer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the link movie/tv show trailer: "</span><span class="p">)</span>
+
+    <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/films.db'</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute SQL to insert record into db</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO movies (title, year, epcount, language, eplist, trailer) VALUES (?, ?, ?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">epcount</span><span class="p">,</span> <span class="n">language</span><span class="p">,</span> <span class="n">eplist</span><span class="p">,</span> <span class="n">trailer</span><span class="p">))</span>
+        <span class="c1"># Commit the changes</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> has been added to the list of movies."</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while inserting record:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+    <span class="c1"># Close cursor and connection</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">create</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>SpongeBob SquarePants has been added to the list of movies.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+    <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/films.db'</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="c1"># Execute SQL to select a record from db by id</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT * FROM movies WHERE id=?"</span><span class="p">,</span> <span class="p">(</span><span class="nb">id</span><span class="p">,))</span>
+
+    <span class="c1"># Fetch the record from the cursor</span>
+    <span class="n">movie</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+
+    <span class="c1"># If movie exists, print its details, else print message</span>
+    <span class="k">if</span> <span class="n">movie</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">movie</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">movie</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">movie</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">movie</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">movie</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">movie</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">movie</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Movie not found."</span><span class="p">)</span>
+
+    <span class="c1"># Close cursor and connection</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">read</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1. SpongeBob SquarePants, 1999, 565, English, no, Help Wanted
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+    <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/films.db'</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="c1"># Ask the user for movie details to update</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the updated movie/tv show title: "</span><span class="p">)</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the updated movie/tv show release year: "</span><span class="p">)</span>
+    <span class="n">epcount</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the updated movie/tv show epcount: "</span><span class="p">)</span>
+    <span class="n">language</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the updated movie/tv show language: "</span><span class="p">)</span>
+    <span class="n">eplist</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the updated movie/tv show episode names: "</span><span class="p">)</span>
+    <span class="n">trailer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the updated link movie/tv show trailer: "</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute SQL to update the record in db</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"UPDATE movies SET title=?, year=?, epcount=?, language=?, eplist=?, trailer=? WHERE id=?"</span><span class="p">,</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">epcount</span><span class="p">,</span> <span class="n">language</span><span class="p">,</span> <span class="n">eplist</span><span class="p">,</span> <span class="n">trailer</span><span class="p">,</span> <span class="nb">id</span><span class="p">))</span>
+        <span class="c1"># Commit the changes</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Movie updated successfully."</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while updating record:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+    <span class="c1"># Close cursor and connection</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">update</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Movie updated successfully.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+    <span class="c1"># Connect to the database and create a cursor to execute SQL commands</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/films.db'</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute SQL to delete the record from db by id</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE FROM movies WHERE id=?"</span><span class="p">,</span> <span class="p">(</span><span class="nb">id</span><span class="p">,))</span>
+        <span class="c1"># Commit the changes</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Movie deleted successfully."</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while deleting record:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+    <span class="c1"># Close cursor and connection</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">delete</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Movie deleted successfully.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Fetching">
+<a class="anchor" href="#Fetching" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fetching<a class="anchor-link" href="#Fetching"> </a>
+</h1>
+<h3 id="Overview">
+<a class="anchor" href="#Overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview<a class="anchor-link" href="#Overview"> </a>
+</h3>
+<ul>
+<li>Involves retrieving data from a server or database</li>
+<li>Can use different HTTP methods, such as GET, POST, PUT, and DELETE, to perform different types of operations on the server.</li>
+<li>Fetching can be done through a variety of ways including AJAX, XHR, and Axios</li>
+<li>In APCSP we tend to use the Fetch API over anything else</li>
+<li>Fetching involves sending a request to a server using a URL (Uniform Resource Locator), which identifies the location of the resource being requested.</li>
+<li>Can receive data in various formats, including JSON</li>
+<li>JSON data can be parsed into objects and arrays in JavaScript, making it easy to work with and manipulate in the frontend</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python-Fetch-Using-Request">
+<a class="anchor" href="#Python-Fetch-Using-Request" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python Fetch Using Request<a class="anchor-link" href="#Python-Fetch-Using-Request"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://moviesdatabase.p.rapidapi.com/titles?page=1"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"content-type"</span><span class="p">:</span> <span class="s2">"application/octet-stream"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"8401db6433msh3a46dd5bf23ad2ep19a280jsn48536a994246"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"moviesdatabase.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is a functional fetch of a movies API from Rapid API, but the data isn't very readable. Below is an example of using Pandas to format the key values as a dataframe.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://moviesdatabase.p.rapidapi.com/titles?page=1"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"content-type"</span><span class="p">:</span> <span class="s2">"application/octet-stream"</span><span class="p">,</span>
+    <span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"8401db6433msh3a46dd5bf23ad2ep19a280jsn48536a994246"</span><span class="p">,</span>
+    <span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"moviesdatabase.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="c1"># Create an empty DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="c1"># Extract the required information and store it in a list of dictionaries</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"results"</span><span class="p">]</span>
+<span class="n">entries</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">entry</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"id"</span><span class="p">],</span>
+        <span class="s2">"title"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"titleText"</span><span class="p">][</span><span class="s2">"text"</span><span class="p">],</span>
+        <span class="s2">"release_year"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"releaseYear"</span><span class="p">][</span><span class="s2">"year"</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">entries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+
+<span class="c1"># Convert the list of dictionaries into a DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span>
+
+
+
+<span class="c1"># ADD YOUR OWN COLUMN TO THE DATAFRAME</span>
+
+<span class="n">results</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"results"</span><span class="p">]</span>
+<span class="n">entries</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">entry</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"id"</span><span class="p">],</span>
+        <span class="s2">"title"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"titleText"</span><span class="p">][</span><span class="s2">"text"</span><span class="p">],</span>
+        <span class="s2">"release_year"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">"releaseYear"</span><span class="p">][</span><span class="s2">"year"</span><span class="p">],</span>
+        <span class="s2">"isSeries"</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">'titleType'</span><span class="p">][</span><span class="s1">'isSeries'</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="n">entries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>          id                                    title  release_year  isSeries
+0  tt0001922                That Winsome Winnie Smile          1911     False
+1  tt0001539                             Caïn et Abel          1911     False
+2  tt0001636                                  Galileo          1911     False
+3  tt0002148                   The Drummer's Vacation          1912     False
+4  tt0001702               The Indian Maiden's Lesson          1911     False
+5  tt0001856             The Revenue Man and the Girl          1911     False
+6  tt0001790  Les misérables - Époque 1: Jean Valjean          1913     False
+7  tt0000543                 Christian IXS bisættelse          1906     False
+8  tt0002089                                   Carmen          1912     False
+9  tt0000548                       Fiskerliv i Norden          1906     False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><mark>For the hack, I added a column for "isSeries".</mark></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Using Pandas to format a request obtained from a 3rd Party API makes it much easier to read and you can select what you want to display as well. Pandas makes it easy to access data that you feel is important.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Backend-and-Frontend-Example">
+<a class="anchor" href="#Backend-and-Frontend-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Backend and Frontend Example<a class="anchor-link" href="#Backend-and-Frontend-Example"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="NOTES-AND-TAKEAWAYS:">
+<a class="anchor" href="#NOTES-AND-TAKEAWAYS:" aria-hidden="true"><span class="octicon octicon-link"></span></a>NOTES AND TAKEAWAYS:<a class="anchor-link" href="#NOTES-AND-TAKEAWAYS:"> </a>
+</h1>
+<ul>
+<li>CRUD is considered part of the backend</li>
+<li>Data cleaning should happen in both the frontend and the backend, but definitely the backend since it could break the server</li>
+<li>Communication between a local backend and public HTTPS frontend is valid</li>
+<li>The context of a certain attribute matters: years within a certain timeframe, names with a certain length limit, etc. help to make sure a backend database is structured correctly and not erroneous</li>
+<li>Data types matter, especially with basic SQLite3 tables</li>
+<li>When fetching from larger APIs, there are content limits<ul>
+<li>When I tried fetching the movie API without limits, it timed out</li>
+<li>Instead, look for specific pages to work with or make a search function or something</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Create a completely unique API with all 4 CRUD features (Create, Read, Update, Delete)</li>
+<li>Create a Fetch API request for your corresponding API</li>
+<li>Attempt a complete website on GitHub Pages including HTML</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Unique-API-with-CRUD-Features">
+<a class="anchor" href="#1.-Unique-API-with-CRUD-Features" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Unique API with CRUD Features<a class="anchor-link" href="#1.-Unique-API-with-CRUD-Features"> </a>
+</h2>
+<h3 id="Model-File">
+<a class="anchor" href="#Model-File" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model File<a class="anchor-link" href="#Model-File"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">""" database dependencies to support sqliteDB examples """</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">__init__</span> <span class="kn">import</span> <span class="n">app</span><span class="p">,</span> <span class="n">db</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.exc</span> <span class="kn">import</span> <span class="n">IntegrityError</span>
+
+<span class="k">class</span> <span class="nc">Event</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'events'</span>  <span class="c1"># table name is plural, class name is singular</span>
+
+    <span class="c1"># Define the User schema with "vars" from object</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="c1">#_uid = db.Column(db.String(255), unique=True, nullable=False)</span>
+    <span class="n">_email</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_event_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_event_details</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_date</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_start_time</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_end_time</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_password</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># constructor of a User object, initializes the instance variables within object (self) </span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">event_details</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_email</span> <span class="o">=</span> <span class="n">email</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_name</span> <span class="o">=</span> <span class="n">event_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_details</span> <span class="o">=</span> <span class="n">event_details</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_date</span> <span class="o">=</span> <span class="n">date</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_start_time</span> <span class="o">=</span> <span class="n">start_time</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_end_time</span> <span class="o">=</span> <span class="n">end_time</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">password</span>
+    
+    <span class="c1">#here's the name getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+    <span class="c1">#here's the name setter</span>
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+    
+    <span class="c1">#here's the email getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">email</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_email</span>
+    
+    <span class="c1">#here's the email setter</span>
+    <span class="nd">@email</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">email</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">email</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_email</span> <span class="o">=</span> <span class="n">email</span>
+    
+    <span class="c1">#here's the event_name getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">event_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_event_name</span>
+    
+    <span class="c1">#here's the event_name setter</span>
+    <span class="nd">@event_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">event_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_name</span> <span class="o">=</span> <span class="n">event_name</span>
+    
+    <span class="c1">#here's the event_details getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">event_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_event_details</span>
+    
+    <span class="c1">#here's the event_details setter</span>
+    <span class="nd">@event_details</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">event_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_details</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_details</span> <span class="o">=</span> <span class="n">event_details</span>
+    
+    <span class="c1">#here's the date getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_date</span>
+    
+    <span class="c1">#here's the date setter</span>
+    <span class="nd">@date</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_date</span> <span class="o">=</span> <span class="n">date</span>
+
+    <span class="c1">#here's the start_time getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">start_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_start_time</span>
+    
+    <span class="c1">#here's the start_time setter</span>
+    <span class="nd">@start_time</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">start_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_time</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_start_time</span> <span class="o">=</span> <span class="n">start_time</span>
+
+    <span class="c1">#here's the end_time getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">end_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_end_time</span>
+    
+    <span class="c1">#here's the end_time setter</span>
+    <span class="nd">@end_time</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">end_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">end_time</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_end_time</span> <span class="o">=</span> <span class="n">end_time</span>
+
+    <span class="c1">#here's the password getter</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">password</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_password</span>
+    
+    <span class="c1">#here's the password setter</span>
+    <span class="nd">@password</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">password</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">password</span>
+    
+    <span class="c1"># output content using str(object) in human readable form, uses getter</span>
+    <span class="c1"># output content using json dumps, this is ready for API response</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+    <span class="c1"># CRUD create/add a new record to the table</span>
+    <span class="c1"># returns self or None on error</span>
+    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># creates a person object from User(db.Model) class, passes initializers</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>  <span class="c1"># add prepares to persist person object to Users table</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>  <span class="c1"># SqlAlchemy "unit of work pattern" requires a manual commit</span>
+            <span class="k">return</span> <span class="bp">self</span>
+        <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="c1"># CRUD read converts self to dictionary</span>
+    <span class="c1"># returns dictionary</span>
+    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+            <span class="s2">"name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">"email"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">email</span><span class="p">,</span>
+            <span class="s2">"event_name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">event_name</span><span class="p">,</span>
+            <span class="s2">"event_details"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">event_details</span><span class="p">,</span>
+            <span class="s2">"date"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="p">,</span>
+            <span class="s2">"start_time"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span><span class="p">,</span>
+            <span class="s2">"end_time"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="p">,</span>
+            <span class="s2">"password"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">password</span>
+        <span class="p">}</span>
+
+    <span class="c1"># CRUD update: updates user name, password, phone</span>
+    <span class="c1"># returns self</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">event_name</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">event_details</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">date</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">""</span><span class="p">):</span>
+        <span class="sd">"""only updates values with length"""</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">email</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">event_name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">event_name</span> <span class="o">=</span> <span class="n">event_name</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">event_details</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">event_details</span> <span class="o">=</span> <span class="n">event_details</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="n">date</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">start_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span> <span class="o">=</span> <span class="n">start_time</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">end_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span> <span class="o">=</span> <span class="n">end_time</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">password</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="c1"># CRUD delete: remove self</span>
+    <span class="c1"># None</span>
+    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="sd">"""Database Creation and Testing """</span>
+
+
+<span class="c1"># Builds working data for testing</span>
+<span class="k">def</span> <span class="nf">initEvents</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="sd">"""Create database and tables"""</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
+        <span class="sd">"""Tester data for table</span>
+<span class="sd">        e1 = Event(name="Thomas Edison", email="tedison@lightbulb.edu",</span>
+<span class="sd">            event_name="The Edison Troupe Meet",</span>
+<span class="sd">            event_details="We 10 selected geniuses will meet in the events room for a convergence.",</span>
+<span class="sd">            date="02/23/2023", start_time="13:00", end_time="14:00", password="tedisonrules20")</span>
+<span class="sd">        e2 = Event(name="John Mortensen", email="jmortensen@powayusd.com",</span>
+<span class="sd">            event_name="Extra Credit Code Meetup",</span>
+<span class="sd">            event_details="Come to work on ideation and any confusion with the Full Stack CPT project. No phones.",</span>
+<span class="sd">            date="02/25/2023", start_time="10:00", end_time="12:00", password="codec0decod3bro")</span>
+<span class="sd">        e3 = Event(name="Karl Giant", email="giantrichguy@wallstreet.org",</span>
+<span class="sd">            event_name="Karl and Cats",</span>
+<span class="sd">            event_details="Karl would like to see cats with friends (if he can fit in the building).",</span>
+<span class="sd">            date="02/26/2023", start_time="16:00", end_time="17:00", password="i_am-the-f4th3r")</span>
+<span class="sd">        </span>
+<span class="sd">        events = [e1, e2, e3]</span>
+
+<span class="sd">        #Builds sample events data</span>
+<span class="sd">        for event in events:</span>
+<span class="sd">            try:</span>
+<span class="sd">                event.create()</span>
+<span class="sd">            except IntegrityError:</span>
+<span class="sd">                '''fails with bad or duplicate data'''</span>
+<span class="sd">                db.session.remove()</span>
+<span class="sd">                print(f"Records exist, duplicate data, or error: {event.event_name}")</span>
+<span class="sd">        """</span>
+
+<span class="k">def</span> <span class="nf">deleteID</span><span class="p">(</span><span class="n">event_id</span><span class="p">):</span>                
+    <span class="n">event</span> <span class="o">=</span> <span class="n">Event</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">event_id</span><span class="p">)</span> <span class="c1">#getting an event from the database based on ID</span>
+
+    <span class="c1">#user = Wordle.query.filter_by(name=name).first()</span>
+    <span class="k">if</span> <span class="n">event</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Query 1:"</span><span class="p">,</span> <span class="n">event</span><span class="p">)</span> <span class="c1">#prints the one query if it finds one</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="c1">#deletes the event with the db.session innate function</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span> <span class="c1">#commits the change</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"event "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">event_id</span><span class="p">)</span><span class="o">+</span><span class="s2">" not found"</span><span class="p">)</span> <span class="c1">#if the event isn't found, the display is provided</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Explanations">
+<a class="anchor" href="#Explanations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Explanations<a class="anchor-link" href="#Explanations"> </a>
+</h4>
+<p>At the top of the class are the specifications for the SQLite columns and the constructor <code>__init__</code> function.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">'events'</span>  <span class="c1"># table name is plural, class name is singular</span>
+
+<span class="c1"># Define the User schema with "vars" from object</span>
+<span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1">#_uid = db.Column(db.String(255), unique=True, nullable=False)</span>
+<span class="n">_email</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">_event_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">_event_details</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">_date</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">_start_time</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">_end_time</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">_password</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># constructor of a User object, initializes the instance variables within object (self) </span>
+<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">event_name</span><span class="p">,</span> <span class="n">event_details</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_email</span> <span class="o">=</span> <span class="n">email</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_event_name</span> <span class="o">=</span> <span class="n">event_name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_event_details</span> <span class="o">=</span> <span class="n">event_details</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_date</span> <span class="o">=</span> <span class="n">date</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_start_time</span> <span class="o">=</span> <span class="n">start_time</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_end_time</span> <span class="o">=</span> <span class="n">end_time</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">password</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Below these are a bunch of setters and getters for each of the attributes above.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+<span class="c1">#here's the name setter</span>
+<span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+<span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Below the property decorators are each of the CRUD functions.</p>
+<p>The <code>create</code> function adds the given Event object to the database specified in the SQLite session and commits the change.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># creates a person object from User(db.Model) class, passes initializers</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>  <span class="c1"># add prepares to persist person object to Users table</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>  <span class="c1"># SqlAlchemy "unit of work pattern" requires a manual commit</span>
+        <span class="k">return</span> <span class="bp">self</span>
+    <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The <code>read</code> function returns each of the given Event object's attributes in the form of a dictionary (JSON).</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+        <span class="s2">"email"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">email</span><span class="p">,</span>
+        <span class="s2">"event_name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">event_name</span><span class="p">,</span>
+        <span class="s2">"event_details"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">event_details</span><span class="p">,</span>
+        <span class="s2">"date"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="p">,</span>
+        <span class="s2">"start_time"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span><span class="p">,</span>
+        <span class="s2">"end_time"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span><span class="p">,</span>
+        <span class="s2">"password"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">password</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The update function assigns the given changes to each of the attributes after some minor validity checks. It then commits the change to the session.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">event_name</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">event_details</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">date</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">""</span><span class="p">):</span>
+    <span class="sd">"""only updates values with length"""</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">email</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">event_name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">event_name</span> <span class="o">=</span> <span class="n">event_name</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">event_details</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">event_details</span> <span class="o">=</span> <span class="n">event_details</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="n">date</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">start_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">start_time</span> <span class="o">=</span> <span class="n">start_time</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">end_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">end_time</span> <span class="o">=</span> <span class="n">end_time</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">password</span>
+    <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="k">return</span> <span class="bp">self</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I struggled to get the original <code>delete</code> function to work, so I made the one below.</p>
+<p><code>delete_ID</code> finds a given event based on its primary key, the <code>id</code> attribute, deletes the row, and then commits to the session.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">deleteID</span><span class="p">(</span><span class="n">event_id</span><span class="p">):</span>                
+    <span class="n">event</span> <span class="o">=</span> <span class="n">Event</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">event_id</span><span class="p">)</span> <span class="c1">#getting an event from the database based on ID</span>
+
+    <span class="c1">#user = Wordle.query.filter_by(name=name).first()</span>
+    <span class="k">if</span> <span class="n">event</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Query 1:"</span><span class="p">,</span> <span class="n">event</span><span class="p">)</span> <span class="c1">#prints the one query if it finds one</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="c1">#deletes the event with the db.session innate function</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span> <span class="c1">#commits the change</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"event "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">event_id</span><span class="p">)</span><span class="o">+</span><span class="s2">" not found"</span><span class="p">)</span> <span class="c1">#if the event isn't found, the display is provided</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="API-File">
+<a class="anchor" href="#API-File" aria-hidden="true"><span class="octicon octicon-link"></span></a>API File<a class="anchor-link" href="#API-File"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">Blueprint</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="kn">from</span> <span class="nn">flask_restful</span> <span class="kn">import</span> <span class="n">Api</span><span class="p">,</span> <span class="n">Resource</span> <span class="c1">#restful building</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">flask_cors</span> <span class="kn">import</span> <span class="n">CORS</span>
+
+<span class="kn">from</span> <span class="nn">model.events</span> <span class="kn">import</span> <span class="n">Event</span><span class="p">,</span> <span class="n">deleteID</span>
+
+<span class="n">event_api</span> <span class="o">=</span> <span class="n">Blueprint</span><span class="p">(</span><span class="s1">'event_api'</span><span class="p">,</span> <span class="vm">__name__</span><span class="p">,</span>
+                   <span class="n">url_prefix</span><span class="o">=</span><span class="s1">'/api/events'</span><span class="p">)</span>
+
+<span class="c1"># API docs https://flask-restful.readthedocs.io/en/latest/api.html</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">Api</span><span class="p">(</span><span class="n">event_api</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">EventAPI</span><span class="p">:</span>        
+    <span class="k">class</span> <span class="nc">_Create</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="sd">''' Read data for json body '''</span>
+            <span class="n">body</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+            
+            <span class="sd">''' Avoid garbage in, error checking '''</span>
+            <span class="c1"># validate name</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'name'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Submitter</span><span class="se">\'</span><span class="s1">s name is missing, or is less than 2 characters'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="c1"># validate uid</span>
+            <span class="n">email</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'email'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">email</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">email</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Email is missing, or is less than 2 characters'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="c1"># look for the rest of the data</span>
+            <span class="n">event_name</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'event_name'</span><span class="p">)</span>
+            <span class="n">event_details</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'event_details'</span><span class="p">)</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'date'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">date</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">date</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mi">2023</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">date</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">2024</span><span class="p">):</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Date is missing, formatted incorrectly, or within an invalid time range.'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="n">start_time</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'start_time'</span><span class="p">)</span>
+            <span class="n">end_time</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'end_time'</span><span class="p">)</span>
+            <span class="n">password</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'password'</span><span class="p">)</span>
+
+            <span class="sd">''' #1: Key code block, setup USER OBJECT '''</span>
+            <span class="n">eo</span> <span class="o">=</span> <span class="n">Event</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> 
+                      <span class="n">email</span><span class="o">=</span><span class="n">email</span><span class="p">,</span>
+                      <span class="n">event_name</span><span class="o">=</span><span class="n">event_name</span><span class="p">,</span>
+                      <span class="n">event_details</span><span class="o">=</span><span class="n">event_details</span><span class="p">,</span>
+                      <span class="n">date</span><span class="o">=</span><span class="n">date</span><span class="p">,</span>
+                      <span class="n">start_time</span><span class="o">=</span><span class="n">start_time</span><span class="p">,</span>
+                      <span class="n">end_time</span><span class="o">=</span><span class="n">end_time</span><span class="p">,</span>
+                      <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
+            
+            <span class="sd">''' #2: Key Code block to add user to database '''</span>
+            <span class="c1"># create user in database</span>
+            <span class="n">event</span> <span class="o">=</span> <span class="n">eo</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+            <span class="c1"># success returns json of user</span>
+            <span class="k">if</span> <span class="n">event</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+            <span class="c1"># failure returns error</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Processed </span><span class="si">{</span><span class="n">event_name</span><span class="si">}</span><span class="s1">, either a format error or the event "</span><span class="si">{</span><span class="n">event_name</span><span class="si">}</span><span class="s1">" is a duplicate'</span><span class="p">},</span> <span class="mi">210</span>
+
+    <span class="k">class</span> <span class="nc">_Read</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">events</span> <span class="o">=</span> <span class="n">Event</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>    <span class="c1"># read/extract all users from database</span>
+            <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">event</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">events</span><span class="p">]</span>  <span class="c1"># prepare output in json</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">json_ready</span><span class="p">)</span>  <span class="c1"># jsonify creates Flask response object, more specific to APIs than json.dumps</span>
+    
+    <span class="k">class</span> <span class="nc">_Delete</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">body</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span> <span class="c1">#getting the database data for a given event</span>
+            <span class="n">event_id</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'id'</span><span class="p">)</span> <span class="c1">#isolating the ID of the given entry</span>
+           
+            <span class="n">status</span> <span class="o">=</span> <span class="n">deleteID</span><span class="p">(</span><span class="n">event_id</span><span class="p">)</span> <span class="c1">#uses the deleteID function from the model</span>
+            <span class="k">if</span> <span class="n">status</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Successfully deleted event with id </span><span class="si">{</span><span class="n">event_id</span><span class="si">}</span><span class="s1"> '</span><span class="p">}</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Event with id </span><span class="si">{</span><span class="n">event_id</span><span class="si">}</span><span class="s1"> not found'</span><span class="p">},</span> <span class="mi">240</span>
+    
+    <span class="k">class</span> <span class="nc">_Update</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">body</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+            <span class="n">event_id</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'id'</span><span class="p">)</span>
+            <span class="n">eu</span> <span class="o">=</span> <span class="n">Event</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">event_id</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">eu</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Event with id </span><span class="si">{</span><span class="n">event_id</span><span class="si">}</span><span class="s1"> could not be found.'</span><span class="p">}</span>
+
+            <span class="sd">''' Avoid garbage in, error checking '''</span>
+            <span class="c1"># validate name</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'name'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Submitter</span><span class="se">\'</span><span class="s1">s name is missing, or is less than 2 characters'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="c1"># validate uid</span>
+            <span class="n">email</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'email'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">email</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">email</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Email is missing, or is less than 2 characters'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="c1"># look for the rest of the data</span>
+            <span class="n">event_name</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'event_name'</span><span class="p">)</span>
+            <span class="n">event_details</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'event_details'</span><span class="p">)</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'date'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">date</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">10</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">date</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mi">2023</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">date</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">2024</span><span class="p">):</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Date is missing, formatted incorrectly, or within an invalid time range.'</span><span class="p">},</span> <span class="mi">210</span>
+            <span class="n">start_time</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'start_time'</span><span class="p">)</span>
+            <span class="n">end_time</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'end_time'</span><span class="p">)</span>
+            <span class="n">password</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'password'</span><span class="p">)</span>
+
+            <span class="n">status</span> <span class="o">=</span> <span class="n">eu</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="o">=</span><span class="n">email</span><span class="p">,</span> <span class="n">event_name</span><span class="o">=</span><span class="n">event_name</span><span class="p">,</span> <span class="n">event_details</span><span class="o">=</span><span class="n">event_details</span><span class="p">,</span> <span class="n">date</span><span class="o">=</span><span class="n">date</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="n">end_time</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">status</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'Successfully updated event with id </span><span class="si">{</span><span class="n">event_id</span><span class="si">}</span><span class="s1">.'</span><span class="p">}</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'An error occurred when updating the event.'</span><span class="p">}</span>
+
+    <span class="c1"># building RESTapi endpoint</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Create</span><span class="p">,</span> <span class="s1">'/create'</span><span class="p">)</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Read</span><span class="p">,</span> <span class="s1">'/'</span><span class="p">)</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Delete</span><span class="p">,</span> <span class="s1">'/delete'</span><span class="p">)</span>
+    <span class="n">api</span><span class="o">.</span><span class="n">add_resource</span><span class="p">(</span><span class="n">_Update</span><span class="p">,</span> <span class="s1">'/update'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The functions behind each of the resource procedures above are kind of self-explanatory. As a general explanation, these give instructions on what do with given information when sent to various specified endpoints from the frontend.</p>
+<h2 id="Fetch-API-Request">
+<a class="anchor" href="#Fetch-API-Request" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fetch API Request<a class="anchor-link" href="#Fetch-API-Request"> </a>
+</h2>
+<p>The frontend code behind the video I show later contains multiple fetches to the database, but I'll point out the ones that are more important to look at.</p>
+<p>This function starts with the get fetch, based on the base endpoint urls provided above. In this case, the get is used to validate the data being entered into the database, but you can see in the video that it also gets used to create the table. You can see the full frontend code <a href="https://raw.githubusercontent.com/drewreed2005/cafegato/gh-pages/events.md">here</a>.</p>
+<p>The function below the read fetch contains the code for a frontend post request. It uses the <code>/create</code> resource link to provide a body of JSON data to the backend and commit it to the database.</p>
+<div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">read_url</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:8239/api/events/"</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">read_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">method</span><span class="o">:</span> <span class="s1">'GET'</span><span class="p">,</span> <span class="c1">//read option</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">'cors'</span><span class="p">,</span> <span class="c1">// cors used</span>
+    <span class="nx">cache</span><span class="o">:</span> <span class="s1">'default'</span><span class="p">,</span> <span class="c1">// set to default</span>
+    <span class="nx">credentials</span><span class="o">:</span> <span class="s1">'omit'</span><span class="p">,</span> <span class="c1">// omit credentials</span>
+    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s1">'Content-Type'</span><span class="o">:</span> <span class="s1">'application/json'</span>
+    <span class="c1">// 'Content-Type': 'application/x-www-form-urlencoded',</span>
+    <span class="p">},</span>
+<span class="p">};</span>
+<span class="kr">const</span> <span class="nx">post_url</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:8239/api/events/create"</span><span class="p">;</span> <span class="c1">// for POST</span>
+
+<span class="kd">function</span> <span class="nx">submit_Form</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="nx">fetch</span><span class="p">(</span><span class="nx">read_url</span><span class="p">,</span> <span class="nx">read_options</span><span class="p">)</span> <span class="c1">// this is the read fetch</span>
+            <span class="c1">// response is RESTful, process needs to be sequential</span>
+            <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="c1">// check for response errors</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="mf">200</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kr">const</span> <span class="nx">errorMsg</span> <span class="o">=</span> <span class="s1">'Database response error: '</span> <span class="o">+</span> <span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">;</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">errorMsg</span><span class="p">);</span>
+            <span class="p">};</span>
+            <span class="c1">// valid response is JSON</span>
+            <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                <span class="c1">// SKIPPING VALIDATION FUNCTIONS TO SHOW FETCH:</span>
+                <span class="kr">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="s2">"name"</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'name'</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span>
+                    <span class="s2">"email"</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'email'</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span>
+                    <span class="s2">"event_name"</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'event_name'</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span>
+                    <span class="s2">"event_details"</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'event_details'</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span>
+                    <span class="s2">"date"</span><span class="o">:</span> <span class="nx">datefix</span><span class="p">,</span>
+                    <span class="s2">"start_time"</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'start_time'</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span>
+                    <span class="s2">"end_time"</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'end_time'</span><span class="p">).</span><span class="nx">value</span><span class="p">,</span>
+                    <span class="s2">"password"</span><span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'password'</span><span class="p">).</span><span class="nx">value</span>
+                <span class="p">};</span>
+                <span class="kr">const</span> <span class="nx">post_options</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="nx">method</span><span class="o">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+                    <span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">body</span><span class="p">),</span>
+                    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="s1">'Content-Type'</span><span class="o">:</span><span class="s1">'application/json'</span><span class="p">,</span>
+                        <span class="s1">'Authorization'</span><span class="o">:</span> <span class="s1">'Bearer my-token'</span><span class="p">,</span>
+                    <span class="p">},</span>
+                <span class="p">};</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+                <span class="nx">fetch</span><span class="p">(</span><span class="nx">post_url</span><span class="p">,</span> <span class="nx">post_options</span><span class="p">)</span>
+                    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span>
+                        <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                        <span class="p">})</span>
+                    <span class="p">)</span>
+                <span class="nx">alert</span><span class="p">(</span><span class="s2">"Thank you, "</span> <span class="o">+</span> <span class="nx">form_list</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">", for submitting an event!\n\n(Warning: You cannot submit two events at the same time! You may only have one event at a time.)"</span><span class="p">);</span>
+</pre></div>
+<p>The code below shows the delete request, which can also be used as an update request for the purposes of this site. It utilizes the delete endpoint from the API file, and submits a body containing only the event ID so that the <code>delete_ID</code> Python function from before can be used.</p>
+<div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">del_url</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:8239/api/events/delete"</span><span class="p">;</span> <span class="c1">// for DELETE</span>
+
+<span class="kd">function</span> <span class="nx">delete_Event</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">del_ename</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"event_name_del"</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">del_password</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"password_del"</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">success</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="nx">fetch</span><span class="p">(</span><span class="nx">read_url</span><span class="p">,</span> <span class="nx">read_options</span><span class="p">)</span>
+            <span class="c1">// fetch to look for most updated event data</span>
+            <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="c1">// check for response errors</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="mf">200</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kr">const</span> <span class="nx">errorMsg</span> <span class="o">=</span> <span class="s1">'Database response error: '</span> <span class="o">+</span> <span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">;</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">errorMsg</span><span class="p">);</span>
+            <span class="p">};</span>
+            <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                <span class="nx">data</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">event</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">[</span><span class="s1">'event_name'</span><span class="p">]</span> <span class="o">==</span> <span class="nx">del_ename</span> <span class="o">&amp;&amp;</span> <span class="nx">event</span><span class="p">[</span><span class="s1">'password'</span><span class="p">]</span> <span class="o">==</span> <span class="nx">del_password</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="c1">// if all validations successful</span>
+                        <span class="kr">const</span> <span class="nx">del_ID</span> <span class="o">=</span> <span class="nx">event</span><span class="p">[</span><span class="s1">'id'</span><span class="p">];</span>
+                        <span class="kr">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="p">{</span>
+                            <span class="s1">'id'</span><span class="o">:</span><span class="nx">del_ID</span>
+                        <span class="p">};</span>
+                        <span class="kr">const</span> <span class="nx">del_options</span> <span class="o">=</span> <span class="p">{</span>
+                            <span class="nx">method</span><span class="o">:</span> <span class="s1">'DELETE'</span><span class="p">,</span>
+                            <span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">body</span><span class="p">),</span>
+                            <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+                                <span class="s1">'Content-Type'</span><span class="o">:</span><span class="s1">'application/json'</span><span class="p">,</span>
+                                <span class="s1">'Authorization'</span><span class="o">:</span> <span class="s1">'Bearer my-token'</span><span class="p">,</span>
+                            <span class="p">},</span>
+                        <span class="p">};</span>
+                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+                        <span class="nx">fetch</span><span class="p">(</span><span class="nx">del_url</span><span class="p">,</span> <span class="nx">del_options</span><span class="p">)</span>
+                            <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span>
+                                <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                                <span class="p">})</span>
+                            <span class="p">)</span>
+                        <span class="nx">alert</span><span class="p">(</span><span class="s1">'You have successfully deleted the event "'</span> <span class="o">+</span> <span class="nx">event</span><span class="p">[</span><span class="s1">'event_name'</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'" from the events database.'</span><span class="p">);</span>
+                        <span class="nx">success</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">})</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">success</span> <span class="o">==</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span><span class="nx">alert</span><span class="p">(</span><span class="s2">"There was an error in one of the two fields you have filled in. Make sure that your event name and password both match the case used when first created. (You can copy-paste the event name from the data below.)"</span><span class="p">)}</span>
+            <span class="p">})</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+</pre></div>
+<h2 id="Video-of-Complete-GitHub-Pages-Website">
+<a class="anchor" href="#Video-of-Complete-GitHub-Pages-Website" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video of Complete GitHub Pages Website<a class="anchor-link" href="#Video-of-Complete-GitHub-Pages-Website"> </a>
+</h2>
+<p><a href="https://www.youtube.com/watch?v=Ja2tz-NUYok">Click here</a> to see a video going over the full functionality of the site, including evidence of the backend and frontend connection. You can also <a href="https://drewreed2005.github.io/cafegato/events">click here</a> to see the site itself, though the database won't work unless the local server is run so the backend-reliant parts won't show up.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/FASTPAGES/frontbacknotespage2/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FASTPAGES/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://samitpoojary.github.io/FASTPAGES/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="” https://github.com/nighthawkcoders “" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://twitter.com/NighthawkCoding “" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="” https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q “" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FASTPAGES/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
